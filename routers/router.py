@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.orm import Session
 from typing import List, Optional
 from datetime import datetime
 from database import get_db
@@ -12,7 +12,7 @@ router = APIRouter(prefix="/api/v1", tags=["sensors"])
 @router.post("/sensors/data", response_model=SensorDataResponse)
 async def create_sensor_data_endpoint(
     data: SensorDataCreate,
-    db: AsyncSession = Depends(get_db)
+    db: Session = Depends(get_db)
 ):
     """Create new sensor data entry"""
-    return await sensor_service.create_sensor_data(db, data)
+    return sensor_service.create_sensor_data(db, data)

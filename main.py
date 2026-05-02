@@ -14,11 +14,12 @@ async def lifespan(app: FastAPI):
     logger.info("Starting up...")
 
     # Initialize database
-    await init_db()
+    init_db()
+    
     logger.info("Database initialized")
 
     # Start MQTT client
-    await mqtt_client.start()
+    mqtt_client.start()
     logger.info("MQTT client started")
 
     yield
