@@ -15,5 +15,13 @@ async def create_sensor_data(db: AsyncSession, data: SensorDataCreate) -> Sensor
     return db_data
 
 
-
+async def get_sensor_data(db: AsyncSession, skip: int = 0, limit: int = 100) -> List[SensorData]:
+    """Асинхронное получение данных"""
+    result = await db.execute(
+        select(SensorData)
+        .order_by(SensorData.datastamp.desc())
+        .offset(skip)
+        .limit(limit)
+    )
+    return result.scalars().all()
 

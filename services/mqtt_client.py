@@ -8,6 +8,7 @@ from config import settings
 from schemas.schemas import SensorDataCreate
 from services.sensor_service import create_sensor_data
 from database import AsyncSessionLocal
+from services.websocket_manager import ws_manager
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -78,12 +79,30 @@ class MQTTClient:
                 # Читаем из очереди
                 payload = await self.message_queue.get()
                 # отправляем на запись в БД
-                await self.process_message(payload)
+                saved_data = await self.process_message(payload)
+                logger.info(f"ЗАПИСЬ УСПЕШНА {saved_data}")
+
+                # ✅ ЕСЛИ ДАННЫЕ УСПЕШНО СОХРАНЕНЫ → ОТПРАВЛЯЕМ В WEB SOCKET
+                if saved_data:
+                   
+                    await ws_manager.add_to_queue({
+                        "type": "new_sensor_data",
+                        "data": {
+                            "id": saved_data.id,
+                            "device": saved_data.device,
+                            "temp": saved_data.temp,
+                            "humidity": saved_data.humidity,
+                            "datastamp": saved_data.datastamp.isoformat() if saved_data.datastamp else None,
+                            "created_at": saved_data.created_at.isoformat() if saved_data.created_at else None
+                        }
+                    })
+                    logger.info(
+                        f"Data sent to WebSocket: device={saved_data.device}")
                 self.message_queue.task_done()
             except asyncio.CancelledError:
                 break
             except Exception as e:
-                logger.error(f"Ошибка в очереди: {e}")
+                logger.error(f"Queue error: {e}")
                 await asyncio.sleep(0.1)
 
     async def process_message(self, payload: str):
@@ -95,7 +114,7 @@ class MQTTClient:
                 # Преобразование данных
                 if isinstance(data.get('datastamp'), str):
                     data['datastamp'] = datetime.fromisoformat(
-                        data['datastamp'].replace('Z', '+00:00'))
+                        data['datastamp'])
                 
                 data['device'] = int(data['device'])
                 data['temp'] = float(data['temp'])
@@ -106,10 +125,12 @@ class MQTTClient:
                 # Асинхронное сохранение в БД
                 result = await create_sensor_data(db, sensor_data)
                 
-                logger.info(f"Saved: device={result.device}, temp={result.temp}, humidity={result.humidity}")
+                logger.info(f"Запись в БД: device={result.device}, temp={result.temp}, humidity={result.humidity}")
+                return result
                 
             except Exception as e:
                 logger.error(f"Process error: {e}", exc_info=True)
+                return None
 
     async def reconnect(self):
         """Переподключение"""

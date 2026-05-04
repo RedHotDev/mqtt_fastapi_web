@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Data Live</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #data { 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            height: 400px; 
+            overflow-y: auto;
+            background: #f9f9f9;
+        }
+        .sensor-record {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            margin: 5px 0;
+            background: white;
+        }
+        .timestamp { color: #666; font-size: 0.9em; }
+        .temp { color: #e74c3c; font-weight: bold; }
+        .humidity { color: #3498db; font-weight: bold; }
+        #status { padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .connected { background: #d4edda; color: #155724; }
+        .disconnected { background: #f8d7da; color: #721c24; }
+        button { padding: 8px 15px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>📡 Live Sensor Data (WebSocket)</h1>
+    <div id="status" class="disconnected">Disconnected</div>
+    <button onclick="connectWebSocket()">Connect</button>
+    <button onclick="disconnectWebSocket()">Disconnect</button>
+    <button onclick="clearData()">Clear Data</button>
+    <h3>Real-time sensor readings:</h3>
+    <div id="data"></div>
+
+    <script>
+        let ws = null;
+
+        function connectWebSocket() {
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsUrl = `${protocol}//${window.location.host}/ws/sensors/live`;
+            
+            ws = new WebSocket(wsUrl);
+            
+            ws.onopen = function() {
+                document.getElementById('status').innerHTML = '✅ Connected to WebSocket';
+                document.getElementById('status').className = 'connected';
+                console.log('WebSocket connected');
+            };
+            
+            ws.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+                console.log('Received:', data);
+                
+                if (data.type === 'new_sensor_data') {
+                    addSensorRecord(data.data);
+                } else if (data.type === 'connected') {
+                    addSystemMessage(`Connected. Active clients: ${data.clients_connected}`);
+                } else if (data.type === 'pong') {
+                    console.log('Pong received');
+                }
+            };
+            
+            ws.onerror = function(error) {
+                console.error('WebSocket error:', error);
+                document.getElementById('status').innerHTML = '❌ WebSocket Error';
+                document.getElementById('status').className = 'disconnected';
+            };
+            
+            ws.onclose = function() {
+                document.getElementById('status').innerHTML = '🔌 Disconnected';
+                document.getElementById('status').className = 'disconnected';
+                console.log('WebSocket disconnected');
+            };
+        }
+        
+        function disconnectWebSocket() {
+            if (ws) {
+                ws.close();
+                ws = null;
+            }
+        }
+        
+        function addSensorRecord(data) {
+            const container = document.getElementById('data');
+            const record = document.createElement('div');
+            record.className = 'sensor-record';
+            record.innerHTML = `
+                <div class="timestamp">📅 ${new Date(data.datastamp).toLocaleString()}</div>
+                <div>🖥️ Device: <strong>${data.device}</strong></div>
+                <div>🌡️ Temperature: <span class="temp">${data.temp}°C</span></div>
+                <div>💧 Humidity: <span class="humidity">${data.humidity}%</span></div>
+                <div>🆔 ID: ${data.id} | Saved: ${new Date(data.created_at).toLocaleTimeString()}</div>
+            `;
+            container.insertBefore(record, container.firstChild);
+            
+            // Keep last 100 records
+            while (container.children.length > 100) {
+                container.removeChild(container.lastChild);
+            }
+        }
+        
+        function addSystemMessage(message) {
+            const container = document.getElementById('data');
+            const msg = document.createElement('div');
+            msg.style.cssText = 'background: #e3f2fd; padding: 5px; margin: 5px 0; border-radius: 3px; color: #1976d2;';
+            msg.textContent = `ℹ️ ${message}`;
+            container.insertBefore(msg, container.firstChild);
+        }
+        
+        function clearData() {
+            document.getElementById('data').innerHTML = '';
+        }
+        
+        // Auto-connect on page load
+        window.addEventListener('load', () => {
+            connectWebSocket();
+            
+            // Optional: send ping every 30 seconds to keep connection alive
+            setInterval(() => {
+                if (ws && ws.readyState === WebSocket.OPEN) {
+                    ws.send('ping');
+                }
+            }, 30000);
+        });
+    </script>
+</body>
+</html>

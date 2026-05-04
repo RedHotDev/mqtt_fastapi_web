@@ -5,6 +5,9 @@ from loglib import logger
 from database import init_db
 from routers.router import router
 from services.mqtt_client import mqtt_client
+from routers.websocket_router import router as ws_router
+from services.websocket_manager import ws_manager
+from fastapi.staticfiles import StaticFiles
 
 
 @asynccontextmanager
@@ -18,15 +21,23 @@ async def lifespan(app: FastAPI):
     
     logger.info("Database initialized")
 
+    # Start WebSocket background processor
+    await ws_manager.start_background_processor()  
+    logger.info("WebSocket background processor started")
+
     # Start MQTT client
     await mqtt_client.start()
     logger.info("MQTT client started")
 
     yield
 
+
     # Shutdown
     logger.info("Shutting down...")
 
+    await ws_manager.stop_background_processor()  # ← добавить
+    logger.info("WebSocket background processor stopped")
+    
     # Stop MQTT client
     await mqtt_client.stop()
     logger.info("MQTT client stopped")
@@ -42,7 +53,9 @@ app = FastAPI(
 )
 
 app.include_router(router)
+app.include_router(ws_router)
 
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 if __name__ == "__main__":
     import uvicorn

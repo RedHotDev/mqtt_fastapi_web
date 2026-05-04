@@ -16,3 +16,14 @@ async def create_sensor_data_endpoint(
 ):
     """Create new sensor data entry"""
     return await  sensor_service.create_sensor_data(db, data)
+
+
+@router.get("/sensors/data", response_model=List[SensorDataResponse])
+async def get_sensor_data_endpoint(
+    skip: int = Query(0, ge=0, description="Number of records to skip"),
+    limit: int = Query(100, ge=1, le=1000,
+                       description="Number of records to return"),
+    db: AsyncSession = Depends(get_db)
+):
+    """Получить список данных датчиков"""
+    return await sensor_service.get_sensor_data(db, skip, limit)

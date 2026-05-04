@@ -1726,3 +1726,597 @@
 2026-05-04 10:24:42,442 - INFO - Starting up...
 2026-05-04 10:24:42,494 - INFO - Database initialized
 2026-05-04 10:24:42,632 - INFO - MQTT client started
+2026-05-04 13:55:00,245 - INFO - Shutting down...
+2026-05-04 13:56:09,086 - DEBUG - Отладка
+2026-05-04 13:56:09,087 - INFO - Информация
+2026-05-04 13:56:09,088 - WARNING - Предупреждение
+2026-05-04 13:56:09,088 - ERROR - Ошибка
+2026-05-04 13:56:10,898 - INFO - Starting up...
+2026-05-04 13:56:10,909 - INFO - Database initialized
+2026-05-04 13:56:11,143 - INFO - MQTT client started
+2026-05-04 14:27:19,311 - INFO - Shutting down...
+2026-05-04 14:27:21,264 - DEBUG - Отладка
+2026-05-04 14:27:21,265 - INFO - Информация
+2026-05-04 14:27:21,265 - WARNING - Предупреждение
+2026-05-04 14:27:21,266 - ERROR - Ошибка
+2026-05-04 14:27:22,486 - INFO - Starting up...
+2026-05-04 14:27:22,499 - INFO - Database initialized
+2026-05-04 14:27:22,651 - INFO - MQTT client started
+2026-05-04 14:34:27,416 - INFO - Shutting down...
+2026-05-04 14:34:28,830 - DEBUG - Отладка
+2026-05-04 14:34:28,830 - INFO - Информация
+2026-05-04 14:34:28,831 - WARNING - Предупреждение
+2026-05-04 14:34:28,831 - ERROR - Ошибка
+2026-05-04 14:34:29,779 - INFO - Starting up...
+2026-05-04 14:34:29,791 - INFO - Database initialized
+2026-05-04 14:34:29,935 - INFO - MQTT client started
+2026-05-04 14:34:30,044 - INFO - Shutting down...
+2026-05-04 14:34:32,520 - DEBUG - Отладка
+2026-05-04 14:34:32,521 - INFO - Информация
+2026-05-04 14:34:32,522 - WARNING - Предупреждение
+2026-05-04 14:34:32,527 - ERROR - Ошибка
+2026-05-04 14:34:34,452 - DEBUG - Отладка
+2026-05-04 14:34:34,452 - INFO - Информация
+2026-05-04 14:34:34,453 - WARNING - Предупреждение
+2026-05-04 14:34:34,453 - ERROR - Ошибка
+2026-05-04 14:34:37,449 - DEBUG - Отладка
+2026-05-04 14:34:37,450 - INFO - Информация
+2026-05-04 14:34:37,451 - WARNING - Предупреждение
+2026-05-04 14:34:37,451 - ERROR - Ошибка
+2026-05-04 14:35:04,634 - DEBUG - Отладка
+2026-05-04 14:35:04,635 - INFO - Информация
+2026-05-04 14:35:04,636 - WARNING - Предупреждение
+2026-05-04 14:35:04,637 - ERROR - Ошибка
+2026-05-04 14:35:06,392 - DEBUG - Отладка
+2026-05-04 14:35:06,393 - INFO - Информация
+2026-05-04 14:35:06,394 - WARNING - Предупреждение
+2026-05-04 14:35:06,395 - ERROR - Ошибка
+2026-05-04 14:35:08,446 - DEBUG - Отладка
+2026-05-04 14:35:08,447 - INFO - Информация
+2026-05-04 14:35:08,447 - WARNING - Предупреждение
+2026-05-04 14:35:08,448 - ERROR - Ошибка
+2026-05-04 14:35:43,427 - DEBUG - Отладка
+2026-05-04 14:35:43,427 - INFO - Информация
+2026-05-04 14:35:43,428 - WARNING - Предупреждение
+2026-05-04 14:35:43,429 - ERROR - Ошибка
+2026-05-04 14:35:47,860 - DEBUG - Отладка
+2026-05-04 14:35:47,860 - INFO - Информация
+2026-05-04 14:35:47,861 - WARNING - Предупреждение
+2026-05-04 14:35:47,861 - ERROR - Ошибка
+2026-05-04 14:35:51,455 - DEBUG - Отладка
+2026-05-04 14:35:51,456 - INFO - Информация
+2026-05-04 14:35:51,457 - WARNING - Предупреждение
+2026-05-04 14:35:51,458 - ERROR - Ошибка
+2026-05-04 14:35:55,464 - DEBUG - Отладка
+2026-05-04 14:35:55,465 - INFO - Информация
+2026-05-04 14:35:55,465 - WARNING - Предупреждение
+2026-05-04 14:35:55,466 - ERROR - Ошибка
+2026-05-04 14:35:56,063 - INFO - Starting up...
+2026-05-04 14:35:56,069 - INFO - Database initialized
+2026-05-04 14:35:56,222 - INFO - MQTT client started
+2026-05-04 14:36:03,678 - INFO - Shutting down...
+2026-05-04 14:36:05,741 - DEBUG - Отладка
+2026-05-04 14:36:05,742 - INFO - Информация
+2026-05-04 14:36:05,742 - WARNING - Предупреждение
+2026-05-04 14:36:05,743 - ERROR - Ошибка
+2026-05-04 14:36:06,264 - INFO - Starting up...
+2026-05-04 14:36:06,274 - INFO - Database initialized
+2026-05-04 14:36:06,412 - INFO - MQTT client started
+2026-05-04 14:36:13,405 - INFO - Shutting down...
+2026-05-04 14:36:14,817 - DEBUG - Отладка
+2026-05-04 14:36:14,818 - INFO - Информация
+2026-05-04 14:36:14,818 - WARNING - Предупреждение
+2026-05-04 14:36:14,822 - ERROR - Ошибка
+2026-05-04 14:36:16,712 - DEBUG - Отладка
+2026-05-04 14:36:16,713 - INFO - Информация
+2026-05-04 14:36:16,713 - WARNING - Предупреждение
+2026-05-04 14:36:16,714 - ERROR - Ошибка
+2026-05-04 14:36:18,391 - DEBUG - Отладка
+2026-05-04 14:36:18,391 - INFO - Информация
+2026-05-04 14:36:18,392 - WARNING - Предупреждение
+2026-05-04 14:36:18,393 - ERROR - Ошибка
+2026-05-04 14:36:21,897 - DEBUG - Отладка
+2026-05-04 14:36:21,897 - INFO - Информация
+2026-05-04 14:36:21,898 - WARNING - Предупреждение
+2026-05-04 14:36:21,898 - ERROR - Ошибка
+2026-05-04 14:36:22,442 - INFO - Starting up...
+2026-05-04 14:36:22,450 - INFO - Database initialized
+2026-05-04 14:36:22,595 - INFO - MQTT client started
+2026-05-04 14:36:24,895 - INFO - Shutting down...
+2026-05-04 14:36:26,667 - DEBUG - Отладка
+2026-05-04 14:36:26,670 - INFO - Информация
+2026-05-04 14:36:26,672 - WARNING - Предупреждение
+2026-05-04 14:36:26,672 - ERROR - Ошибка
+2026-05-04 14:36:27,280 - INFO - Starting up...
+2026-05-04 14:36:27,288 - INFO - Database initialized
+2026-05-04 14:36:27,442 - INFO - MQTT client started
+2026-05-04 14:39:29,658 - INFO - Shutting down...
+2026-05-04 14:39:31,758 - DEBUG - Отладка
+2026-05-04 14:39:31,760 - INFO - Информация
+2026-05-04 14:39:31,761 - WARNING - Предупреждение
+2026-05-04 14:39:31,762 - ERROR - Ошибка
+2026-05-04 14:39:32,308 - INFO - Starting up...
+2026-05-04 14:39:32,318 - INFO - Database initialized
+2026-05-04 14:39:33,483 - INFO - MQTT client started
+2026-05-04 14:39:33,808 - INFO - Shutting down...
+2026-05-04 14:39:35,556 - DEBUG - Отладка
+2026-05-04 14:39:35,556 - INFO - Информация
+2026-05-04 14:39:35,557 - WARNING - Предупреждение
+2026-05-04 14:39:35,557 - ERROR - Ошибка
+2026-05-04 14:39:36,201 - INFO - Starting up...
+2026-05-04 14:39:36,206 - INFO - Database initialized
+2026-05-04 14:39:36,357 - INFO - MQTT client started
+2026-05-04 14:39:40,499 - INFO - Shutting down...
+2026-05-04 14:39:41,807 - DEBUG - Отладка
+2026-05-04 14:39:41,807 - INFO - Информация
+2026-05-04 14:39:41,808 - WARNING - Предупреждение
+2026-05-04 14:39:41,809 - ERROR - Ошибка
+2026-05-04 14:39:42,337 - INFO - Starting up...
+2026-05-04 14:39:42,343 - INFO - Database initialized
+2026-05-04 14:39:43,508 - INFO - MQTT client started
+2026-05-04 14:41:00,522 - INFO - Shutting down...
+2026-05-04 14:41:01,803 - DEBUG - Отладка
+2026-05-04 14:41:01,804 - INFO - Информация
+2026-05-04 14:41:01,804 - WARNING - Предупреждение
+2026-05-04 14:41:01,805 - ERROR - Ошибка
+2026-05-04 14:41:02,554 - INFO - Starting up...
+2026-05-04 14:41:02,565 - INFO - Database initialized
+2026-05-04 14:41:02,714 - INFO - MQTT client started
+2026-05-04 15:17:36,987 - INFO - Shutting down...
+2026-05-04 15:17:42,121 - DEBUG - Отладка
+2026-05-04 15:17:42,123 - INFO - Информация
+2026-05-04 15:17:42,124 - WARNING - Предупреждение
+2026-05-04 15:17:42,124 - ERROR - Ошибка
+2026-05-04 15:17:43,814 - INFO - Starting up...
+2026-05-04 15:17:43,825 - INFO - Database initialized
+2026-05-04 15:17:44,025 - INFO - MQTT client started
+2026-05-04 15:17:50,100 - INFO - Shutting down...
+2026-05-04 15:17:52,626 - DEBUG - Отладка
+2026-05-04 15:17:52,628 - INFO - Информация
+2026-05-04 15:17:52,629 - WARNING - Предупреждение
+2026-05-04 15:17:52,630 - ERROR - Ошибка
+2026-05-04 15:17:53,497 - INFO - Starting up...
+2026-05-04 15:17:53,502 - INFO - Database initialized
+2026-05-04 15:17:53,908 - INFO - MQTT client started
+2026-05-04 15:19:48,129 - INFO - Shutting down...
+2026-05-04 15:19:50,676 - DEBUG - Отладка
+2026-05-04 15:19:50,677 - INFO - Информация
+2026-05-04 15:19:50,678 - WARNING - Предупреждение
+2026-05-04 15:19:50,678 - ERROR - Ошибка
+2026-05-04 15:19:51,396 - INFO - Starting up...
+2026-05-04 15:19:51,405 - INFO - Database initialized
+2026-05-04 15:19:51,642 - INFO - MQTT client started
+2026-05-04 15:19:54,975 - INFO - Shutting down...
+2026-05-04 15:19:56,857 - DEBUG - Отладка
+2026-05-04 15:19:56,857 - INFO - Информация
+2026-05-04 15:19:56,858 - WARNING - Предупреждение
+2026-05-04 15:19:56,859 - ERROR - Ошибка
+2026-05-04 15:19:57,494 - INFO - Starting up...
+2026-05-04 15:19:57,503 - INFO - Database initialized
+2026-05-04 15:19:57,709 - INFO - MQTT client started
+2026-05-04 15:20:10,024 - INFO - Shutting down...
+2026-05-04 15:20:12,542 - DEBUG - Отладка
+2026-05-04 15:20:12,542 - INFO - Информация
+2026-05-04 15:20:12,543 - WARNING - Предупреждение
+2026-05-04 15:20:12,543 - ERROR - Ошибка
+2026-05-04 15:20:13,198 - INFO - Starting up...
+2026-05-04 15:20:13,211 - INFO - Database initialized
+2026-05-04 15:20:13,359 - INFO - MQTT client started
+2026-05-04 15:20:13,470 - INFO - Shutting down...
+2026-05-04 15:20:15,720 - DEBUG - Отладка
+2026-05-04 15:20:15,721 - INFO - Информация
+2026-05-04 15:20:15,721 - WARNING - Предупреждение
+2026-05-04 15:20:15,722 - ERROR - Ошибка
+2026-05-04 15:20:16,663 - INFO - Starting up...
+2026-05-04 15:20:16,673 - INFO - Database initialized
+2026-05-04 15:20:16,828 - INFO - MQTT client started
+2026-05-04 15:20:16,937 - INFO - Shutting down...
+2026-05-04 15:20:22,010 - DEBUG - Отладка
+2026-05-04 15:20:22,011 - INFO - Информация
+2026-05-04 15:20:22,011 - WARNING - Предупреждение
+2026-05-04 15:20:22,012 - ERROR - Ошибка
+2026-05-04 15:20:22,670 - INFO - Starting up...
+2026-05-04 15:20:22,680 - INFO - Database initialized
+2026-05-04 15:20:22,854 - INFO - MQTT client started
+2026-05-04 15:20:23,626 - INFO - Shutting down...
+2026-05-04 15:20:25,276 - DEBUG - Отладка
+2026-05-04 15:20:25,279 - INFO - Информация
+2026-05-04 15:20:25,295 - WARNING - Предупреждение
+2026-05-04 15:20:25,295 - ERROR - Ошибка
+2026-05-04 15:20:25,991 - INFO - Starting up...
+2026-05-04 15:20:25,997 - INFO - Database initialized
+2026-05-04 15:20:26,170 - INFO - MQTT client started
+2026-05-04 15:21:10,687 - INFO - Shutting down...
+2026-05-04 15:21:13,369 - DEBUG - Отладка
+2026-05-04 15:21:13,369 - INFO - Информация
+2026-05-04 15:21:13,370 - WARNING - Предупреждение
+2026-05-04 15:21:13,371 - ERROR - Ошибка
+2026-05-04 15:21:18,488 - DEBUG - Отладка
+2026-05-04 15:21:18,488 - INFO - Информация
+2026-05-04 15:21:18,489 - WARNING - Предупреждение
+2026-05-04 15:21:18,490 - ERROR - Ошибка
+2026-05-04 15:21:19,160 - INFO - Starting up...
+2026-05-04 15:21:19,171 - INFO - Database initialized
+2026-05-04 15:21:19,328 - INFO - MQTT client started
+2026-05-04 15:22:12,069 - INFO - Shutting down...
+2026-05-04 15:22:14,169 - DEBUG - Отладка
+2026-05-04 15:22:14,169 - INFO - Информация
+2026-05-04 15:22:14,170 - WARNING - Предупреждение
+2026-05-04 15:22:14,171 - ERROR - Ошибка
+2026-05-04 15:22:36,537 - DEBUG - Отладка
+2026-05-04 15:22:36,539 - INFO - Информация
+2026-05-04 15:22:36,541 - WARNING - Предупреждение
+2026-05-04 15:22:36,542 - ERROR - Ошибка
+2026-05-04 15:22:37,403 - INFO - Starting up...
+2026-05-04 15:22:37,408 - INFO - Database initialized
+2026-05-04 15:22:37,553 - INFO - MQTT client started
+2026-05-04 15:23:06,388 - INFO - Shutting down...
+2026-05-04 15:23:08,317 - DEBUG - Отладка
+2026-05-04 15:23:08,318 - INFO - Информация
+2026-05-04 15:23:08,318 - WARNING - Предупреждение
+2026-05-04 15:23:08,319 - ERROR - Ошибка
+2026-05-04 15:23:08,892 - INFO - Starting up...
+2026-05-04 15:23:08,902 - INFO - Database initialized
+2026-05-04 15:23:09,044 - INFO - MQTT client started
+2026-05-04 15:23:18,183 - INFO - Shutting down...
+2026-05-04 15:23:20,293 - DEBUG - Отладка
+2026-05-04 15:23:20,294 - INFO - Информация
+2026-05-04 15:23:20,295 - WARNING - Предупреждение
+2026-05-04 15:23:20,298 - ERROR - Ошибка
+2026-05-04 15:23:21,106 - INFO - Starting up...
+2026-05-04 15:23:21,112 - INFO - Database initialized
+2026-05-04 15:23:21,268 - INFO - MQTT client started
+2026-05-04 15:23:27,002 - INFO - Shutting down...
+2026-05-04 15:23:28,919 - DEBUG - Отладка
+2026-05-04 15:23:28,958 - INFO - Информация
+2026-05-04 15:23:28,990 - WARNING - Предупреждение
+2026-05-04 15:23:28,991 - ERROR - Ошибка
+2026-05-04 15:23:34,707 - DEBUG - Отладка
+2026-05-04 15:23:34,720 - INFO - Информация
+2026-05-04 15:23:34,721 - WARNING - Предупреждение
+2026-05-04 15:23:34,722 - ERROR - Ошибка
+2026-05-04 15:23:35,519 - INFO - Starting up...
+2026-05-04 15:23:35,525 - INFO - Database initialized
+2026-05-04 15:23:35,683 - INFO - MQTT client started
+2026-05-04 15:24:02,622 - INFO - Shutting down...
+2026-05-04 15:24:04,602 - DEBUG - Отладка
+2026-05-04 15:24:04,602 - INFO - Информация
+2026-05-04 15:24:04,603 - WARNING - Предупреждение
+2026-05-04 15:24:04,603 - ERROR - Ошибка
+2026-05-04 15:24:05,240 - INFO - Starting up...
+2026-05-04 15:24:05,249 - INFO - Database initialized
+2026-05-04 15:24:05,250 - INFO - WebSocket background processor started
+2026-05-04 15:24:05,250 - INFO - WebSocket background processor started
+2026-05-04 15:24:05,401 - INFO - MQTT client started
+2026-05-04 15:24:06,637 - INFO - Shutting down...
+2026-05-04 15:24:07,370 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:24:09,118 - DEBUG - Отладка
+2026-05-04 15:24:09,119 - INFO - Информация
+2026-05-04 15:24:09,120 - WARNING - Предупреждение
+2026-05-04 15:24:09,121 - ERROR - Ошибка
+2026-05-04 15:24:09,724 - INFO - Starting up...
+2026-05-04 15:24:09,733 - INFO - Database initialized
+2026-05-04 15:24:09,735 - INFO - WebSocket background processor started
+2026-05-04 15:24:09,735 - INFO - WebSocket background processor started
+2026-05-04 15:24:09,886 - INFO - MQTT client started
+2026-05-04 15:24:37,073 - INFO - Shutting down...
+2026-05-04 15:24:38,071 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:24:39,949 - DEBUG - Отладка
+2026-05-04 15:24:39,949 - INFO - Информация
+2026-05-04 15:24:39,950 - WARNING - Предупреждение
+2026-05-04 15:24:39,950 - ERROR - Ошибка
+2026-05-04 15:24:40,640 - INFO - Starting up...
+2026-05-04 15:24:40,648 - INFO - Database initialized
+2026-05-04 15:24:40,651 - INFO - WebSocket background processor started
+2026-05-04 15:24:40,651 - INFO - WebSocket background processor started
+2026-05-04 15:24:40,801 - INFO - MQTT client started
+2026-05-04 15:24:41,758 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:24:44,109 - DEBUG - Отладка
+2026-05-04 15:24:44,118 - INFO - Информация
+2026-05-04 15:24:44,120 - WARNING - Предупреждение
+2026-05-04 15:24:44,120 - ERROR - Ошибка
+2026-05-04 15:24:45,514 - INFO - Starting up...
+2026-05-04 15:24:45,524 - INFO - Database initialized
+2026-05-04 15:24:45,526 - INFO - WebSocket background processor started
+2026-05-04 15:24:45,531 - INFO - WebSocket background processor started
+2026-05-04 15:24:45,670 - INFO - MQTT client started
+2026-05-04 15:24:45,782 - INFO - Shutting down...
+2026-05-04 15:24:46,632 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:24:50,483 - DEBUG - Отладка
+2026-05-04 15:24:50,484 - INFO - Информация
+2026-05-04 15:24:50,484 - WARNING - Предупреждение
+2026-05-04 15:24:50,485 - ERROR - Ошибка
+2026-05-04 15:24:51,342 - INFO - Starting up...
+2026-05-04 15:24:51,356 - INFO - Database initialized
+2026-05-04 15:24:51,356 - INFO - WebSocket background processor started
+2026-05-04 15:24:51,357 - INFO - WebSocket background processor started
+2026-05-04 15:24:51,501 - INFO - MQTT client started
+2026-05-04 15:24:52,279 - INFO - Shutting down...
+2026-05-04 15:24:52,280 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:24:52,282 - INFO - WebSocket background processor stopped
+2026-05-04 15:24:52,283 - INFO - WebSocket background processor stopped
+2026-05-04 15:24:54,535 - DEBUG - Отладка
+2026-05-04 15:24:54,535 - INFO - Информация
+2026-05-04 15:24:54,536 - WARNING - Предупреждение
+2026-05-04 15:24:54,536 - ERROR - Ошибка
+2026-05-04 15:24:55,123 - INFO - Starting up...
+2026-05-04 15:24:55,132 - INFO - Database initialized
+2026-05-04 15:24:55,133 - INFO - WebSocket background processor started
+2026-05-04 15:24:55,134 - INFO - WebSocket background processor started
+2026-05-04 15:24:55,280 - INFO - MQTT client started
+2026-05-04 15:25:10,725 - INFO - Shutting down...
+2026-05-04 15:25:10,732 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:25:10,733 - INFO - WebSocket background processor stopped
+2026-05-04 15:25:10,734 - INFO - WebSocket background processor stopped
+2026-05-04 15:25:12,622 - DEBUG - Отладка
+2026-05-04 15:25:12,623 - INFO - Информация
+2026-05-04 15:25:12,624 - WARNING - Предупреждение
+2026-05-04 15:25:12,625 - ERROR - Ошибка
+2026-05-04 15:25:13,334 - INFO - Starting up...
+2026-05-04 15:25:13,339 - INFO - Database initialized
+2026-05-04 15:25:13,340 - INFO - WebSocket background processor started
+2026-05-04 15:25:13,341 - INFO - WebSocket background processor started
+2026-05-04 15:25:13,522 - INFO - MQTT client started
+2026-05-04 15:26:58,961 - INFO - Shutting down...
+2026-05-04 15:26:58,962 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:26:58,962 - INFO - WebSocket background processor stopped
+2026-05-04 15:26:58,963 - INFO - WebSocket background processor stopped
+2026-05-04 15:27:00,971 - DEBUG - Отладка
+2026-05-04 15:27:00,972 - INFO - Информация
+2026-05-04 15:27:00,972 - WARNING - Предупреждение
+2026-05-04 15:27:00,973 - ERROR - Ошибка
+2026-05-04 15:27:03,193 - DEBUG - Отладка
+2026-05-04 15:27:03,194 - INFO - Информация
+2026-05-04 15:27:03,194 - WARNING - Предупреждение
+2026-05-04 15:27:03,195 - ERROR - Ошибка
+2026-05-04 15:27:28,631 - DEBUG - Отладка
+2026-05-04 15:27:28,631 - INFO - Информация
+2026-05-04 15:27:28,632 - WARNING - Предупреждение
+2026-05-04 15:27:28,632 - ERROR - Ошибка
+2026-05-04 15:27:29,377 - INFO - Starting up...
+2026-05-04 15:27:29,384 - INFO - Database initialized
+2026-05-04 15:27:29,385 - INFO - WebSocket background processor started
+2026-05-04 15:27:29,385 - INFO - WebSocket background processor started
+2026-05-04 15:27:29,526 - INFO - MQTT client started
+2026-05-04 15:28:29,170 - INFO - WebSocket connected. Total connections: 1
+2026-05-04 15:28:35,453 - INFO - WebSocket connected. Total connections: 2
+2026-05-04 15:28:38,741 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-04 15:28:38,742 - INFO - WebSocket client disconnected
+2026-05-04 15:28:41,575 - INFO - WebSocket connected. Total connections: 2
+2026-05-04 15:28:44,065 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-04 15:28:44,066 - INFO - WebSocket client disconnected
+2026-05-04 15:28:46,014 - INFO - WebSocket connected. Total connections: 2
+2026-05-04 15:28:59,761 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:29:29,757 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:29:36,158 - INFO - WebSocket connected. Total connections: 3
+2026-05-04 15:29:59,763 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:30:13,344 - INFO - WebSocket disconnected. Total connections: 2
+2026-05-04 15:30:13,344 - INFO - WebSocket client disconnected
+2026-05-04 15:30:15,252 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-04 15:30:15,316 - INFO - WebSocket client disconnected
+2026-05-04 15:30:15,329 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-04 15:30:15,330 - INFO - WebSocket client disconnected
+2026-05-04 15:30:15,334 - INFO - WebSocket connected. Total connections: 1
+2026-05-04 15:30:45,311 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:31:15,757 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:31:45,757 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:32:15,311 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:32:45,745 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:33:15,740 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:33:45,736 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:34:22,755 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:35:22,744 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:36:05,719 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:36:15,303 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:36:45,290 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:37:15,732 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:37:45,732 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:38:17,701 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-04 15:38:17,702 - INFO - WebSocket client disconnected
+2026-05-04 15:38:17,817 - INFO - Shutting down...
+2026-05-04 15:38:17,819 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:38:17,821 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:17,821 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:21,222 - DEBUG - Отладка
+2026-05-04 15:38:21,240 - INFO - Информация
+2026-05-04 15:38:21,372 - WARNING - Предупреждение
+2026-05-04 15:38:21,404 - ERROR - Ошибка
+2026-05-04 15:38:24,331 - INFO - Starting up...
+2026-05-04 15:38:24,372 - INFO - Database initialized
+2026-05-04 15:38:24,385 - INFO - WebSocket background processor started
+2026-05-04 15:38:24,388 - INFO - WebSocket background processor started
+2026-05-04 15:38:24,690 - INFO - MQTT client started
+2026-05-04 15:38:24,818 - INFO - Shutting down...
+2026-05-04 15:38:24,823 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:38:24,824 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:24,829 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:31,568 - DEBUG - Отладка
+2026-05-04 15:38:31,581 - INFO - Информация
+2026-05-04 15:38:31,586 - WARNING - Предупреждение
+2026-05-04 15:38:31,600 - ERROR - Ошибка
+2026-05-04 15:38:32,430 - INFO - Starting up...
+2026-05-04 15:38:32,439 - INFO - Database initialized
+2026-05-04 15:38:32,448 - INFO - WebSocket background processor started
+2026-05-04 15:38:32,450 - INFO - WebSocket background processor started
+2026-05-04 15:38:32,598 - INFO - MQTT client started
+2026-05-04 15:38:32,712 - INFO - Shutting down...
+2026-05-04 15:38:32,713 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:38:32,714 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:32,715 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:36,235 - DEBUG - Отладка
+2026-05-04 15:38:36,252 - INFO - Информация
+2026-05-04 15:38:36,273 - WARNING - Предупреждение
+2026-05-04 15:38:36,284 - ERROR - Ошибка
+2026-05-04 15:38:37,840 - INFO - Starting up...
+2026-05-04 15:38:37,969 - INFO - Database initialized
+2026-05-04 15:38:37,998 - INFO - WebSocket background processor started
+2026-05-04 15:38:38,003 - INFO - WebSocket background processor started
+2026-05-04 15:38:38,185 - INFO - MQTT client started
+2026-05-04 15:38:38,319 - INFO - Shutting down...
+2026-05-04 15:38:38,320 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:38:38,324 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:38,334 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:42,141 - DEBUG - Отладка
+2026-05-04 15:38:42,144 - INFO - Информация
+2026-05-04 15:38:42,146 - WARNING - Предупреждение
+2026-05-04 15:38:42,147 - ERROR - Ошибка
+2026-05-04 15:38:43,287 - INFO - Starting up...
+2026-05-04 15:38:43,298 - INFO - Database initialized
+2026-05-04 15:38:43,302 - INFO - WebSocket background processor started
+2026-05-04 15:38:43,303 - INFO - WebSocket background processor started
+2026-05-04 15:38:43,463 - INFO - MQTT client started
+2026-05-04 15:38:47,324 - INFO - Shutting down...
+2026-05-04 15:38:47,328 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:38:47,329 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:47,330 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:49,432 - DEBUG - Отладка
+2026-05-04 15:38:49,432 - INFO - Информация
+2026-05-04 15:38:49,433 - WARNING - Предупреждение
+2026-05-04 15:38:49,433 - ERROR - Ошибка
+2026-05-04 15:38:50,064 - INFO - Starting up...
+2026-05-04 15:38:50,070 - INFO - Database initialized
+2026-05-04 15:38:50,072 - INFO - WebSocket background processor started
+2026-05-04 15:38:50,073 - INFO - WebSocket background processor started
+2026-05-04 15:38:50,235 - INFO - MQTT client started
+2026-05-04 15:38:55,837 - INFO - Shutting down...
+2026-05-04 15:38:55,838 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:38:55,839 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:55,840 - INFO - WebSocket background processor stopped
+2026-05-04 15:38:59,803 - DEBUG - Отладка
+2026-05-04 15:38:59,887 - INFO - Информация
+2026-05-04 15:38:59,897 - WARNING - Предупреждение
+2026-05-04 15:38:59,898 - ERROR - Ошибка
+2026-05-04 15:39:01,950 - INFO - Starting up...
+2026-05-04 15:39:02,067 - INFO - Database initialized
+2026-05-04 15:39:02,069 - INFO - WebSocket background processor started
+2026-05-04 15:39:02,071 - INFO - WebSocket background processor started
+2026-05-04 15:39:02,253 - INFO - MQTT client started
+2026-05-04 15:39:06,788 - INFO - Shutting down...
+2026-05-04 15:39:06,789 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:39:06,789 - INFO - WebSocket background processor stopped
+2026-05-04 15:39:06,790 - INFO - WebSocket background processor stopped
+2026-05-04 15:39:08,819 - DEBUG - Отладка
+2026-05-04 15:39:08,870 - INFO - Информация
+2026-05-04 15:39:08,885 - WARNING - Предупреждение
+2026-05-04 15:39:08,886 - ERROR - Ошибка
+2026-05-04 15:39:09,731 - INFO - Starting up...
+2026-05-04 15:39:09,738 - INFO - Database initialized
+2026-05-04 15:39:09,749 - INFO - WebSocket background processor started
+2026-05-04 15:39:09,750 - INFO - WebSocket background processor started
+2026-05-04 15:39:09,897 - INFO - MQTT client started
+2026-05-04 15:40:37,961 - DEBUG - Отладка
+2026-05-04 15:40:37,961 - INFO - Информация
+2026-05-04 15:40:37,963 - WARNING - Предупреждение
+2026-05-04 15:40:37,964 - ERROR - Ошибка
+2026-05-04 15:40:38,682 - INFO - Starting up...
+2026-05-04 15:40:38,687 - INFO - Database initialized
+2026-05-04 15:40:38,688 - INFO - WebSocket background processor started
+2026-05-04 15:40:38,692 - INFO - WebSocket background processor started
+2026-05-04 15:40:38,837 - INFO - MQTT client started
+2026-05-04 15:41:23,213 - INFO - Shutting down...
+2026-05-04 15:41:23,213 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:41:23,215 - INFO - WebSocket background processor stopped
+2026-05-04 15:41:23,215 - INFO - WebSocket background processor stopped
+2026-05-04 15:41:25,327 - DEBUG - Отладка
+2026-05-04 15:41:25,333 - INFO - Информация
+2026-05-04 15:41:25,348 - WARNING - Предупреждение
+2026-05-04 15:41:25,368 - ERROR - Ошибка
+2026-05-04 15:41:27,766 - INFO - Starting up...
+2026-05-04 15:41:27,779 - INFO - Database initialized
+2026-05-04 15:41:27,780 - INFO - WebSocket background processor started
+2026-05-04 15:41:27,780 - INFO - WebSocket background processor started
+2026-05-04 15:41:27,930 - INFO - MQTT client started
+2026-05-04 15:41:28,043 - INFO - Shutting down...
+2026-05-04 15:41:28,045 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:41:28,047 - INFO - WebSocket background processor stopped
+2026-05-04 15:41:28,050 - INFO - WebSocket background processor stopped
+2026-05-04 15:41:30,148 - DEBUG - Отладка
+2026-05-04 15:41:30,149 - INFO - Информация
+2026-05-04 15:41:30,150 - WARNING - Предупреждение
+2026-05-04 15:41:30,150 - ERROR - Ошибка
+2026-05-04 15:41:30,848 - INFO - Starting up...
+2026-05-04 15:41:30,854 - INFO - Database initialized
+2026-05-04 15:41:30,860 - INFO - WebSocket background processor started
+2026-05-04 15:41:30,860 - INFO - WebSocket background processor started
+2026-05-04 15:41:31,137 - INFO - MQTT client started
+2026-05-04 15:41:57,758 - INFO - Shutting down...
+2026-05-04 15:41:57,762 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:41:57,764 - INFO - WebSocket background processor stopped
+2026-05-04 15:41:57,766 - INFO - WebSocket background processor stopped
+2026-05-04 15:42:02,165 - DEBUG - Отладка
+2026-05-04 15:42:02,181 - INFO - Информация
+2026-05-04 15:42:02,215 - WARNING - Предупреждение
+2026-05-04 15:42:02,244 - ERROR - Ошибка
+2026-05-04 15:42:03,919 - INFO - Starting up...
+2026-05-04 15:42:03,948 - INFO - Database initialized
+2026-05-04 15:42:03,949 - INFO - WebSocket background processor started
+2026-05-04 15:42:03,950 - INFO - WebSocket background processor started
+2026-05-04 15:42:04,126 - INFO - MQTT client started
+2026-05-04 15:42:04,250 - INFO - Shutting down...
+2026-05-04 15:42:04,258 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:42:04,260 - INFO - WebSocket background processor stopped
+2026-05-04 15:42:04,266 - INFO - WebSocket background processor stopped
+2026-05-04 15:42:08,759 - DEBUG - Отладка
+2026-05-04 15:42:08,759 - INFO - Информация
+2026-05-04 15:42:08,760 - WARNING - Предупреждение
+2026-05-04 15:42:08,761 - ERROR - Ошибка
+2026-05-04 15:42:09,857 - INFO - Starting up...
+2026-05-04 15:42:09,864 - INFO - Database initialized
+2026-05-04 15:42:09,864 - INFO - WebSocket background processor started
+2026-05-04 15:42:09,865 - INFO - WebSocket background processor started
+2026-05-04 15:42:10,009 - INFO - MQTT client started
+2026-05-04 15:42:41,783 - INFO - Shutting down...
+2026-05-04 15:42:41,816 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:42:41,832 - INFO - WebSocket background processor stopped
+2026-05-04 15:42:41,893 - INFO - WebSocket background processor stopped
+2026-05-04 15:42:45,038 - DEBUG - Отладка
+2026-05-04 15:42:45,040 - INFO - Информация
+2026-05-04 15:42:45,042 - WARNING - Предупреждение
+2026-05-04 15:42:45,042 - ERROR - Ошибка
+2026-05-04 15:42:45,844 - INFO - Starting up...
+2026-05-04 15:42:45,860 - INFO - Database initialized
+2026-05-04 15:42:45,864 - INFO - WebSocket background processor started
+2026-05-04 15:42:45,866 - INFO - WebSocket background processor started
+2026-05-04 15:42:46,026 - INFO - MQTT client started
+2026-05-04 15:45:57,504 - INFO - Shutting down...
+2026-05-04 15:45:57,504 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:45:57,505 - INFO - WebSocket background processor stopped
+2026-05-04 15:45:57,506 - INFO - WebSocket background processor stopped
+2026-05-04 15:46:03,385 - DEBUG - Отладка
+2026-05-04 15:46:03,386 - INFO - Информация
+2026-05-04 15:46:03,388 - WARNING - Предупреждение
+2026-05-04 15:46:03,389 - ERROR - Ошибка
+2026-05-04 15:46:04,358 - INFO - Starting up...
+2026-05-04 15:46:04,370 - INFO - Database initialized
+2026-05-04 15:46:04,371 - INFO - WebSocket background processor started
+2026-05-04 15:46:04,372 - INFO - WebSocket background processor started
+2026-05-04 15:46:04,519 - INFO - MQTT client started
+2026-05-04 15:46:10,375 - INFO - Shutting down...
+2026-05-04 15:46:10,378 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:46:10,380 - INFO - WebSocket background processor stopped
+2026-05-04 15:46:10,388 - INFO - WebSocket background processor stopped
+2026-05-04 15:46:12,973 - DEBUG - Отладка
+2026-05-04 15:46:12,974 - INFO - Информация
+2026-05-04 15:46:12,974 - WARNING - Предупреждение
+2026-05-04 15:46:12,975 - ERROR - Ошибка
+2026-05-04 15:46:13,636 - INFO - Starting up...
+2026-05-04 15:46:13,644 - INFO - Database initialized
+2026-05-04 15:46:13,644 - INFO - WebSocket background processor started
+2026-05-04 15:46:13,646 - INFO - WebSocket background processor started
+2026-05-04 15:46:13,809 - INFO - MQTT client started
+2026-05-04 15:46:56,089 - INFO - Shutting down...
+2026-05-04 15:46:56,090 - INFO - WebSocket queue processor cancelled
+2026-05-04 15:46:56,091 - INFO - WebSocket background processor stopped
+2026-05-04 15:46:56,092 - INFO - WebSocket background processor stopped
+2026-05-04 15:46:58,621 - DEBUG - Отладка
+2026-05-04 15:46:58,622 - INFO - Информация
+2026-05-04 15:46:58,622 - WARNING - Предупреждение
+2026-05-04 15:46:58,623 - ERROR - Ошибка
+2026-05-04 15:46:59,579 - INFO - Starting up...
+2026-05-04 15:46:59,596 - INFO - Database initialized
+2026-05-04 15:46:59,600 - INFO - WebSocket background processor started
+2026-05-04 15:46:59,601 - INFO - WebSocket background processor started
+2026-05-04 15:46:59,762 - INFO - MQTT client started
+2026-05-04 15:47:06,174 - INFO - WebSocket connected. Total connections: 1
+2026-05-04 15:47:36,156 - DEBUG - Received from WebSocket client: ping
+2026-05-04 15:48:06,156 - DEBUG - Received from WebSocket client: ping
