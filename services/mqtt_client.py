@@ -7,7 +7,7 @@ from datetime import datetime
 from config import settings
 from schemas.schemas import SensorDataCreate
 from services.sensor_service import create_sensor_data
-from database import SessionLocal
+from database import AsyncSessionLocal
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -31,7 +31,9 @@ class MQTTClient:
         self.client.on_disconnect = self.on_disconnect
 
         self.connected = False
-        self.message_handler: Optional[Callable] = None
+        self.loop: Optional[asyncio.AbstractEventLoop] = None
+        self.message_queue: Optional[asyncio.Queue] = None
+        self.queue_task: Optional[asyncio.Task] = None
 
     def on_connect(self, client, userdata, flags, reason_code, properties=None):
         if reason_code == 0:
@@ -58,86 +60,95 @@ class MQTTClient:
                 asyncio.run_coroutine_threadsafe(self.reconnect(), self.loop)
 
     def on_message(self, client, userdata, msg):
+        """Вызывается в потоке MQTT"""
         try:
             payload = msg.payload.decode('utf-8')
-            logger.info(f"Received message on topic {msg.topic}: {payload}")
+            logger.info(f"Received: {payload}")
 
-            # Process message asynchronously
-            self.process_message(payload)
-
+            # Безопасно добавляем в очередь из другого потока
+            if self.message_queue:
+                self.message_queue.put_nowait(payload)
         except Exception as e:
-            logger.error(f"Error processing message: {e}")
+            logger.error(f"Error: {e}")
 
     
-    def process_message(self, payload: str):
-        """Process incoming MQTT message and save to database"""
-        try:
-            data = json.loads(payload)
+    async def process_queue(self):
+        while True:
+            try:
+                # Читаем из очереди
+                payload = await self.message_queue.get()
+                # отправляем на запись в БД
+                await self.process_message(payload)
+                self.message_queue.task_done()
+            except asyncio.CancelledError:
+                break
+            except Exception as e:
+                logger.error(f"Ошибка в очереди: {e}")
+                await asyncio.sleep(0.1)
 
-            # Validate required fields
-            required_fields = ['datastamp', 'device', 'temp', 'humidity']
-            if not all(field in data for field in required_fields):
-                logger.error(
-                    f"Missing required fields. Required: {required_fields}, Received: {data.keys()}")
-                return
+    async def process_message(self, payload: str):
+        """Асинхронная обработка сообщения"""
+        async with AsyncSessionLocal() as db:
+            try:
+                data = json.loads(payload)
+                
+                # Преобразование данных
+                if isinstance(data.get('datastamp'), str):
+                    data['datastamp'] = datetime.fromisoformat(
+                        data['datastamp'].replace('Z', '+00:00'))
+                
+                data['device'] = int(data['device'])
+                data['temp'] = float(data['temp'])
+                data['humidity'] = float(data['humidity'])
+                
+                sensor_data = SensorDataCreate(**data)
+                
+                # Асинхронное сохранение в БД
+                result = await create_sensor_data(db, sensor_data)
+                
+                logger.info(f"Saved: device={result.device}, temp={result.temp}, humidity={result.humidity}")
+                
+            except Exception as e:
+                logger.error(f"Process error: {e}", exc_info=True)
 
-            # Convert datastamp string to datetime if needed
-            if isinstance(data['datastamp'], str):
-                data['datastamp'] = datetime.fromisoformat(
-                    data['datastamp'].replace('Z', '+00:00'))
+    async def reconnect(self):
+        """Переподключение"""
+        while not self.connected:
+            try:
+                logger.info("Reconnecting...")
+                self.client.connect(settings.broker_host, settings.broker_port, 60)
+                self.client.loop_start()
+                await asyncio.sleep(5)
+            except Exception as e:
+                logger.error(f"Reconnect failed: {e}")
+                await asyncio.sleep(10)
 
-            # Create sensor data object
-            sensor_data = SensorDataCreate(**data)
 
-            # Save to database
-            db = SessionLocal()
-            create_sensor_data(db, sensor_data)
-            logger.info(
-                f"Saved sensor data: device={sensor_data.device}, temp={sensor_data.temp}, humidity={sensor_data.humidity}")
+    async def start(self):
+        """Запуск MQTT клиента"""
+        self.loop = asyncio.get_running_loop()
+        self.message_queue = asyncio.Queue(maxsize=1000)
+        self.queue_task = asyncio.create_task(self.process_queue())
+        
+        self.client.connect(settings.broker_host, settings.broker_port, 60)
+        self.client.loop_start()
+        
+        # Ждем подключения
+        for _ in range(50):  # 5 секунд таймаут
+            if self.connected:
+                break
+            await asyncio.sleep(0.1)
+        
+        logger.info(f"MQTT client started. Connected: {self.connected}")
 
-        except json.JSONDecodeError as e:
-            logger.error(f"Invalid JSON payload: {e}")
-        except Exception as e:
-            logger.error(f"Error saving to database: {e}")
-
-    # async def reconnect(self):
-    #     """Reconnect to MQTT broker"""
-    #     while not self.connected:
-    #         try:
-    #             logger.info("Reconnecting to MQTT broker...")
-    #             self.client.connect(settings.broker_host,
-    #                                 settings.broker_port, 60)
-    #             self.client.loop_start()
-    #             await asyncio.sleep(5)
-    #         except Exception as e:
-    #             logger.error(f"Reconnection failed: {e}")
-    #             await asyncio.sleep(10)
-
-    def start(self):
-        """Start MQTT client"""
-        try:
-          
-
-            # Connect to MQTT broker
-            self.client.connect(settings.broker_host, settings.broker_port, 60)
-           
-            self.client.loop_start()
-
-            
-
-        except Exception as e:
-            logger.error(f"Failed to start MQTT client: {e}")
-            raise
-
-    def stop(self):
-        """Stop MQTT client"""
-       
-
-        # Stop MQTT client
-        if self.client:
-            self.client.loop_stop()
-            self.client.disconnect()
-            logger.info("MQTT client stopped")
+    async def stop(self):
+        """Остановка"""
+        if self.queue_task:
+            self.queue_task.cancel()
+        
+        self.client.loop_stop()
+        self.client.disconnect()
+        logger.info("MQTT client stopped")
 
 
 

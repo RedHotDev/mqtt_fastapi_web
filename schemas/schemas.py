@@ -5,7 +5,7 @@ from typing import Optional
 
 class SensorDataBase(BaseModel):
     datastamp: datetime
-    device: str
+    device: int
     temp: float = Field(..., ge=-50, le=100,
                         description="Temperature in Celsius")
     humidity: float = Field(..., ge=0, le=100,
@@ -25,7 +25,7 @@ class SensorDataResponse(SensorDataBase):
 
 
 class SensorDataFilter(BaseModel):
-    device: Optional[str] = None
+    device: Optional[int] = None
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None
     min_temp: Optional[float] = None

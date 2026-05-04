@@ -16,7 +16,7 @@ class Settings(BaseSettings):
 
 
     # Database Settings
-    database_url: str = "sqlite:///./sensors.db"
+    database_url: str = "sqlite+aiosqlite:///./sensors.db"
 
     # FastAPI Settings
     api_host: str = "0.0.0.0"

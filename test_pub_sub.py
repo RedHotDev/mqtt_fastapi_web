@@ -87,7 +87,7 @@ while True:
     temp = random.randint(20, 25)
     f = bool(random.getrandbits(1))
     msg = {
-        "datastamp": datetime.datetime.now().isoformat(timespec='seconds'), "device": "1",   "temp": temp,  "humidity": random.randint(20, 70)}
+        "datastamp": datetime.datetime.now().isoformat(timespec='seconds'), "device": 1,   "temp": temp,  "humidity": random.randint(20, 70)}
     msg = json.dumps(msg)
     
     result = client.publish(topic, msg, qos=1)
