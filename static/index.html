@@ -1,130 +1,443 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Sensor Data Live</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        #data { 
-            border: 1px solid #ccc; 
-            padding: 10px; 
-            height: 400px; 
-            overflow-y: auto;
-            background: #f9f9f9;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f2f5;
         }
-        .sensor-record {
-            border-bottom: 1px solid #ddd;
-            padding: 8px;
-            margin: 5px 0;
+
+        #status {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .connected {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .disconnected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Панель текущего значения */
+        .current-panel {
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .current-item {
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .current-label {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .current-value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .current-unit {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        #currentDevice {
+            font-size: 32px;
+        }
+
+        /* Контейнер графика */
+        .chart-container {
             background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        .timestamp { color: #666; font-size: 0.9em; }
-        .temp { color: #e74c3c; font-weight: bold; }
-        .humidity { color: #3498db; font-weight: bold; }
-        #status { padding: 10px; margin-bottom: 10px; border-radius: 5px; }
-        .connected { background: #d4edda; color: #155724; }
-        .disconnected { background: #f8d7da; color: #721c24; }
-        button { padding: 8px 15px; margin: 5px; cursor: pointer; }
+
+        canvas {
+            max-height: 300px;
+            width: 100%;
+        }
+
+        #data {
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            font-family: monospace;
+            font-size: 13px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Каждое сообщение - одна строка */
+        .sensor-record {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ddd;
+            background: white;
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+
+        .sensor-record:hover {
+            background: #f0f0f0;
+        }
+
+        .system-message {
+            padding: 8px 10px;
+            background: #e3f2fd;
+            color: #1976d2;
+            text-align: center;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .btn-connect {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-disconnect {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-clear {
+            background: #ffc107;
+            color: #333;
+        }
     </style>
 </head>
+
 <body>
-    <h1>📡 Live Sensor Data (WebSocket)</h1>
+    <h1>📡 MQTT Sensor</h1>
+
     <div id="status" class="disconnected">Disconnected</div>
-    <button onclick="connectWebSocket()">Connect</button>
-    <button onclick="disconnectWebSocket()">Disconnect</button>
-    <button onclick="clearData()">Clear Data</button>
-    <h3>Real-time sensor readings:</h3>
+
+    <div class="controls">
+        <button class="btn-connect" onclick="connectWebSocket()">Соединение</button>
+        <button class="btn-disconnect" onclick="disconnectWebSocket()">Отключиться</button>
+        <button class="btn-clear" onclick="clearAll()">Очистить всё</button>
+    </div>
+
+    <!-- Панель текущего значения -->
+    <div class="current-panel">
+        <div class="current-item">
+            <div class="current-label">📱 Текущее устройство</div>
+            <div class="current-value" id="currentDevice">—</div>
+        </div>
+        <div class="current-item">
+            <div class="current-label">🌡️ Температура</div>
+            <div class="current-value">
+                <span id="currentTemp">—</span>
+                <span class="current-unit">°C</span>
+            </div>
+        </div>
+        <div class="current-item">
+            <div class="current-label">💧 Влажность</div>
+            <div class="current-value">
+                <span id="currentHumidity">—</span>
+                <span class="current-unit">%</span>
+            </div>
+        </div>
+        <div class="current-item">
+            <div class="current-label">🕐 Последнее обновление</div>
+            <div class="current-value" id="currentTime" style="font-size: 16px;">—</div>
+        </div>
+    </div>
+
+    <!-- График -->
+    <div class="chart-container">
+        <canvas id="sensorChart"></canvas>
+    </div>
+
+    <h3>Сообщения :</h3>
     <div id="data"></div>
 
     <script>
         let ws = null;
+        let chart = null;
+        let chartData = {
+            labels: [],
+            temperatures: [],
+            humidities: []
+        };
+        let allRecords = [];
+
+        // Инициализация графика
+        function initChart() {
+            const ctx = document.getElementById('sensorChart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [
+                        {
+                            label: 'Температура (°C)',
+                            data: [],
+                            borderColor: '#e74c3c',
+                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true,
+                            yAxisID: 'y'
+                        },
+                        {
+                            label: 'Влажность (%)',
+                            data: [],
+                            borderColor: '#3498db',
+                            backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Температура и влажность в реальном времени',
+                            font: {
+                                size: 14
+                            }
+                        },
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Температура (°C)',
+                                color: '#e74c3c'
+                            },
+                            min: -10,
+                            max: 50,
+                            grid: {
+                                color: 'rgba(231, 76, 60, 0.1)'
+                            }
+                        },
+                        y1: {
+                            position: 'right',
+                            title: {
+                                display: true,
+                                text: 'Влажность (%)',
+                                color: '#3498db'
+                            },
+                            min: 0,
+                            max: 100,
+                            grid: {
+                                drawOnChartArea: false
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Время'
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45,
+                                autoSkip: true,
+                                maxTicksLimit: 10
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Обновление графика
+        function updateChart(sensorData) {
+            const time = new Date(sensorData.datastamp).toLocaleTimeString();
+
+            // Добавляем новые данные
+            chartData.labels.push(time);
+            chartData.temperatures.push(sensorData.temp);
+            chartData.humidities.push(sensorData.humidity);
+
+            // Оставляем только последние 30 точек
+            if (chartData.labels.length > 30) {
+                chartData.labels.shift();
+                chartData.temperatures.shift();
+                chartData.humidities.shift();
+            }
+
+            // Обновляем график
+            chart.data.labels = chartData.labels;
+            chart.data.datasets[0].data = chartData.temperatures;
+            chart.data.datasets[1].data = chartData.humidities;
+            chart.update();
+        }
+
+        // Очистка графика
+        function clearChart() {
+            chartData = {
+                labels: [],
+                temperatures: [],
+                humidities: []
+            };
+            chart.data.labels = [];
+            chart.data.datasets[0].data = [];
+            chart.data.datasets[1].data = [];
+            chart.update();
+        }
 
         function connectWebSocket() {
-            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsUrl = `${protocol}//${window.location.host}/ws/sensors/live`;
-            
+            const wsUrl = `ws://${window.location.host}/ws/sensors/live`;
             ws = new WebSocket(wsUrl);
-            
-            ws.onopen = function() {
-                document.getElementById('status').innerHTML = '✅ Connected to WebSocket';
+
+            ws.onopen = function () {
+                document.getElementById('status').innerHTML = '✅ Connected';
                 document.getElementById('status').className = 'connected';
-                console.log('WebSocket connected');
             };
-            
-            ws.onmessage = function(event) {
+
+            ws.onmessage = function (event) {
                 const data = JSON.parse(event.data);
-                console.log('Received:', data);
-                
+
                 if (data.type === 'new_sensor_data') {
-                    addSensorRecord(data.data);
-                } else if (data.type === 'connected') {
-                    addSystemMessage(`Connected. Active clients: ${data.clients_connected}`);
-                } else if (data.type === 'pong') {
-                    console.log('Pong received');
+                    const d = data.data;
+
+                    // Обновляем панель текущего значения
+                    updateCurrentPanel(d);
+
+                    // Обновляем график
+                    updateChart(d);
+
+                    // Сохраняем запись
+                    allRecords.unshift(d);
+
+                    // Форматируем полную дату для списка сообщений
+                    const fullDate = new Date(d.datastamp).toLocaleString();
+                    // ВСЁ В ОДНОЙ СТРОКЕ
+                    const line = `[#${d.id}] ${fullDate} | Device: ${d.device} | Temp: ${d.temp}°C | Humidity: ${d.humidity}%`;
+
+                    const container = document.getElementById('data');
+                    const record = document.createElement('div');
+                    record.className = 'sensor-record';
+                    record.textContent = line;
+
+                    container.insertBefore(record, container.firstChild);
+
+                    // Оставляем только последние 100 записей
+                    while (container.children.length > 100) {
+                        container.removeChild(container.lastChild);
+                    }
                 }
             };
-            
-            ws.onerror = function(error) {
-                console.error('WebSocket error:', error);
-                document.getElementById('status').innerHTML = '❌ WebSocket Error';
+
+            ws.onclose = function () {
+                document.getElementById('status').innerHTML = '❌ Disconnected';
                 document.getElementById('status').className = 'disconnected';
-            };
-            
-            ws.onclose = function() {
-                document.getElementById('status').innerHTML = '🔌 Disconnected';
-                document.getElementById('status').className = 'disconnected';
-                console.log('WebSocket disconnected');
             };
         }
-        
+
+        // Функция обновления панели текущего значения
+        function updateCurrentPanel(d) {
+            document.getElementById('currentDevice').textContent = d.device;
+
+            const tempElem = document.getElementById('currentTemp');
+            tempElem.textContent = d.temp;
+            if (d.temp < 10) {
+                tempElem.style.color = '#a0d8ff';
+            } else if (d.temp < 20) {
+                tempElem.style.color = '#90ee90';
+            } else if (d.temp < 30) {
+                tempElem.style.color = '#ffd700';
+            } else {
+                tempElem.style.color = '#ff6b6b';
+            }
+
+            const humidityElem = document.getElementById('currentHumidity');
+            humidityElem.textContent = d.humidity;
+            if (d.humidity < 30) {
+                humidityElem.style.color = '#ffa500';
+            } else if (d.humidity < 70) {
+                humidityElem.style.color = '#90ee90';
+            } else {
+                humidityElem.style.color = '#a0d8ff';
+            }
+
+            const now = new Date();
+            document.getElementById('currentTime').textContent = now.toLocaleTimeString();
+        }
+
         function disconnectWebSocket() {
-            if (ws) {
-                ws.close();
-                ws = null;
-            }
+            if (ws) ws.close();
         }
-        
-        function addSensorRecord(data) {
-            const container = document.getElementById('data');
-            const record = document.createElement('div');
-            record.className = 'sensor-record';
-            record.innerHTML = `
-                <div class="timestamp">📅 ${new Date(data.datastamp).toLocaleString()}</div>
-                <div>🖥️ Device: <strong>${data.device}</strong></div>
-                <div>🌡️ Temperature: <span class="temp">${data.temp}°C</span></div>
-                <div>💧 Humidity: <span class="humidity">${data.humidity}%</span></div>
-                <div>🆔 ID: ${data.id} | Saved: ${new Date(data.created_at).toLocaleTimeString()}</div>
-            `;
-            container.insertBefore(record, container.firstChild);
-            
-            // Keep last 100 records
-            while (container.children.length > 100) {
-                container.removeChild(container.lastChild);
-            }
-        }
-        
-        function addSystemMessage(message) {
-            const container = document.getElementById('data');
-            const msg = document.createElement('div');
-            msg.style.cssText = 'background: #e3f2fd; padding: 5px; margin: 5px 0; border-radius: 3px; color: #1976d2;';
-            msg.textContent = `ℹ️ ${message}`;
-            container.insertBefore(msg, container.firstChild);
-        }
-        
-        function clearData() {
+
+        function clearAll() {
+            // Очищаем список сообщений
             document.getElementById('data').innerHTML = '';
+            // Очищаем массив записей
+            allRecords = [];
+            // Очищаем график
+            clearChart();
+            // Сбрасываем панель текущего значения
+            document.getElementById('currentDevice').textContent = '—';
+            document.getElementById('currentTemp').textContent = '—';
+            document.getElementById('currentHumidity').textContent = '—';
+            document.getElementById('currentTime').textContent = '—';
         }
-        
-        // Auto-connect on page load
-        window.addEventListener('load', () => {
-            connectWebSocket();
-            
-            // Optional: send ping every 30 seconds to keep connection alive
-            setInterval(() => {
-                if (ws && ws.readyState === WebSocket.OPEN) {
-                    ws.send('ping');
-                }
-            }, 30000);
-        });
+
+        // Инициализация графика при загрузке
+        initChart();
+
+        // Автоподключение
+        connectWebSocket();
     </script>
 </body>
+
 </html>

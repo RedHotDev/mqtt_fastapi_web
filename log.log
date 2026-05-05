@@ -2320,3 +2320,90 @@
 2026-05-04 15:47:06,174 - INFO - WebSocket connected. Total connections: 1
 2026-05-04 15:47:36,156 - DEBUG - Received from WebSocket client: ping
 2026-05-04 15:48:06,156 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:25:09,391 - DEBUG - Отладка
+2026-05-05 09:25:09,395 - INFO - Информация
+2026-05-05 09:25:09,396 - WARNING - Предупреждение
+2026-05-05 09:25:09,396 - ERROR - Ошибка
+2026-05-05 09:25:11,501 - INFO - Starting up...
+2026-05-05 09:25:11,590 - INFO - Database initialized
+2026-05-05 09:25:11,591 - INFO - WebSocket background processor started
+2026-05-05 09:25:11,592 - INFO - WebSocket background processor started
+2026-05-05 09:25:11,830 - INFO - MQTT client started
+2026-05-05 09:25:12,348 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:25:42,417 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:26:12,410 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:26:42,472 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:27:12,409 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:27:37,112 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:27:37,214 - INFO - WebSocket client disconnected
+2026-05-05 09:27:51,159 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:28:21,136 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:28:51,409 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:29:21,393 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:29:51,425 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:30:08,357 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:30:08,441 - INFO - WebSocket client disconnected
+2026-05-05 09:31:18,443 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:31:37,103 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:31:37,191 - INFO - WebSocket client disconnected
+2026-05-05 09:31:37,259 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:32:07,201 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:32:09,623 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:32:09,720 - INFO - WebSocket client disconnected
+2026-05-05 09:32:09,805 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:32:40,401 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:33:09,724 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:33:40,395 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:33:52,785 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:33:52,855 - INFO - WebSocket client disconnected
+2026-05-05 09:33:53,020 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:34:23,399 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:34:53,281 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:35:15,736 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:35:15,785 - INFO - WebSocket client disconnected
+2026-05-05 09:35:16,137 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:35:24,433 - INFO - WebSocket connected. Total connections: 2
+2026-05-05 09:35:46,127 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:36:16,137 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:36:46,127 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:37:16,114 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:37:46,391 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:38:16,379 - DEBUG - Received from WebSocket client: ping
+2026-05-05 09:38:23,062 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-05 09:38:23,080 - INFO - WebSocket client disconnected
+2026-05-05 09:38:23,082 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:38:23,109 - INFO - WebSocket client disconnected
+2026-05-05 09:38:23,112 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:42:47,977 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:42:47,988 - INFO - WebSocket client disconnected
+2026-05-05 09:42:48,036 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:42:50,357 - INFO - WebSocket connected. Total connections: 2
+2026-05-05 09:43:40,407 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-05 09:43:40,457 - INFO - WebSocket client disconnected
+2026-05-05 09:43:40,468 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:43:40,469 - INFO - WebSocket client disconnected
+2026-05-05 09:43:40,474 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:45:43,954 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:45:43,955 - INFO - WebSocket client disconnected
+2026-05-05 09:45:44,016 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:48:16,333 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:48:16,335 - INFO - WebSocket client disconnected
+2026-05-05 09:48:16,416 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:48:21,593 - INFO - WebSocket connected. Total connections: 2
+2026-05-05 09:50:16,066 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-05 09:50:16,079 - INFO - WebSocket client disconnected
+2026-05-05 09:50:16,100 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:50:16,100 - INFO - WebSocket client disconnected
+2026-05-05 09:50:16,130 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:50:20,183 - INFO - WebSocket connected. Total connections: 2
+2026-05-05 09:50:38,527 - INFO - WebSocket disconnected. Total connections: 1
+2026-05-05 09:50:38,527 - INFO - WebSocket client disconnected
+2026-05-05 09:50:40,844 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:50:40,847 - INFO - WebSocket client disconnected
+2026-05-05 09:50:40,909 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 09:56:57,708 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 09:56:57,711 - INFO - WebSocket client disconnected
+2026-05-05 09:56:57,790 - INFO - WebSocket connected. Total connections: 1
+2026-05-05 10:00:02,065 - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 10:00:02,067 - INFO - WebSocket client disconnected
+2026-05-05 10:00:02,644 - INFO - WebSocket connected. Total connections: 1

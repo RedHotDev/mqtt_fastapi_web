@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fastapi-mqtt-service:
+    build: .
+    container_name: fastapi-mqtt-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./data/sensors.db
+    env_file:
+      - .env
+    restart: unless-stopped
