@@ -53,3 +53,35 @@
 2026-05-05 12:55:20,225 - loglib - INFO - WebSocket background processor started
 2026-05-05 12:55:20,225 - loglib - INFO - WebSocket background processor started
 2026-05-05 12:55:20,500 - loglib - INFO - MQTT client started
+2026-05-05 12:56:38,165 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-05 12:56:44,862 - loglib - INFO - WebSocket connected. Total connections: 2
+2026-05-05 12:56:46,299 - loglib - INFO - WebSocket disconnected. Total connections: 1
+2026-05-05 12:56:46,301 - loglib - INFO - WebSocket client disconnected
+2026-05-05 12:56:48,273 - loglib - INFO - WebSocket connected. Total connections: 2
+2026-05-05 12:57:28,170 - loglib - INFO - WebSocket disconnected. Total connections: 1
+2026-05-05 12:57:28,173 - loglib - INFO - WebSocket client disconnected
+2026-05-05 12:57:38,293 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-05 12:57:38,294 - loglib - INFO - WebSocket client disconnected
+2026-05-06 05:22:01,554 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-06 05:22:04,261 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-06 05:22:04,263 - loglib - INFO - WebSocket client disconnected
+2026-05-06 05:22:04,437 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-06 05:22:05,204 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-06 05:22:05,207 - loglib - INFO - WebSocket client disconnected
+2026-05-06 05:23:43,239 - loglib - INFO - Shutting down...
+2026-05-06 05:23:43,243 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-06 05:23:43,247 - loglib - INFO - WebSocket background processor stopped
+2026-05-06 05:23:43,250 - loglib - INFO - WebSocket background processor stopped
+2026-05-06 10:51:57,966 - loglib - DEBUG - Отладка
+2026-05-06 10:51:57,978 - loglib - INFO - Информация
+2026-05-06 10:51:57,979 - loglib - WARNING - Предупреждение
+2026-05-06 10:51:57,980 - loglib - ERROR - Ошибка
+2026-05-06 10:51:59,710 - loglib - INFO - Starting up...
+2026-05-06 10:51:59,792 - loglib - INFO - Database initialized
+2026-05-06 10:51:59,794 - loglib - INFO - WebSocket background processor started
+2026-05-06 10:51:59,794 - loglib - INFO - WebSocket background processor started
+2026-05-06 10:52:00,984 - loglib - INFO - MQTT client started
+2026-05-06 10:52:06,899 - loglib - INFO - Shutting down...
+2026-05-06 10:52:06,900 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-06 10:52:06,901 - loglib - INFO - WebSocket background processor stopped
+2026-05-06 10:52:06,902 - loglib - INFO - WebSocket background processor stopped
