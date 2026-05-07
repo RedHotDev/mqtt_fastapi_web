@@ -1,5 +1,7 @@
 /env
 /fastapi-mqtt-service.tar
 /readme.txt
+/log.log
+/sensor.db
 
 
