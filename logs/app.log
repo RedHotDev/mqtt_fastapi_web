@@ -85,3 +85,1546 @@
 2026-05-06 10:52:06,900 - loglib - INFO - WebSocket queue processor cancelled
 2026-05-06 10:52:06,901 - loglib - INFO - WebSocket background processor stopped
 2026-05-06 10:52:06,902 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:35:06,107 - loglib - DEBUG - Отладка
+2026-05-19 11:35:06,130 - loglib - INFO - Информация
+2026-05-19 11:35:06,131 - loglib - WARNING - Предупреждение
+2026-05-19 11:35:06,131 - loglib - ERROR - Ошибка
+2026-05-19 11:35:08,113 - loglib - INFO - Starting up...
+2026-05-19 11:35:08,769 - loglib - INFO - Database initialized
+2026-05-19 11:35:08,771 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:35:08,771 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:35:08,926 - loglib - INFO - MQTT client started
+2026-05-19 11:37:37,858 - loglib - INFO - Shutting down...
+2026-05-19 11:37:37,862 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:37:37,862 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:37,862 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:39,318 - loglib - DEBUG - Отладка
+2026-05-19 11:37:39,318 - loglib - INFO - Информация
+2026-05-19 11:37:39,318 - loglib - WARNING - Предупреждение
+2026-05-19 11:37:39,318 - loglib - ERROR - Ошибка
+2026-05-19 11:37:40,463 - loglib - INFO - Starting up...
+2026-05-19 11:37:40,471 - loglib - INFO - Database initialized
+2026-05-19 11:37:40,478 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:40,478 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:40,628 - loglib - INFO - MQTT client started
+2026-05-19 11:37:41,270 - loglib - INFO - Shutting down...
+2026-05-19 11:37:41,271 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:37:41,272 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:41,276 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:43,463 - loglib - DEBUG - Отладка
+2026-05-19 11:37:43,463 - loglib - INFO - Информация
+2026-05-19 11:37:43,488 - loglib - WARNING - Предупреждение
+2026-05-19 11:37:43,488 - loglib - ERROR - Ошибка
+2026-05-19 11:37:44,132 - loglib - INFO - Starting up...
+2026-05-19 11:37:44,147 - loglib - INFO - Database initialized
+2026-05-19 11:37:44,149 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:44,149 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:44,324 - loglib - INFO - MQTT client started
+2026-05-19 11:37:44,461 - loglib - INFO - Shutting down...
+2026-05-19 11:37:44,461 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:37:44,461 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:44,461 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:46,394 - loglib - DEBUG - Отладка
+2026-05-19 11:37:46,394 - loglib - INFO - Информация
+2026-05-19 11:37:46,394 - loglib - WARNING - Предупреждение
+2026-05-19 11:37:46,394 - loglib - ERROR - Ошибка
+2026-05-19 11:37:46,873 - loglib - INFO - Starting up...
+2026-05-19 11:37:46,873 - loglib - INFO - Database initialized
+2026-05-19 11:37:46,873 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:46,873 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:47,038 - loglib - INFO - MQTT client started
+2026-05-19 11:37:51,810 - loglib - INFO - Shutting down...
+2026-05-19 11:37:51,811 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:37:51,812 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:51,813 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:37:53,257 - loglib - DEBUG - Отладка
+2026-05-19 11:37:53,257 - loglib - INFO - Информация
+2026-05-19 11:37:53,257 - loglib - WARNING - Предупреждение
+2026-05-19 11:37:53,257 - loglib - ERROR - Ошибка
+2026-05-19 11:37:53,828 - loglib - INFO - Starting up...
+2026-05-19 11:37:53,845 - loglib - INFO - Database initialized
+2026-05-19 11:37:53,846 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:53,846 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:37:53,991 - loglib - INFO - MQTT client started
+2026-05-19 11:38:04,491 - loglib - INFO - Shutting down...
+2026-05-19 11:38:04,493 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:38:04,494 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:04,495 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:06,917 - loglib - DEBUG - Отладка
+2026-05-19 11:38:06,918 - loglib - INFO - Информация
+2026-05-19 11:38:06,918 - loglib - WARNING - Предупреждение
+2026-05-19 11:38:06,918 - loglib - ERROR - Ошибка
+2026-05-19 11:38:07,530 - loglib - INFO - Starting up...
+2026-05-19 11:38:07,535 - loglib - INFO - Database initialized
+2026-05-19 11:38:07,535 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:38:07,536 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:38:07,759 - loglib - INFO - MQTT client started
+2026-05-19 11:38:07,862 - loglib - INFO - Shutting down...
+2026-05-19 11:38:07,863 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:38:07,863 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:07,864 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:09,719 - loglib - DEBUG - Отладка
+2026-05-19 11:38:09,719 - loglib - INFO - Информация
+2026-05-19 11:38:09,719 - loglib - WARNING - Предупреждение
+2026-05-19 11:38:09,720 - loglib - ERROR - Ошибка
+2026-05-19 11:38:10,663 - loglib - INFO - Starting up...
+2026-05-19 11:38:10,675 - loglib - INFO - Database initialized
+2026-05-19 11:38:10,675 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:38:10,675 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:38:10,828 - loglib - INFO - MQTT client started
+2026-05-19 11:38:27,002 - loglib - INFO - Shutting down...
+2026-05-19 11:38:27,003 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:38:27,014 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:27,014 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:30,341 - loglib - DEBUG - Отладка
+2026-05-19 11:38:30,341 - loglib - INFO - Информация
+2026-05-19 11:38:30,341 - loglib - WARNING - Предупреждение
+2026-05-19 11:38:30,341 - loglib - ERROR - Ошибка
+2026-05-19 11:38:30,981 - loglib - INFO - Starting up...
+2026-05-19 11:38:30,994 - loglib - INFO - Database initialized
+2026-05-19 11:38:30,995 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:38:30,996 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:38:31,137 - loglib - INFO - MQTT client started
+2026-05-19 11:38:59,076 - loglib - INFO - Shutting down...
+2026-05-19 11:38:59,077 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:38:59,078 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:38:59,079 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:39:00,556 - loglib - DEBUG - Отладка
+2026-05-19 11:39:00,556 - loglib - INFO - Информация
+2026-05-19 11:39:00,556 - loglib - WARNING - Предупреждение
+2026-05-19 11:39:00,556 - loglib - ERROR - Ошибка
+2026-05-19 11:39:01,140 - loglib - INFO - Starting up...
+2026-05-19 11:39:01,163 - loglib - INFO - Database initialized
+2026-05-19 11:39:01,163 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:39:01,164 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:39:01,327 - loglib - INFO - MQTT client started
+2026-05-19 11:41:36,474 - loglib - INFO - Shutting down...
+2026-05-19 11:41:36,474 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:41:36,474 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:41:36,474 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:41:38,115 - loglib - DEBUG - Отладка
+2026-05-19 11:41:38,115 - loglib - INFO - Информация
+2026-05-19 11:41:38,119 - loglib - WARNING - Предупреждение
+2026-05-19 11:41:38,124 - loglib - ERROR - Ошибка
+2026-05-19 11:41:38,988 - loglib - INFO - Starting up...
+2026-05-19 11:41:39,010 - loglib - INFO - Database initialized
+2026-05-19 11:41:39,011 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:41:39,011 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:41:39,157 - loglib - INFO - MQTT client started
+2026-05-19 11:41:52,803 - loglib - INFO - Shutting down...
+2026-05-19 11:41:52,825 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:41:52,828 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:41:52,833 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:41:56,595 - loglib - DEBUG - Отладка
+2026-05-19 11:41:59,994 - loglib - INFO - Информация
+2026-05-19 11:41:59,994 - loglib - WARNING - Предупреждение
+2026-05-19 11:41:59,994 - loglib - ERROR - Ошибка
+2026-05-19 11:42:01,422 - loglib - INFO - Starting up...
+2026-05-19 11:42:01,457 - loglib - INFO - Database initialized
+2026-05-19 11:42:01,461 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:01,463 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:01,627 - loglib - INFO - MQTT client started
+2026-05-19 11:42:01,856 - loglib - INFO - Shutting down...
+2026-05-19 11:42:01,856 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:42:01,856 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:01,856 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:04,907 - loglib - DEBUG - Отладка
+2026-05-19 11:42:04,907 - loglib - INFO - Информация
+2026-05-19 11:42:04,907 - loglib - WARNING - Предупреждение
+2026-05-19 11:42:04,907 - loglib - ERROR - Ошибка
+2026-05-19 11:42:05,563 - loglib - INFO - Starting up...
+2026-05-19 11:42:05,568 - loglib - INFO - Database initialized
+2026-05-19 11:42:05,569 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:05,570 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:05,719 - loglib - INFO - MQTT client started
+2026-05-19 11:42:17,389 - loglib - INFO - Shutting down...
+2026-05-19 11:42:17,389 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:42:17,389 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:17,389 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:19,264 - loglib - DEBUG - Отладка
+2026-05-19 11:42:19,265 - loglib - INFO - Информация
+2026-05-19 11:42:19,266 - loglib - WARNING - Предупреждение
+2026-05-19 11:42:19,266 - loglib - ERROR - Ошибка
+2026-05-19 11:42:19,942 - loglib - INFO - Starting up...
+2026-05-19 11:42:19,947 - loglib - INFO - Database initialized
+2026-05-19 11:42:19,948 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:19,948 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:20,107 - loglib - INFO - MQTT client started
+2026-05-19 11:42:36,430 - loglib - INFO - Shutting down...
+2026-05-19 11:42:36,432 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:42:36,432 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:36,432 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:38,700 - loglib - DEBUG - Отладка
+2026-05-19 11:42:38,700 - loglib - INFO - Информация
+2026-05-19 11:42:38,707 - loglib - WARNING - Предупреждение
+2026-05-19 11:42:38,711 - loglib - ERROR - Ошибка
+2026-05-19 11:42:39,408 - loglib - INFO - Starting up...
+2026-05-19 11:42:39,430 - loglib - INFO - Database initialized
+2026-05-19 11:42:39,430 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:39,430 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:42:39,579 - loglib - INFO - MQTT client started
+2026-05-19 11:42:50,794 - loglib - INFO - Shutting down...
+2026-05-19 11:42:50,796 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:42:50,797 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:50,797 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:42:53,652 - loglib - DEBUG - Отладка
+2026-05-19 11:42:53,652 - loglib - INFO - Информация
+2026-05-19 11:42:53,667 - loglib - WARNING - Предупреждение
+2026-05-19 11:42:53,677 - loglib - ERROR - Ошибка
+2026-05-19 11:42:55,762 - loglib - DEBUG - Отладка
+2026-05-19 11:42:55,763 - loglib - INFO - Информация
+2026-05-19 11:42:55,763 - loglib - WARNING - Предупреждение
+2026-05-19 11:42:55,764 - loglib - ERROR - Ошибка
+2026-05-19 11:43:08,924 - loglib - DEBUG - Отладка
+2026-05-19 11:43:08,924 - loglib - INFO - Информация
+2026-05-19 11:43:08,942 - loglib - WARNING - Предупреждение
+2026-05-19 11:43:08,942 - loglib - ERROR - Ошибка
+2026-05-19 11:43:58,939 - loglib - DEBUG - Отладка
+2026-05-19 11:43:58,939 - loglib - INFO - Информация
+2026-05-19 11:43:58,939 - loglib - WARNING - Предупреждение
+2026-05-19 11:43:58,939 - loglib - ERROR - Ошибка
+2026-05-19 11:45:16,898 - loglib - DEBUG - Отладка
+2026-05-19 11:45:16,906 - loglib - INFO - Информация
+2026-05-19 11:45:16,906 - loglib - WARNING - Предупреждение
+2026-05-19 11:45:16,906 - loglib - ERROR - Ошибка
+2026-05-19 11:45:18,439 - loglib - INFO - Starting up...
+2026-05-19 11:45:18,458 - loglib - INFO - Database initialized
+2026-05-19 11:45:18,458 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:45:18,458 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:45:18,610 - loglib - INFO - MQTT client started
+2026-05-19 11:45:32,695 - loglib - INFO - Shutting down...
+2026-05-19 11:45:32,699 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 11:45:32,727 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:45:32,741 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 11:45:36,323 - loglib - DEBUG - Отладка
+2026-05-19 11:45:36,323 - loglib - INFO - Информация
+2026-05-19 11:45:36,323 - loglib - WARNING - Предупреждение
+2026-05-19 11:45:36,323 - loglib - ERROR - Ошибка
+2026-05-19 11:45:36,947 - loglib - INFO - Starting up...
+2026-05-19 11:45:36,955 - loglib - INFO - Database initialized
+2026-05-19 11:45:36,957 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:45:36,958 - loglib - INFO - WebSocket background processor started
+2026-05-19 11:45:37,112 - loglib - INFO - MQTT client started
+2026-05-19 13:54:41,879 - loglib - INFO - Shutting down...
+2026-05-19 13:54:41,899 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 13:54:41,913 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:54:41,955 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:54:48,555 - loglib - DEBUG - Отладка
+2026-05-19 13:54:48,556 - loglib - INFO - Информация
+2026-05-19 13:54:48,556 - loglib - WARNING - Предупреждение
+2026-05-19 13:54:48,558 - loglib - ERROR - Ошибка
+2026-05-19 13:54:53,187 - loglib - DEBUG - Отладка
+2026-05-19 13:54:53,188 - loglib - INFO - Информация
+2026-05-19 13:54:53,188 - loglib - WARNING - Предупреждение
+2026-05-19 13:54:53,189 - loglib - ERROR - Ошибка
+2026-05-19 13:54:57,405 - loglib - DEBUG - Отладка
+2026-05-19 13:54:57,486 - loglib - INFO - Информация
+2026-05-19 13:54:57,507 - loglib - WARNING - Предупреждение
+2026-05-19 13:54:57,515 - loglib - ERROR - Ошибка
+2026-05-19 13:55:00,815 - loglib - DEBUG - Отладка
+2026-05-19 13:55:00,815 - loglib - INFO - Информация
+2026-05-19 13:55:00,815 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:00,816 - loglib - ERROR - Ошибка
+2026-05-19 13:55:03,522 - loglib - DEBUG - Отладка
+2026-05-19 13:55:03,523 - loglib - INFO - Информация
+2026-05-19 13:55:03,529 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:03,534 - loglib - ERROR - Ошибка
+2026-05-19 13:55:07,428 - loglib - DEBUG - Отладка
+2026-05-19 13:55:07,429 - loglib - INFO - Информация
+2026-05-19 13:55:07,431 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:07,433 - loglib - ERROR - Ошибка
+2026-05-19 13:55:09,957 - loglib - DEBUG - Отладка
+2026-05-19 13:55:09,957 - loglib - INFO - Информация
+2026-05-19 13:55:09,964 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:09,965 - loglib - ERROR - Ошибка
+2026-05-19 13:55:12,117 - loglib - DEBUG - Отладка
+2026-05-19 13:55:12,118 - loglib - INFO - Информация
+2026-05-19 13:55:12,121 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:12,123 - loglib - ERROR - Ошибка
+2026-05-19 13:55:13,758 - loglib - DEBUG - Отладка
+2026-05-19 13:55:13,758 - loglib - INFO - Информация
+2026-05-19 13:55:13,759 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:13,760 - loglib - ERROR - Ошибка
+2026-05-19 13:55:18,534 - loglib - DEBUG - Отладка
+2026-05-19 13:55:18,534 - loglib - INFO - Информация
+2026-05-19 13:55:18,535 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:18,536 - loglib - ERROR - Ошибка
+2026-05-19 13:55:21,275 - loglib - DEBUG - Отладка
+2026-05-19 13:55:21,275 - loglib - INFO - Информация
+2026-05-19 13:55:21,294 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:21,302 - loglib - ERROR - Ошибка
+2026-05-19 13:55:22,349 - loglib - INFO - Starting up...
+2026-05-19 13:55:22,357 - loglib - INFO - Database initialized
+2026-05-19 13:55:22,360 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:55:22,363 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:55:22,640 - loglib - INFO - MQTT client started
+2026-05-19 13:55:22,751 - loglib - INFO - Shutting down...
+2026-05-19 13:55:22,757 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 13:55:22,757 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:55:22,758 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:55:25,495 - loglib - DEBUG - Отладка
+2026-05-19 13:55:25,495 - loglib - INFO - Информация
+2026-05-19 13:55:25,495 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:25,496 - loglib - ERROR - Ошибка
+2026-05-19 13:55:25,948 - loglib - INFO - Starting up...
+2026-05-19 13:55:25,954 - loglib - INFO - Database initialized
+2026-05-19 13:55:25,955 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:55:25,956 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:55:26,097 - loglib - INFO - MQTT client started
+2026-05-19 13:55:33,333 - loglib - INFO - Shutting down...
+2026-05-19 13:55:33,334 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 13:55:33,335 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:55:33,335 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:55:35,235 - loglib - DEBUG - Отладка
+2026-05-19 13:55:35,235 - loglib - INFO - Информация
+2026-05-19 13:55:35,235 - loglib - WARNING - Предупреждение
+2026-05-19 13:55:35,236 - loglib - ERROR - Ошибка
+2026-05-19 13:55:35,720 - loglib - INFO - Starting up...
+2026-05-19 13:55:35,728 - loglib - INFO - Database initialized
+2026-05-19 13:55:35,728 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:55:35,730 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:55:35,869 - loglib - INFO - MQTT client started
+2026-05-19 13:55:58,105 - loglib - INFO - Shutting down...
+2026-05-19 13:55:58,106 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 13:55:58,107 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:55:58,107 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:56:00,000 - loglib - DEBUG - Отладка
+2026-05-19 13:56:00,001 - loglib - INFO - Информация
+2026-05-19 13:56:00,001 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:00,002 - loglib - ERROR - Ошибка
+2026-05-19 13:56:00,461 - loglib - INFO - Starting up...
+2026-05-19 13:56:00,467 - loglib - INFO - Database initialized
+2026-05-19 13:56:00,467 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:56:00,468 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:56:00,629 - loglib - INFO - MQTT client started
+2026-05-19 13:56:07,968 - loglib - INFO - Shutting down...
+2026-05-19 13:56:07,970 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 13:56:07,971 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:56:07,973 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:56:09,532 - loglib - DEBUG - Отладка
+2026-05-19 13:56:09,532 - loglib - INFO - Информация
+2026-05-19 13:56:09,533 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:09,534 - loglib - ERROR - Ошибка
+2026-05-19 13:56:09,990 - loglib - INFO - Starting up...
+2026-05-19 13:56:09,995 - loglib - INFO - Database initialized
+2026-05-19 13:56:09,996 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:56:09,997 - loglib - INFO - WebSocket background processor started
+2026-05-19 13:56:10,166 - loglib - INFO - MQTT client started
+2026-05-19 13:56:17,404 - loglib - INFO - Shutting down...
+2026-05-19 13:56:17,405 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 13:56:17,406 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:56:17,407 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 13:56:19,335 - loglib - DEBUG - Отладка
+2026-05-19 13:56:19,335 - loglib - INFO - Информация
+2026-05-19 13:56:19,335 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:19,336 - loglib - ERROR - Ошибка
+2026-05-19 13:56:20,845 - loglib - DEBUG - Отладка
+2026-05-19 13:56:20,846 - loglib - INFO - Информация
+2026-05-19 13:56:20,846 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:20,847 - loglib - ERROR - Ошибка
+2026-05-19 13:56:25,436 - loglib - DEBUG - Отладка
+2026-05-19 13:56:25,437 - loglib - INFO - Информация
+2026-05-19 13:56:25,437 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:25,438 - loglib - ERROR - Ошибка
+2026-05-19 13:56:27,139 - loglib - DEBUG - Отладка
+2026-05-19 13:56:27,139 - loglib - INFO - Информация
+2026-05-19 13:56:27,139 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:27,140 - loglib - ERROR - Ошибка
+2026-05-19 13:56:30,863 - loglib - DEBUG - Отладка
+2026-05-19 13:56:30,863 - loglib - INFO - Информация
+2026-05-19 13:56:30,864 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:30,864 - loglib - ERROR - Ошибка
+2026-05-19 13:56:55,149 - loglib - DEBUG - Отладка
+2026-05-19 13:56:55,150 - loglib - INFO - Информация
+2026-05-19 13:56:55,150 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:55,151 - loglib - ERROR - Ошибка
+2026-05-19 13:56:57,516 - loglib - DEBUG - Отладка
+2026-05-19 13:56:57,517 - loglib - INFO - Информация
+2026-05-19 13:56:57,520 - loglib - WARNING - Предупреждение
+2026-05-19 13:56:57,521 - loglib - ERROR - Ошибка
+2026-05-19 13:57:00,210 - loglib - DEBUG - Отладка
+2026-05-19 13:57:00,212 - loglib - INFO - Информация
+2026-05-19 13:57:00,216 - loglib - WARNING - Предупреждение
+2026-05-19 13:57:00,217 - loglib - ERROR - Ошибка
+2026-05-19 13:57:02,655 - loglib - DEBUG - Отладка
+2026-05-19 13:57:02,655 - loglib - INFO - Информация
+2026-05-19 13:57:02,656 - loglib - WARNING - Предупреждение
+2026-05-19 13:57:02,656 - loglib - ERROR - Ошибка
+2026-05-19 13:57:10,563 - loglib - DEBUG - Отладка
+2026-05-19 13:57:10,564 - loglib - INFO - Информация
+2026-05-19 13:57:10,564 - loglib - WARNING - Предупреждение
+2026-05-19 13:57:10,565 - loglib - ERROR - Ошибка
+2026-05-19 13:57:19,157 - loglib - DEBUG - Отладка
+2026-05-19 13:57:19,157 - loglib - INFO - Информация
+2026-05-19 13:57:19,158 - loglib - WARNING - Предупреждение
+2026-05-19 13:57:19,160 - loglib - ERROR - Ошибка
+2026-05-19 13:57:21,012 - loglib - DEBUG - Отладка
+2026-05-19 13:57:21,012 - loglib - INFO - Информация
+2026-05-19 13:57:21,013 - loglib - WARNING - Предупреждение
+2026-05-19 13:57:21,014 - loglib - ERROR - Ошибка
+2026-05-19 13:57:30,537 - loglib - DEBUG - Отладка
+2026-05-19 13:57:30,537 - loglib - INFO - Информация
+2026-05-19 13:57:30,538 - loglib - WARNING - Предупреждение
+2026-05-19 13:57:30,539 - loglib - ERROR - Ошибка
+2026-05-19 13:58:19,335 - loglib - DEBUG - Отладка
+2026-05-19 13:58:19,335 - loglib - INFO - Информация
+2026-05-19 13:58:19,337 - loglib - WARNING - Предупреждение
+2026-05-19 13:58:19,339 - loglib - ERROR - Ошибка
+2026-05-19 13:58:21,871 - loglib - DEBUG - Отладка
+2026-05-19 13:58:21,872 - loglib - INFO - Информация
+2026-05-19 13:58:21,872 - loglib - WARNING - Предупреждение
+2026-05-19 13:58:21,873 - loglib - ERROR - Ошибка
+2026-05-19 14:00:13,378 - loglib - DEBUG - Отладка
+2026-05-19 14:00:13,378 - loglib - INFO - Информация
+2026-05-19 14:00:13,383 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:13,385 - loglib - ERROR - Ошибка
+2026-05-19 14:00:15,100 - loglib - DEBUG - Отладка
+2026-05-19 14:00:15,100 - loglib - INFO - Информация
+2026-05-19 14:00:15,101 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:15,102 - loglib - ERROR - Ошибка
+2026-05-19 14:00:24,329 - loglib - DEBUG - Отладка
+2026-05-19 14:00:24,329 - loglib - INFO - Информация
+2026-05-19 14:00:24,330 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:24,330 - loglib - ERROR - Ошибка
+2026-05-19 14:00:29,101 - loglib - DEBUG - Отладка
+2026-05-19 14:00:29,101 - loglib - INFO - Информация
+2026-05-19 14:00:29,102 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:29,102 - loglib - ERROR - Ошибка
+2026-05-19 14:00:32,120 - loglib - DEBUG - Отладка
+2026-05-19 14:00:32,121 - loglib - INFO - Информация
+2026-05-19 14:00:32,135 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:32,144 - loglib - ERROR - Ошибка
+2026-05-19 14:00:35,096 - loglib - DEBUG - Отладка
+2026-05-19 14:00:35,097 - loglib - INFO - Информация
+2026-05-19 14:00:35,097 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:35,098 - loglib - ERROR - Ошибка
+2026-05-19 14:00:38,597 - loglib - DEBUG - Отладка
+2026-05-19 14:00:38,598 - loglib - INFO - Информация
+2026-05-19 14:00:38,598 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:38,599 - loglib - ERROR - Ошибка
+2026-05-19 14:00:45,077 - loglib - DEBUG - Отладка
+2026-05-19 14:00:45,077 - loglib - INFO - Информация
+2026-05-19 14:00:45,078 - loglib - WARNING - Предупреждение
+2026-05-19 14:00:45,078 - loglib - ERROR - Ошибка
+2026-05-19 14:01:06,201 - loglib - DEBUG - Отладка
+2026-05-19 14:01:06,202 - loglib - INFO - Информация
+2026-05-19 14:01:06,202 - loglib - WARNING - Предупреждение
+2026-05-19 14:01:06,203 - loglib - ERROR - Ошибка
+2026-05-19 14:01:09,318 - loglib - DEBUG - Отладка
+2026-05-19 14:01:09,319 - loglib - INFO - Информация
+2026-05-19 14:01:09,319 - loglib - WARNING - Предупреждение
+2026-05-19 14:01:09,320 - loglib - ERROR - Ошибка
+2026-05-19 14:03:33,872 - loglib - DEBUG - Отладка
+2026-05-19 14:03:33,872 - loglib - INFO - Информация
+2026-05-19 14:03:33,873 - loglib - WARNING - Предупреждение
+2026-05-19 14:03:33,874 - loglib - ERROR - Ошибка
+2026-05-19 14:03:36,725 - loglib - DEBUG - Отладка
+2026-05-19 14:03:36,726 - loglib - INFO - Информация
+2026-05-19 14:03:36,727 - loglib - WARNING - Предупреждение
+2026-05-19 14:03:36,728 - loglib - ERROR - Ошибка
+2026-05-19 14:03:42,194 - loglib - DEBUG - Отладка
+2026-05-19 14:03:42,195 - loglib - INFO - Информация
+2026-05-19 14:03:42,196 - loglib - WARNING - Предупреждение
+2026-05-19 14:03:42,197 - loglib - ERROR - Ошибка
+2026-05-19 14:03:48,497 - loglib - DEBUG - Отладка
+2026-05-19 14:03:48,497 - loglib - INFO - Информация
+2026-05-19 14:03:48,497 - loglib - WARNING - Предупреждение
+2026-05-19 14:03:48,498 - loglib - ERROR - Ошибка
+2026-05-19 14:03:52,433 - loglib - DEBUG - Отладка
+2026-05-19 14:03:52,433 - loglib - INFO - Информация
+2026-05-19 14:03:52,434 - loglib - WARNING - Предупреждение
+2026-05-19 14:03:52,434 - loglib - ERROR - Ошибка
+2026-05-19 14:03:53,999 - loglib - DEBUG - Отладка
+2026-05-19 14:03:54,000 - loglib - INFO - Информация
+2026-05-19 14:03:54,000 - loglib - WARNING - Предупреждение
+2026-05-19 14:03:54,001 - loglib - ERROR - Ошибка
+2026-05-19 14:04:57,057 - loglib - DEBUG - Отладка
+2026-05-19 14:04:57,057 - loglib - INFO - Информация
+2026-05-19 14:04:57,058 - loglib - WARNING - Предупреждение
+2026-05-19 14:04:57,058 - loglib - ERROR - Ошибка
+2026-05-19 14:05:02,005 - loglib - DEBUG - Отладка
+2026-05-19 14:05:02,005 - loglib - INFO - Информация
+2026-05-19 14:05:02,006 - loglib - WARNING - Предупреждение
+2026-05-19 14:05:02,007 - loglib - ERROR - Ошибка
+2026-05-19 14:05:31,133 - loglib - DEBUG - Отладка
+2026-05-19 14:05:31,135 - loglib - INFO - Информация
+2026-05-19 14:05:31,139 - loglib - WARNING - Предупреждение
+2026-05-19 14:05:31,157 - loglib - ERROR - Ошибка
+2026-05-19 14:05:34,091 - loglib - DEBUG - Отладка
+2026-05-19 14:05:34,091 - loglib - INFO - Информация
+2026-05-19 14:05:34,093 - loglib - WARNING - Предупреждение
+2026-05-19 14:05:34,098 - loglib - ERROR - Ошибка
+2026-05-19 14:05:36,205 - loglib - DEBUG - Отладка
+2026-05-19 14:05:36,206 - loglib - INFO - Информация
+2026-05-19 14:05:36,206 - loglib - WARNING - Предупреждение
+2026-05-19 14:05:36,207 - loglib - ERROR - Ошибка
+2026-05-19 14:05:54,269 - loglib - DEBUG - Отладка
+2026-05-19 14:05:54,269 - loglib - INFO - Информация
+2026-05-19 14:05:54,270 - loglib - WARNING - Предупреждение
+2026-05-19 14:05:54,274 - loglib - ERROR - Ошибка
+2026-05-19 14:05:58,109 - loglib - DEBUG - Отладка
+2026-05-19 14:05:58,110 - loglib - INFO - Информация
+2026-05-19 14:05:58,112 - loglib - WARNING - Предупреждение
+2026-05-19 14:05:58,113 - loglib - ERROR - Ошибка
+2026-05-19 14:08:14,158 - loglib - DEBUG - Отладка
+2026-05-19 14:08:14,159 - loglib - INFO - Информация
+2026-05-19 14:08:14,159 - loglib - WARNING - Предупреждение
+2026-05-19 14:08:14,160 - loglib - ERROR - Ошибка
+2026-05-19 14:08:15,702 - loglib - DEBUG - Отладка
+2026-05-19 14:08:15,703 - loglib - INFO - Информация
+2026-05-19 14:08:15,703 - loglib - WARNING - Предупреждение
+2026-05-19 14:08:15,704 - loglib - ERROR - Ошибка
+2026-05-19 14:08:19,683 - loglib - DEBUG - Отладка
+2026-05-19 14:08:19,683 - loglib - INFO - Информация
+2026-05-19 14:08:19,691 - loglib - WARNING - Предупреждение
+2026-05-19 14:08:19,692 - loglib - ERROR - Ошибка
+2026-05-19 14:09:36,265 - loglib - DEBUG - Отладка
+2026-05-19 14:09:36,266 - loglib - INFO - Информация
+2026-05-19 14:09:36,267 - loglib - WARNING - Предупреждение
+2026-05-19 14:09:36,269 - loglib - ERROR - Ошибка
+2026-05-19 14:09:40,505 - loglib - DEBUG - Отладка
+2026-05-19 14:09:40,505 - loglib - INFO - Информация
+2026-05-19 14:09:40,505 - loglib - WARNING - Предупреждение
+2026-05-19 14:09:40,506 - loglib - ERROR - Ошибка
+2026-05-19 14:09:42,325 - loglib - DEBUG - Отладка
+2026-05-19 14:09:42,325 - loglib - INFO - Информация
+2026-05-19 14:09:42,326 - loglib - WARNING - Предупреждение
+2026-05-19 14:09:42,326 - loglib - ERROR - Ошибка
+2026-05-19 14:10:08,814 - loglib - DEBUG - Отладка
+2026-05-19 14:10:08,814 - loglib - INFO - Информация
+2026-05-19 14:10:08,815 - loglib - WARNING - Предупреждение
+2026-05-19 14:10:08,815 - loglib - ERROR - Ошибка
+2026-05-19 14:10:46,082 - loglib - DEBUG - Отладка
+2026-05-19 14:10:46,082 - loglib - INFO - Информация
+2026-05-19 14:10:46,085 - loglib - WARNING - Предупреждение
+2026-05-19 14:10:46,087 - loglib - ERROR - Ошибка
+2026-05-19 14:10:55,056 - loglib - DEBUG - Отладка
+2026-05-19 14:10:55,056 - loglib - INFO - Информация
+2026-05-19 14:10:55,058 - loglib - WARNING - Предупреждение
+2026-05-19 14:10:55,059 - loglib - ERROR - Ошибка
+2026-05-19 14:10:58,179 - loglib - DEBUG - Отладка
+2026-05-19 14:10:58,179 - loglib - INFO - Информация
+2026-05-19 14:10:58,180 - loglib - WARNING - Предупреждение
+2026-05-19 14:10:58,180 - loglib - ERROR - Ошибка
+2026-05-19 14:24:01,596 - loglib - DEBUG - Отладка
+2026-05-19 14:24:01,613 - loglib - INFO - Информация
+2026-05-19 14:24:01,613 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:01,613 - loglib - ERROR - Ошибка
+2026-05-19 14:24:05,079 - loglib - DEBUG - Отладка
+2026-05-19 14:24:05,079 - loglib - INFO - Информация
+2026-05-19 14:24:05,097 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:05,099 - loglib - ERROR - Ошибка
+2026-05-19 14:24:07,404 - loglib - DEBUG - Отладка
+2026-05-19 14:24:07,404 - loglib - INFO - Информация
+2026-05-19 14:24:07,404 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:07,404 - loglib - ERROR - Ошибка
+2026-05-19 14:24:10,561 - loglib - DEBUG - Отладка
+2026-05-19 14:24:10,561 - loglib - INFO - Информация
+2026-05-19 14:24:10,561 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:10,561 - loglib - ERROR - Ошибка
+2026-05-19 14:24:15,338 - loglib - DEBUG - Отладка
+2026-05-19 14:24:15,338 - loglib - INFO - Информация
+2026-05-19 14:24:15,338 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:15,338 - loglib - ERROR - Ошибка
+2026-05-19 14:24:21,496 - loglib - DEBUG - Отладка
+2026-05-19 14:24:21,496 - loglib - INFO - Информация
+2026-05-19 14:24:21,496 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:21,496 - loglib - ERROR - Ошибка
+2026-05-19 14:24:38,493 - loglib - DEBUG - Отладка
+2026-05-19 14:24:38,493 - loglib - INFO - Информация
+2026-05-19 14:24:38,493 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:38,493 - loglib - ERROR - Ошибка
+2026-05-19 14:24:41,430 - loglib - DEBUG - Отладка
+2026-05-19 14:24:41,430 - loglib - INFO - Информация
+2026-05-19 14:24:41,449 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:41,455 - loglib - ERROR - Ошибка
+2026-05-19 14:24:44,218 - loglib - DEBUG - Отладка
+2026-05-19 14:24:44,218 - loglib - INFO - Информация
+2026-05-19 14:24:44,219 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:44,219 - loglib - ERROR - Ошибка
+2026-05-19 14:24:57,625 - loglib - DEBUG - Отладка
+2026-05-19 14:24:57,629 - loglib - INFO - Информация
+2026-05-19 14:24:57,629 - loglib - WARNING - Предупреждение
+2026-05-19 14:24:57,629 - loglib - ERROR - Ошибка
+2026-05-19 14:25:07,764 - loglib - DEBUG - Отладка
+2026-05-19 14:25:07,767 - loglib - INFO - Информация
+2026-05-19 14:25:07,767 - loglib - WARNING - Предупреждение
+2026-05-19 14:25:07,767 - loglib - ERROR - Ошибка
+2026-05-19 14:25:10,177 - loglib - DEBUG - Отладка
+2026-05-19 14:25:10,177 - loglib - INFO - Информация
+2026-05-19 14:25:10,177 - loglib - WARNING - Предупреждение
+2026-05-19 14:25:10,177 - loglib - ERROR - Ошибка
+2026-05-19 14:25:17,980 - loglib - DEBUG - Отладка
+2026-05-19 14:25:17,980 - loglib - INFO - Информация
+2026-05-19 14:25:17,980 - loglib - WARNING - Предупреждение
+2026-05-19 14:25:17,980 - loglib - ERROR - Ошибка
+2026-05-19 14:26:02,910 - loglib - DEBUG - Отладка
+2026-05-19 14:26:02,910 - loglib - INFO - Информация
+2026-05-19 14:26:02,910 - loglib - WARNING - Предупреждение
+2026-05-19 14:26:02,910 - loglib - ERROR - Ошибка
+2026-05-19 14:26:24,520 - loglib - DEBUG - Отладка
+2026-05-19 14:26:24,521 - loglib - INFO - Информация
+2026-05-19 14:26:24,522 - loglib - WARNING - Предупреждение
+2026-05-19 14:26:24,523 - loglib - ERROR - Ошибка
+2026-05-19 14:26:39,912 - loglib - DEBUG - Отладка
+2026-05-19 14:26:39,912 - loglib - INFO - Информация
+2026-05-19 14:26:39,912 - loglib - WARNING - Предупреждение
+2026-05-19 14:26:39,912 - loglib - ERROR - Ошибка
+2026-05-19 14:26:48,893 - loglib - DEBUG - Отладка
+2026-05-19 14:26:48,895 - loglib - INFO - Информация
+2026-05-19 14:26:48,895 - loglib - WARNING - Предупреждение
+2026-05-19 14:26:48,895 - loglib - ERROR - Ошибка
+2026-05-19 14:26:51,312 - loglib - DEBUG - Отладка
+2026-05-19 14:26:51,312 - loglib - INFO - Информация
+2026-05-19 14:26:51,312 - loglib - WARNING - Предупреждение
+2026-05-19 14:26:51,312 - loglib - ERROR - Ошибка
+2026-05-19 14:27:16,278 - loglib - DEBUG - Отладка
+2026-05-19 14:27:16,278 - loglib - INFO - Информация
+2026-05-19 14:27:16,278 - loglib - WARNING - Предупреждение
+2026-05-19 14:27:16,278 - loglib - ERROR - Ошибка
+2026-05-19 14:27:30,946 - loglib - DEBUG - Отладка
+2026-05-19 14:27:30,946 - loglib - INFO - Информация
+2026-05-19 14:27:30,947 - loglib - WARNING - Предупреждение
+2026-05-19 14:27:30,947 - loglib - ERROR - Ошибка
+2026-05-19 14:27:32,423 - loglib - DEBUG - Отладка
+2026-05-19 14:27:32,423 - loglib - INFO - Информация
+2026-05-19 14:27:32,423 - loglib - WARNING - Предупреждение
+2026-05-19 14:27:32,423 - loglib - ERROR - Ошибка
+2026-05-19 14:27:36,628 - loglib - DEBUG - Отладка
+2026-05-19 14:27:36,628 - loglib - INFO - Информация
+2026-05-19 14:27:36,628 - loglib - WARNING - Предупреждение
+2026-05-19 14:27:36,628 - loglib - ERROR - Ошибка
+2026-05-19 14:29:23,744 - loglib - DEBUG - Отладка
+2026-05-19 14:29:23,745 - loglib - INFO - Информация
+2026-05-19 14:29:23,745 - loglib - WARNING - Предупреждение
+2026-05-19 14:29:23,746 - loglib - ERROR - Ошибка
+2026-05-19 14:29:33,958 - loglib - DEBUG - Отладка
+2026-05-19 14:29:33,958 - loglib - INFO - Информация
+2026-05-19 14:29:33,958 - loglib - WARNING - Предупреждение
+2026-05-19 14:29:33,979 - loglib - ERROR - Ошибка
+2026-05-19 14:29:36,327 - loglib - DEBUG - Отладка
+2026-05-19 14:29:36,327 - loglib - INFO - Информация
+2026-05-19 14:29:36,336 - loglib - WARNING - Предупреждение
+2026-05-19 14:29:36,363 - loglib - ERROR - Ошибка
+2026-05-19 14:29:38,793 - loglib - DEBUG - Отладка
+2026-05-19 14:29:38,793 - loglib - INFO - Информация
+2026-05-19 14:29:38,793 - loglib - WARNING - Предупреждение
+2026-05-19 14:29:38,793 - loglib - ERROR - Ошибка
+2026-05-19 14:30:25,192 - loglib - DEBUG - Отладка
+2026-05-19 14:30:25,192 - loglib - INFO - Информация
+2026-05-19 14:30:25,192 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:25,192 - loglib - ERROR - Ошибка
+2026-05-19 14:30:27,713 - loglib - DEBUG - Отладка
+2026-05-19 14:30:27,713 - loglib - INFO - Информация
+2026-05-19 14:30:27,713 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:27,713 - loglib - ERROR - Ошибка
+2026-05-19 14:30:31,978 - loglib - DEBUG - Отладка
+2026-05-19 14:30:31,978 - loglib - INFO - Информация
+2026-05-19 14:30:31,996 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:32,014 - loglib - ERROR - Ошибка
+2026-05-19 14:30:34,275 - loglib - DEBUG - Отладка
+2026-05-19 14:30:34,275 - loglib - INFO - Информация
+2026-05-19 14:30:34,275 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:34,275 - loglib - ERROR - Ошибка
+2026-05-19 14:30:38,049 - loglib - DEBUG - Отладка
+2026-05-19 14:30:38,049 - loglib - INFO - Информация
+2026-05-19 14:30:38,063 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:38,065 - loglib - ERROR - Ошибка
+2026-05-19 14:30:42,515 - loglib - DEBUG - Отладка
+2026-05-19 14:30:42,515 - loglib - INFO - Информация
+2026-05-19 14:30:42,529 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:42,530 - loglib - ERROR - Ошибка
+2026-05-19 14:30:45,165 - loglib - DEBUG - Отладка
+2026-05-19 14:30:45,165 - loglib - INFO - Информация
+2026-05-19 14:30:45,165 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:45,184 - loglib - ERROR - Ошибка
+2026-05-19 14:30:48,973 - loglib - DEBUG - Отладка
+2026-05-19 14:30:48,973 - loglib - INFO - Информация
+2026-05-19 14:30:48,973 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:48,973 - loglib - ERROR - Ошибка
+2026-05-19 14:30:51,451 - loglib - DEBUG - Отладка
+2026-05-19 14:30:51,451 - loglib - INFO - Информация
+2026-05-19 14:30:51,452 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:51,452 - loglib - ERROR - Ошибка
+2026-05-19 14:30:53,275 - loglib - DEBUG - Отладка
+2026-05-19 14:30:53,275 - loglib - INFO - Информация
+2026-05-19 14:30:53,275 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:53,281 - loglib - ERROR - Ошибка
+2026-05-19 14:30:56,757 - loglib - DEBUG - Отладка
+2026-05-19 14:30:56,757 - loglib - INFO - Информация
+2026-05-19 14:30:56,757 - loglib - WARNING - Предупреждение
+2026-05-19 14:30:56,757 - loglib - ERROR - Ошибка
+2026-05-19 14:31:45,546 - loglib - DEBUG - Отладка
+2026-05-19 14:31:45,547 - loglib - INFO - Информация
+2026-05-19 14:31:45,680 - loglib - WARNING - Предупреждение
+2026-05-19 14:31:45,681 - loglib - ERROR - Ошибка
+2026-05-19 14:31:50,327 - loglib - DEBUG - Отладка
+2026-05-19 14:31:50,327 - loglib - INFO - Информация
+2026-05-19 14:31:50,327 - loglib - WARNING - Предупреждение
+2026-05-19 14:31:50,327 - loglib - ERROR - Ошибка
+2026-05-19 14:31:52,882 - loglib - DEBUG - Отладка
+2026-05-19 14:31:52,883 - loglib - INFO - Информация
+2026-05-19 14:31:52,883 - loglib - WARNING - Предупреждение
+2026-05-19 14:31:52,884 - loglib - ERROR - Ошибка
+2026-05-19 14:32:04,392 - loglib - DEBUG - Отладка
+2026-05-19 14:32:04,392 - loglib - INFO - Информация
+2026-05-19 14:32:04,392 - loglib - WARNING - Предупреждение
+2026-05-19 14:32:04,392 - loglib - ERROR - Ошибка
+2026-05-19 14:32:06,527 - loglib - DEBUG - Отладка
+2026-05-19 14:32:06,527 - loglib - INFO - Информация
+2026-05-19 14:32:06,528 - loglib - WARNING - Предупреждение
+2026-05-19 14:32:06,529 - loglib - ERROR - Ошибка
+2026-05-19 14:32:08,746 - loglib - DEBUG - Отладка
+2026-05-19 14:32:08,746 - loglib - INFO - Информация
+2026-05-19 14:32:08,746 - loglib - WARNING - Предупреждение
+2026-05-19 14:32:08,746 - loglib - ERROR - Ошибка
+2026-05-19 14:32:11,241 - loglib - DEBUG - Отладка
+2026-05-19 14:32:11,241 - loglib - INFO - Информация
+2026-05-19 14:32:11,242 - loglib - WARNING - Предупреждение
+2026-05-19 14:32:11,243 - loglib - ERROR - Ошибка
+2026-05-19 14:34:53,391 - loglib - DEBUG - Отладка
+2026-05-19 14:34:53,391 - loglib - INFO - Информация
+2026-05-19 14:34:53,391 - loglib - WARNING - Предупреждение
+2026-05-19 14:34:53,391 - loglib - ERROR - Ошибка
+2026-05-19 14:34:57,945 - loglib - DEBUG - Отладка
+2026-05-19 14:34:57,946 - loglib - INFO - Информация
+2026-05-19 14:34:57,946 - loglib - WARNING - Предупреждение
+2026-05-19 14:34:57,947 - loglib - ERROR - Ошибка
+2026-05-19 14:35:01,194 - loglib - DEBUG - Отладка
+2026-05-19 14:35:01,195 - loglib - INFO - Информация
+2026-05-19 14:35:01,213 - loglib - WARNING - Предупреждение
+2026-05-19 14:35:01,216 - loglib - ERROR - Ошибка
+2026-05-19 14:35:04,225 - loglib - DEBUG - Отладка
+2026-05-19 14:35:04,226 - loglib - INFO - Информация
+2026-05-19 14:35:04,226 - loglib - WARNING - Предупреждение
+2026-05-19 14:35:04,227 - loglib - ERROR - Ошибка
+2026-05-19 14:35:06,976 - loglib - DEBUG - Отладка
+2026-05-19 14:35:06,977 - loglib - INFO - Информация
+2026-05-19 14:35:06,977 - loglib - WARNING - Предупреждение
+2026-05-19 14:35:06,978 - loglib - ERROR - Ошибка
+2026-05-19 14:35:08,676 - loglib - DEBUG - Отладка
+2026-05-19 14:35:08,677 - loglib - INFO - Информация
+2026-05-19 14:35:08,677 - loglib - WARNING - Предупреждение
+2026-05-19 14:35:08,678 - loglib - ERROR - Ошибка
+2026-05-19 14:35:21,840 - loglib - DEBUG - Отладка
+2026-05-19 14:35:21,840 - loglib - INFO - Информация
+2026-05-19 14:35:21,840 - loglib - WARNING - Предупреждение
+2026-05-19 14:35:21,840 - loglib - ERROR - Ошибка
+2026-05-19 14:35:32,012 - loglib - DEBUG - Отладка
+2026-05-19 14:35:32,012 - loglib - INFO - Информация
+2026-05-19 14:35:32,012 - loglib - WARNING - Предупреждение
+2026-05-19 14:35:32,013 - loglib - ERROR - Ошибка
+2026-05-19 14:36:00,422 - loglib - DEBUG - Отладка
+2026-05-19 14:36:00,422 - loglib - INFO - Информация
+2026-05-19 14:36:00,422 - loglib - WARNING - Предупреждение
+2026-05-19 14:36:00,422 - loglib - ERROR - Ошибка
+2026-05-19 14:36:25,083 - loglib - DEBUG - Отладка
+2026-05-19 14:36:25,083 - loglib - INFO - Информация
+2026-05-19 14:36:25,088 - loglib - WARNING - Предупреждение
+2026-05-19 14:36:25,088 - loglib - ERROR - Ошибка
+2026-05-19 14:36:26,900 - loglib - DEBUG - Отладка
+2026-05-19 14:36:26,900 - loglib - INFO - Информация
+2026-05-19 14:36:26,900 - loglib - WARNING - Предупреждение
+2026-05-19 14:36:26,901 - loglib - ERROR - Ошибка
+2026-05-19 14:38:52,525 - loglib - DEBUG - Отладка
+2026-05-19 14:38:52,526 - loglib - INFO - Информация
+2026-05-19 14:38:52,527 - loglib - WARNING - Предупреждение
+2026-05-19 14:38:52,528 - loglib - ERROR - Ошибка
+2026-05-19 14:39:06,873 - loglib - DEBUG - Отладка
+2026-05-19 14:39:06,876 - loglib - INFO - Информация
+2026-05-19 14:39:06,876 - loglib - WARNING - Предупреждение
+2026-05-19 14:39:06,876 - loglib - ERROR - Ошибка
+2026-05-19 14:39:15,937 - loglib - DEBUG - Отладка
+2026-05-19 14:39:15,937 - loglib - INFO - Информация
+2026-05-19 14:39:15,937 - loglib - WARNING - Предупреждение
+2026-05-19 14:39:15,937 - loglib - ERROR - Ошибка
+2026-05-19 14:39:19,200 - loglib - DEBUG - Отладка
+2026-05-19 14:39:19,200 - loglib - INFO - Информация
+2026-05-19 14:39:19,201 - loglib - WARNING - Предупреждение
+2026-05-19 14:39:19,204 - loglib - ERROR - Ошибка
+2026-05-19 14:39:25,939 - loglib - DEBUG - Отладка
+2026-05-19 14:39:25,939 - loglib - INFO - Информация
+2026-05-19 14:39:25,939 - loglib - WARNING - Предупреждение
+2026-05-19 14:39:25,939 - loglib - ERROR - Ошибка
+2026-05-19 14:41:13,557 - loglib - DEBUG - Отладка
+2026-05-19 14:41:13,557 - loglib - INFO - Информация
+2026-05-19 14:41:13,557 - loglib - WARNING - Предупреждение
+2026-05-19 14:41:13,575 - loglib - ERROR - Ошибка
+2026-05-19 14:41:15,295 - loglib - DEBUG - Отладка
+2026-05-19 14:41:15,295 - loglib - INFO - Информация
+2026-05-19 14:41:15,296 - loglib - WARNING - Предупреждение
+2026-05-19 14:41:15,296 - loglib - ERROR - Ошибка
+2026-05-19 14:44:25,977 - loglib - DEBUG - Отладка
+2026-05-19 14:44:25,977 - loglib - INFO - Информация
+2026-05-19 14:44:25,977 - loglib - WARNING - Предупреждение
+2026-05-19 14:44:25,977 - loglib - ERROR - Ошибка
+2026-05-19 14:44:26,701 - loglib - INFO - Starting up...
+2026-05-19 14:44:26,752 - loglib - INFO - Database initialized
+2026-05-19 14:44:26,753 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:44:26,753 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:44:26,919 - loglib - INFO - MQTT client started
+2026-05-19 14:46:22,885 - loglib - INFO - Shutting down...
+2026-05-19 14:46:22,886 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:46:22,887 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:46:22,887 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:46:27,207 - loglib - DEBUG - Отладка
+2026-05-19 14:46:27,207 - loglib - INFO - Информация
+2026-05-19 14:46:27,207 - loglib - WARNING - Предупреждение
+2026-05-19 14:46:27,207 - loglib - ERROR - Ошибка
+2026-05-19 14:46:27,715 - loglib - INFO - Starting up...
+2026-05-19 14:46:27,715 - loglib - INFO - Database initialized
+2026-05-19 14:46:27,715 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:46:27,715 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:46:27,884 - loglib - INFO - MQTT client started
+2026-05-19 14:46:33,937 - loglib - INFO - Shutting down...
+2026-05-19 14:46:33,937 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:46:33,938 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:46:33,938 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:46:36,544 - loglib - DEBUG - Отладка
+2026-05-19 14:46:36,549 - loglib - INFO - Информация
+2026-05-19 14:46:36,549 - loglib - WARNING - Предупреждение
+2026-05-19 14:46:36,549 - loglib - ERROR - Ошибка
+2026-05-19 14:46:39,085 - loglib - DEBUG - Отладка
+2026-05-19 14:46:39,085 - loglib - INFO - Информация
+2026-05-19 14:46:39,085 - loglib - WARNING - Предупреждение
+2026-05-19 14:46:39,101 - loglib - ERROR - Ошибка
+2026-05-19 14:46:39,982 - loglib - INFO - Starting up...
+2026-05-19 14:46:39,982 - loglib - INFO - Database initialized
+2026-05-19 14:46:39,982 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:46:39,982 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:46:40,130 - loglib - INFO - MQTT client started
+2026-05-19 14:46:40,238 - loglib - INFO - Shutting down...
+2026-05-19 14:46:40,238 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:46:40,239 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:46:40,239 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:46:42,127 - loglib - DEBUG - Отладка
+2026-05-19 14:46:42,127 - loglib - INFO - Информация
+2026-05-19 14:46:42,128 - loglib - WARNING - Предупреждение
+2026-05-19 14:46:42,128 - loglib - ERROR - Ошибка
+2026-05-19 14:46:42,636 - loglib - INFO - Starting up...
+2026-05-19 14:46:42,642 - loglib - INFO - Database initialized
+2026-05-19 14:46:42,643 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:46:42,643 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:46:42,781 - loglib - INFO - MQTT client started
+2026-05-19 14:48:35,819 - loglib - INFO - Shutting down...
+2026-05-19 14:48:35,984 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:48:36,088 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:48:36,125 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:48:38,300 - loglib - DEBUG - Отладка
+2026-05-19 14:48:38,300 - loglib - INFO - Информация
+2026-05-19 14:48:38,320 - loglib - WARNING - Предупреждение
+2026-05-19 14:48:38,323 - loglib - ERROR - Ошибка
+2026-05-19 14:48:39,829 - loglib - INFO - Starting up...
+2026-05-19 14:48:39,871 - loglib - INFO - Database initialized
+2026-05-19 14:48:39,890 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:48:39,904 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:48:40,065 - loglib - INFO - MQTT client started
+2026-05-19 14:48:40,165 - loglib - INFO - Shutting down...
+2026-05-19 14:48:40,165 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:48:40,165 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:48:40,165 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:48:42,620 - loglib - DEBUG - Отладка
+2026-05-19 14:48:42,620 - loglib - INFO - Информация
+2026-05-19 14:48:42,620 - loglib - WARNING - Предупреждение
+2026-05-19 14:48:42,620 - loglib - ERROR - Ошибка
+2026-05-19 14:48:43,314 - loglib - INFO - Starting up...
+2026-05-19 14:48:43,314 - loglib - INFO - Database initialized
+2026-05-19 14:48:43,314 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:48:43,314 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:48:43,469 - loglib - INFO - MQTT client started
+2026-05-19 14:49:24,267 - loglib - INFO - Shutting down...
+2026-05-19 14:49:24,267 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:49:24,267 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:49:24,267 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:49:26,014 - loglib - DEBUG - Отладка
+2026-05-19 14:49:26,014 - loglib - INFO - Информация
+2026-05-19 14:49:26,014 - loglib - WARNING - Предупреждение
+2026-05-19 14:49:26,014 - loglib - ERROR - Ошибка
+2026-05-19 14:49:26,612 - loglib - INFO - Starting up...
+2026-05-19 14:49:26,612 - loglib - INFO - Database initialized
+2026-05-19 14:49:26,628 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:49:26,630 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:49:26,783 - loglib - INFO - MQTT client started
+2026-05-19 14:49:50,984 - loglib - INFO - Shutting down...
+2026-05-19 14:49:51,000 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:49:51,006 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:49:51,014 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:49:53,800 - loglib - DEBUG - Отладка
+2026-05-19 14:49:53,801 - loglib - INFO - Информация
+2026-05-19 14:49:53,801 - loglib - WARNING - Предупреждение
+2026-05-19 14:49:53,802 - loglib - ERROR - Ошибка
+2026-05-19 14:49:54,333 - loglib - INFO - Starting up...
+2026-05-19 14:49:54,339 - loglib - INFO - Database initialized
+2026-05-19 14:49:54,340 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:49:54,340 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:49:54,495 - loglib - INFO - MQTT client started
+2026-05-19 14:51:57,915 - loglib - INFO - Shutting down...
+2026-05-19 14:51:57,970 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:51:58,082 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:51:58,084 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:52:01,047 - loglib - DEBUG - Отладка
+2026-05-19 14:52:01,047 - loglib - INFO - Информация
+2026-05-19 14:52:01,047 - loglib - WARNING - Предупреждение
+2026-05-19 14:52:01,047 - loglib - ERROR - Ошибка
+2026-05-19 14:52:01,765 - loglib - INFO - Starting up...
+2026-05-19 14:52:01,765 - loglib - INFO - Database initialized
+2026-05-19 14:52:01,765 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:52:01,765 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:52:01,903 - loglib - INFO - MQTT client started
+2026-05-19 14:54:18,013 - loglib - INFO - Shutting down...
+2026-05-19 14:54:18,013 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:54:18,013 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:18,013 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:21,261 - loglib - DEBUG - Отладка
+2026-05-19 14:54:21,261 - loglib - INFO - Информация
+2026-05-19 14:54:21,261 - loglib - WARNING - Предупреждение
+2026-05-19 14:54:21,261 - loglib - ERROR - Ошибка
+2026-05-19 14:54:22,205 - loglib - INFO - Starting up...
+2026-05-19 14:54:22,214 - loglib - INFO - Database initialized
+2026-05-19 14:54:22,215 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:22,216 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:22,364 - loglib - INFO - MQTT client started
+2026-05-19 14:54:29,430 - loglib - INFO - Shutting down...
+2026-05-19 14:54:29,432 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:54:29,433 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:29,434 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:33,081 - loglib - DEBUG - Отладка
+2026-05-19 14:54:33,081 - loglib - INFO - Информация
+2026-05-19 14:54:33,081 - loglib - WARNING - Предупреждение
+2026-05-19 14:54:33,082 - loglib - ERROR - Ошибка
+2026-05-19 14:54:33,622 - loglib - INFO - Starting up...
+2026-05-19 14:54:33,638 - loglib - INFO - Database initialized
+2026-05-19 14:54:33,646 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:33,647 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:33,789 - loglib - INFO - MQTT client started
+2026-05-19 14:54:37,118 - loglib - INFO - Shutting down...
+2026-05-19 14:54:37,125 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:54:37,126 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:37,130 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:39,931 - loglib - DEBUG - Отладка
+2026-05-19 14:54:39,931 - loglib - INFO - Информация
+2026-05-19 14:54:39,931 - loglib - WARNING - Предупреждение
+2026-05-19 14:54:39,932 - loglib - ERROR - Ошибка
+2026-05-19 14:54:40,449 - loglib - INFO - Starting up...
+2026-05-19 14:54:40,466 - loglib - INFO - Database initialized
+2026-05-19 14:54:40,467 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:40,468 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:40,613 - loglib - INFO - MQTT client started
+2026-05-19 14:54:46,377 - loglib - INFO - Shutting down...
+2026-05-19 14:54:46,377 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:54:46,377 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:46,390 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:54:47,883 - loglib - DEBUG - Отладка
+2026-05-19 14:54:47,883 - loglib - INFO - Информация
+2026-05-19 14:54:47,883 - loglib - WARNING - Предупреждение
+2026-05-19 14:54:47,883 - loglib - ERROR - Ошибка
+2026-05-19 14:54:48,400 - loglib - INFO - Starting up...
+2026-05-19 14:54:48,415 - loglib - INFO - Database initialized
+2026-05-19 14:54:48,415 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:48,416 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:54:48,577 - loglib - INFO - MQTT client started
+2026-05-19 14:55:28,367 - loglib - INFO - Shutting down...
+2026-05-19 14:55:28,367 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:55:28,367 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:28,367 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:30,745 - loglib - DEBUG - Отладка
+2026-05-19 14:55:30,746 - loglib - INFO - Информация
+2026-05-19 14:55:30,746 - loglib - WARNING - Предупреждение
+2026-05-19 14:55:30,747 - loglib - ERROR - Ошибка
+2026-05-19 14:55:31,482 - loglib - INFO - Starting up...
+2026-05-19 14:55:31,491 - loglib - INFO - Database initialized
+2026-05-19 14:55:31,495 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:31,495 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:31,714 - loglib - INFO - MQTT client started
+2026-05-19 14:55:39,110 - loglib - INFO - Shutting down...
+2026-05-19 14:55:39,136 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:55:39,137 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:39,154 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:41,323 - loglib - DEBUG - Отладка
+2026-05-19 14:55:41,323 - loglib - INFO - Информация
+2026-05-19 14:55:41,323 - loglib - WARNING - Предупреждение
+2026-05-19 14:55:41,323 - loglib - ERROR - Ошибка
+2026-05-19 14:55:45,459 - loglib - DEBUG - Отладка
+2026-05-19 14:55:45,475 - loglib - INFO - Информация
+2026-05-19 14:55:45,475 - loglib - WARNING - Предупреждение
+2026-05-19 14:55:45,475 - loglib - ERROR - Ошибка
+2026-05-19 14:55:45,987 - loglib - INFO - Starting up...
+2026-05-19 14:55:46,001 - loglib - INFO - Database initialized
+2026-05-19 14:55:46,004 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:46,005 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:46,161 - loglib - INFO - MQTT client started
+2026-05-19 14:55:50,491 - loglib - INFO - Shutting down...
+2026-05-19 14:55:50,492 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:55:50,494 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:50,494 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:53,602 - loglib - DEBUG - Отладка
+2026-05-19 14:55:53,602 - loglib - INFO - Информация
+2026-05-19 14:55:53,627 - loglib - WARNING - Предупреждение
+2026-05-19 14:55:53,652 - loglib - ERROR - Ошибка
+2026-05-19 14:55:55,360 - loglib - INFO - Starting up...
+2026-05-19 14:55:55,629 - loglib - INFO - Database initialized
+2026-05-19 14:55:55,636 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:55,636 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:55,882 - loglib - INFO - MQTT client started
+2026-05-19 14:55:56,363 - loglib - INFO - Shutting down...
+2026-05-19 14:55:56,385 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 14:55:56,445 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:56,519 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 14:55:58,274 - loglib - DEBUG - Отладка
+2026-05-19 14:55:58,274 - loglib - INFO - Информация
+2026-05-19 14:55:58,281 - loglib - WARNING - Предупреждение
+2026-05-19 14:55:58,282 - loglib - ERROR - Ошибка
+2026-05-19 14:55:58,930 - loglib - INFO - Starting up...
+2026-05-19 14:55:58,940 - loglib - INFO - Database initialized
+2026-05-19 14:55:58,941 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:58,941 - loglib - INFO - WebSocket background processor started
+2026-05-19 14:55:59,093 - loglib - INFO - MQTT client started
+2026-05-19 15:01:26,355 - loglib - DEBUG - Отладка
+2026-05-19 15:01:26,355 - loglib - INFO - Информация
+2026-05-19 15:01:26,357 - loglib - WARNING - Предупреждение
+2026-05-19 15:01:26,358 - loglib - ERROR - Ошибка
+2026-05-19 15:01:26,841 - loglib - INFO - Starting up...
+2026-05-19 15:01:27,453 - loglib - INFO - Database initialized
+2026-05-19 15:01:27,454 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:01:27,455 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:01:27,607 - loglib - INFO - MQTT client started
+2026-05-19 15:02:33,635 - loglib - INFO - Shutting down...
+2026-05-19 15:02:33,650 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:02:33,669 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:33,756 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:36,777 - loglib - DEBUG - Отладка
+2026-05-19 15:02:36,777 - loglib - INFO - Информация
+2026-05-19 15:02:36,777 - loglib - WARNING - Предупреждение
+2026-05-19 15:02:36,777 - loglib - ERROR - Ошибка
+2026-05-19 15:02:37,457 - loglib - INFO - Starting up...
+2026-05-19 15:02:37,482 - loglib - INFO - Database initialized
+2026-05-19 15:02:37,482 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:37,482 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:37,645 - loglib - INFO - MQTT client started
+2026-05-19 15:02:37,758 - loglib - INFO - Shutting down...
+2026-05-19 15:02:37,758 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:02:37,770 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:37,771 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:40,425 - loglib - DEBUG - Отладка
+2026-05-19 15:02:40,425 - loglib - INFO - Информация
+2026-05-19 15:02:40,426 - loglib - WARNING - Предупреждение
+2026-05-19 15:02:40,426 - loglib - ERROR - Ошибка
+2026-05-19 15:02:41,201 - loglib - INFO - Starting up...
+2026-05-19 15:02:41,241 - loglib - INFO - Database initialized
+2026-05-19 15:02:41,289 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:41,289 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:41,492 - loglib - INFO - MQTT client started
+2026-05-19 15:02:42,274 - loglib - INFO - Shutting down...
+2026-05-19 15:02:42,274 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:02:42,274 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:42,274 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:45,832 - loglib - DEBUG - Отладка
+2026-05-19 15:02:45,832 - loglib - INFO - Информация
+2026-05-19 15:02:45,846 - loglib - WARNING - Предупреждение
+2026-05-19 15:02:45,846 - loglib - ERROR - Ошибка
+2026-05-19 15:02:46,557 - loglib - INFO - Starting up...
+2026-05-19 15:02:46,557 - loglib - INFO - Database initialized
+2026-05-19 15:02:46,557 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:46,557 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:46,721 - loglib - INFO - MQTT client started
+2026-05-19 15:02:46,838 - loglib - INFO - Shutting down...
+2026-05-19 15:02:46,843 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:02:46,845 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:46,846 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:02:48,706 - loglib - DEBUG - Отладка
+2026-05-19 15:02:48,706 - loglib - INFO - Информация
+2026-05-19 15:02:48,706 - loglib - WARNING - Предупреждение
+2026-05-19 15:02:48,706 - loglib - ERROR - Ошибка
+2026-05-19 15:02:49,190 - loglib - INFO - Starting up...
+2026-05-19 15:02:49,190 - loglib - INFO - Database initialized
+2026-05-19 15:02:49,190 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:49,190 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:02:49,356 - loglib - INFO - MQTT client started
+2026-05-19 15:06:34,008 - loglib - INFO - Shutting down...
+2026-05-19 15:06:34,010 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:06:34,011 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:06:34,012 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:06:36,116 - loglib - DEBUG - Отладка
+2026-05-19 15:06:36,116 - loglib - INFO - Информация
+2026-05-19 15:06:36,116 - loglib - WARNING - Предупреждение
+2026-05-19 15:06:36,116 - loglib - ERROR - Ошибка
+2026-05-19 15:06:36,684 - loglib - INFO - Starting up...
+2026-05-19 15:06:36,694 - loglib - INFO - Database initialized
+2026-05-19 15:06:36,695 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:06:36,695 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:06:36,835 - loglib - INFO - MQTT client started
+2026-05-19 15:07:56,423 - loglib - INFO - Shutting down...
+2026-05-19 15:07:56,423 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:07:56,423 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:07:56,423 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:07:57,777 - loglib - DEBUG - Отладка
+2026-05-19 15:07:57,777 - loglib - INFO - Информация
+2026-05-19 15:07:57,788 - loglib - WARNING - Предупреждение
+2026-05-19 15:07:57,788 - loglib - ERROR - Ошибка
+2026-05-19 15:07:58,404 - loglib - INFO - Starting up...
+2026-05-19 15:07:58,426 - loglib - INFO - Database initialized
+2026-05-19 15:07:58,426 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:07:58,427 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:07:58,560 - loglib - INFO - MQTT client started
+2026-05-19 15:08:13,921 - loglib - INFO - Shutting down...
+2026-05-19 15:08:13,921 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:08:13,933 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:08:13,947 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:08:15,788 - loglib - DEBUG - Отладка
+2026-05-19 15:08:15,788 - loglib - INFO - Информация
+2026-05-19 15:08:15,788 - loglib - WARNING - Предупреждение
+2026-05-19 15:08:15,788 - loglib - ERROR - Ошибка
+2026-05-19 15:08:16,444 - loglib - INFO - Starting up...
+2026-05-19 15:08:16,449 - loglib - INFO - Database initialized
+2026-05-19 15:08:16,450 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:08:16,451 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:08:16,601 - loglib - INFO - MQTT client started
+2026-05-19 15:14:44,829 - loglib - INFO - Shutting down...
+2026-05-19 15:14:44,861 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:14:44,862 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:14:44,863 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:14:46,867 - loglib - DEBUG - Отладка
+2026-05-19 15:14:46,867 - loglib - INFO - Информация
+2026-05-19 15:14:46,867 - loglib - WARNING - Предупреждение
+2026-05-19 15:14:46,867 - loglib - ERROR - Ошибка
+2026-05-19 15:14:48,284 - loglib - INFO - Starting up...
+2026-05-19 15:14:48,307 - loglib - INFO - Database initialized
+2026-05-19 15:14:48,309 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:14:48,309 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:14:48,467 - loglib - INFO - MQTT client started
+2026-05-19 15:14:51,674 - loglib - INFO - Shutting down...
+2026-05-19 15:14:51,675 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:14:51,676 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:14:51,676 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:14:54,032 - loglib - DEBUG - Отладка
+2026-05-19 15:14:54,032 - loglib - INFO - Информация
+2026-05-19 15:14:54,032 - loglib - WARNING - Предупреждение
+2026-05-19 15:14:54,032 - loglib - ERROR - Ошибка
+2026-05-19 15:14:54,623 - loglib - INFO - Starting up...
+2026-05-19 15:14:54,629 - loglib - INFO - Database initialized
+2026-05-19 15:14:54,629 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:14:54,630 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:14:54,779 - loglib - INFO - MQTT client started
+2026-05-19 15:28:15,141 - loglib - INFO - Shutting down...
+2026-05-19 15:28:15,145 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:28:15,145 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:15,183 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:18,303 - loglib - DEBUG - Отладка
+2026-05-19 15:28:18,304 - loglib - INFO - Информация
+2026-05-19 15:28:18,363 - loglib - WARNING - Предупреждение
+2026-05-19 15:28:18,431 - loglib - ERROR - Ошибка
+2026-05-19 15:28:20,524 - loglib - INFO - Starting up...
+2026-05-19 15:28:20,553 - loglib - INFO - Database initialized
+2026-05-19 15:28:20,566 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:20,566 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:20,713 - loglib - INFO - MQTT client started
+2026-05-19 15:28:20,844 - loglib - INFO - Shutting down...
+2026-05-19 15:28:20,844 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:28:20,844 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:20,844 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:23,822 - loglib - DEBUG - Отладка
+2026-05-19 15:28:23,822 - loglib - INFO - Информация
+2026-05-19 15:28:23,823 - loglib - WARNING - Предупреждение
+2026-05-19 15:28:23,823 - loglib - ERROR - Ошибка
+2026-05-19 15:28:25,015 - loglib - INFO - Starting up...
+2026-05-19 15:28:25,055 - loglib - INFO - Database initialized
+2026-05-19 15:28:25,055 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:25,069 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:25,246 - loglib - INFO - MQTT client started
+2026-05-19 15:28:26,735 - loglib - INFO - Shutting down...
+2026-05-19 15:28:26,737 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:28:26,738 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:26,739 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:28,544 - loglib - DEBUG - Отладка
+2026-05-19 15:28:28,544 - loglib - INFO - Информация
+2026-05-19 15:28:28,544 - loglib - WARNING - Предупреждение
+2026-05-19 15:28:28,544 - loglib - ERROR - Ошибка
+2026-05-19 15:28:29,093 - loglib - INFO - Starting up...
+2026-05-19 15:28:29,093 - loglib - INFO - Database initialized
+2026-05-19 15:28:29,093 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:29,093 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:29,279 - loglib - INFO - MQTT client started
+2026-05-19 15:28:31,869 - loglib - INFO - Shutting down...
+2026-05-19 15:28:31,870 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:28:31,871 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:31,885 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:28:33,622 - loglib - DEBUG - Отладка
+2026-05-19 15:28:33,622 - loglib - INFO - Информация
+2026-05-19 15:28:33,623 - loglib - WARNING - Предупреждение
+2026-05-19 15:28:33,623 - loglib - ERROR - Ошибка
+2026-05-19 15:28:34,194 - loglib - INFO - Starting up...
+2026-05-19 15:28:34,207 - loglib - INFO - Database initialized
+2026-05-19 15:28:34,210 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:34,226 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:28:34,389 - loglib - INFO - MQTT client started
+2026-05-19 15:29:04,328 - loglib - INFO - Shutting down...
+2026-05-19 15:29:04,330 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:29:04,331 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:29:04,331 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:29:05,677 - loglib - DEBUG - Отладка
+2026-05-19 15:29:05,677 - loglib - INFO - Информация
+2026-05-19 15:29:05,677 - loglib - WARNING - Предупреждение
+2026-05-19 15:29:05,677 - loglib - ERROR - Ошибка
+2026-05-19 15:29:06,311 - loglib - INFO - Starting up...
+2026-05-19 15:29:06,311 - loglib - INFO - Database initialized
+2026-05-19 15:29:06,311 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:29:06,311 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:29:06,478 - loglib - INFO - MQTT client started
+2026-05-19 15:31:50,028 - loglib - INFO - Shutting down...
+2026-05-19 15:31:50,028 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:31:50,042 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:31:50,042 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:31:51,614 - loglib - DEBUG - Отладка
+2026-05-19 15:31:51,614 - loglib - INFO - Информация
+2026-05-19 15:31:51,614 - loglib - WARNING - Предупреждение
+2026-05-19 15:31:51,614 - loglib - ERROR - Ошибка
+2026-05-19 15:31:52,367 - loglib - INFO - Starting up...
+2026-05-19 15:31:52,375 - loglib - INFO - Database initialized
+2026-05-19 15:31:52,378 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:31:52,379 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:31:52,527 - loglib - INFO - MQTT client started
+2026-05-19 15:32:00,943 - loglib - INFO - Shutting down...
+2026-05-19 15:32:00,959 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:32:00,967 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:32:00,968 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:32:04,625 - loglib - DEBUG - Отладка
+2026-05-19 15:32:04,625 - loglib - INFO - Информация
+2026-05-19 15:32:04,669 - loglib - WARNING - Предупреждение
+2026-05-19 15:32:04,744 - loglib - ERROR - Ошибка
+2026-05-19 15:32:06,375 - loglib - INFO - Starting up...
+2026-05-19 15:32:06,480 - loglib - INFO - Database initialized
+2026-05-19 15:32:06,481 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:32:06,482 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:32:06,643 - loglib - INFO - MQTT client started
+2026-05-19 15:32:06,784 - loglib - INFO - Shutting down...
+2026-05-19 15:32:06,797 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:32:06,797 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:32:06,798 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:32:09,170 - loglib - DEBUG - Отладка
+2026-05-19 15:32:09,170 - loglib - INFO - Информация
+2026-05-19 15:32:09,172 - loglib - WARNING - Предупреждение
+2026-05-19 15:32:09,176 - loglib - ERROR - Ошибка
+2026-05-19 15:32:09,710 - loglib - INFO - Starting up...
+2026-05-19 15:32:09,717 - loglib - INFO - Database initialized
+2026-05-19 15:32:09,717 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:32:09,718 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:32:09,874 - loglib - INFO - MQTT client started
+2026-05-19 15:34:54,824 - loglib - DEBUG - Отладка
+2026-05-19 15:34:54,824 - loglib - INFO - Информация
+2026-05-19 15:34:54,824 - loglib - WARNING - Предупреждение
+2026-05-19 15:34:54,825 - loglib - ERROR - Ошибка
+2026-05-19 15:34:55,461 - loglib - INFO - Starting up...
+2026-05-19 15:34:55,499 - loglib - INFO - Database initialized
+2026-05-19 15:34:55,508 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:34:55,508 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:34:55,703 - loglib - INFO - MQTT client started
+2026-05-19 15:37:11,505 - loglib - INFO - Shutting down...
+2026-05-19 15:37:11,507 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:37:11,509 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:37:11,511 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:37:15,111 - loglib - DEBUG - Отладка
+2026-05-19 15:37:15,111 - loglib - INFO - Информация
+2026-05-19 15:37:15,112 - loglib - WARNING - Предупреждение
+2026-05-19 15:37:15,112 - loglib - ERROR - Ошибка
+2026-05-19 15:37:16,831 - loglib - INFO - Starting up...
+2026-05-19 15:37:16,862 - loglib - INFO - Database initialized
+2026-05-19 15:37:16,879 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:37:16,879 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:37:17,038 - loglib - INFO - MQTT client started
+2026-05-19 15:37:17,688 - loglib - INFO - Shutting down...
+2026-05-19 15:37:17,688 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:37:17,688 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:37:17,688 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:37:19,524 - loglib - DEBUG - Отладка
+2026-05-19 15:37:19,524 - loglib - INFO - Информация
+2026-05-19 15:37:19,524 - loglib - WARNING - Предупреждение
+2026-05-19 15:37:19,524 - loglib - ERROR - Ошибка
+2026-05-19 15:37:20,157 - loglib - INFO - Starting up...
+2026-05-19 15:37:20,164 - loglib - INFO - Database initialized
+2026-05-19 15:37:20,164 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:37:20,168 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:37:20,323 - loglib - INFO - MQTT client started
+2026-05-19 15:39:54,554 - loglib - INFO - Shutting down...
+2026-05-19 15:39:54,577 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:39:54,580 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:39:54,581 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:39:57,839 - loglib - DEBUG - Отладка
+2026-05-19 15:39:57,839 - loglib - INFO - Информация
+2026-05-19 15:39:57,839 - loglib - WARNING - Предупреждение
+2026-05-19 15:39:57,839 - loglib - ERROR - Ошибка
+2026-05-19 15:40:02,924 - loglib - DEBUG - Отладка
+2026-05-19 15:40:02,925 - loglib - INFO - Информация
+2026-05-19 15:40:02,925 - loglib - WARNING - Предупреждение
+2026-05-19 15:40:02,926 - loglib - ERROR - Ошибка
+2026-05-19 15:40:03,522 - loglib - INFO - Starting up...
+2026-05-19 15:40:03,522 - loglib - INFO - Database initialized
+2026-05-19 15:40:03,522 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:40:03,522 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:40:03,931 - loglib - INFO - MQTT client started
+2026-05-19 15:40:16,887 - loglib - INFO - Shutting down...
+2026-05-19 15:40:16,887 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:40:16,887 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:40:16,887 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:40:20,674 - loglib - DEBUG - Отладка
+2026-05-19 15:40:21,072 - loglib - INFO - Информация
+2026-05-19 15:40:21,072 - loglib - WARNING - Предупреждение
+2026-05-19 15:40:21,072 - loglib - ERROR - Ошибка
+2026-05-19 15:40:22,388 - loglib - INFO - Starting up...
+2026-05-19 15:40:22,405 - loglib - INFO - Database initialized
+2026-05-19 15:40:22,406 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:40:22,407 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:40:22,589 - loglib - INFO - MQTT client started
+2026-05-19 15:40:22,738 - loglib - INFO - Shutting down...
+2026-05-19 15:40:22,738 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:40:22,738 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:40:22,738 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:40:25,559 - loglib - DEBUG - Отладка
+2026-05-19 15:40:25,559 - loglib - INFO - Информация
+2026-05-19 15:40:25,560 - loglib - WARNING - Предупреждение
+2026-05-19 15:40:25,560 - loglib - ERROR - Ошибка
+2026-05-19 15:40:26,223 - loglib - INFO - Starting up...
+2026-05-19 15:40:26,228 - loglib - INFO - Database initialized
+2026-05-19 15:40:26,229 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:40:26,230 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:40:26,371 - loglib - INFO - MQTT client started
+2026-05-19 15:45:40,638 - loglib - DEBUG - Отладка
+2026-05-19 15:45:40,638 - loglib - INFO - Информация
+2026-05-19 15:45:40,639 - loglib - WARNING - Предупреждение
+2026-05-19 15:45:40,639 - loglib - ERROR - Ошибка
+2026-05-19 15:45:41,126 - loglib - INFO - Starting up...
+2026-05-19 15:45:41,135 - loglib - INFO - Database initialized
+2026-05-19 15:45:41,136 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:45:41,137 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:45:41,285 - loglib - INFO - MQTT client started
+2026-05-19 15:47:10,435 - loglib - INFO - Shutting down...
+2026-05-19 15:47:10,435 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:47:10,435 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:47:10,435 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:47:12,690 - loglib - DEBUG - Отладка
+2026-05-19 15:47:12,690 - loglib - INFO - Информация
+2026-05-19 15:47:12,690 - loglib - WARNING - Предупреждение
+2026-05-19 15:47:12,690 - loglib - ERROR - Ошибка
+2026-05-19 15:47:13,366 - loglib - INFO - Starting up...
+2026-05-19 15:47:13,383 - loglib - INFO - Database initialized
+2026-05-19 15:47:13,383 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:47:13,383 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:47:13,566 - loglib - INFO - MQTT client started
+2026-05-19 15:47:19,560 - loglib - INFO - Shutting down...
+2026-05-19 15:47:19,578 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:47:19,592 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:47:19,623 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:47:23,368 - loglib - DEBUG - Отладка
+2026-05-19 15:47:23,368 - loglib - INFO - Информация
+2026-05-19 15:47:23,369 - loglib - WARNING - Предупреждение
+2026-05-19 15:47:23,370 - loglib - ERROR - Ошибка
+2026-05-19 15:47:24,049 - loglib - INFO - Starting up...
+2026-05-19 15:47:24,049 - loglib - INFO - Database initialized
+2026-05-19 15:47:24,049 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:47:24,049 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:47:24,219 - loglib - INFO - MQTT client started
+2026-05-19 15:51:28,365 - loglib - INFO - Shutting down...
+2026-05-19 15:51:28,365 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:51:28,365 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:51:28,365 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:51:30,230 - loglib - DEBUG - Отладка
+2026-05-19 15:51:30,230 - loglib - INFO - Информация
+2026-05-19 15:51:30,230 - loglib - WARNING - Предупреждение
+2026-05-19 15:51:30,246 - loglib - ERROR - Ошибка
+2026-05-19 15:51:44,320 - loglib - DEBUG - Отладка
+2026-05-19 15:51:44,322 - loglib - INFO - Информация
+2026-05-19 15:51:44,323 - loglib - WARNING - Предупреждение
+2026-05-19 15:51:44,325 - loglib - ERROR - Ошибка
+2026-05-19 15:51:49,783 - loglib - DEBUG - Отладка
+2026-05-19 15:51:49,783 - loglib - INFO - Информация
+2026-05-19 15:51:49,783 - loglib - WARNING - Предупреждение
+2026-05-19 15:51:49,801 - loglib - ERROR - Ошибка
+2026-05-19 15:51:50,446 - loglib - INFO - Starting up...
+2026-05-19 15:51:50,468 - loglib - INFO - Database initialized
+2026-05-19 15:51:50,468 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:51:50,469 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:51:50,604 - loglib - INFO - MQTT client started
+2026-05-19 15:57:55,043 - loglib - INFO - Shutting down...
+2026-05-19 15:57:55,043 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:57:55,043 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:57:55,063 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:57:57,263 - loglib - DEBUG - Отладка
+2026-05-19 15:57:57,263 - loglib - INFO - Информация
+2026-05-19 15:57:57,277 - loglib - WARNING - Предупреждение
+2026-05-19 15:57:57,278 - loglib - ERROR - Ошибка
+2026-05-19 15:57:57,993 - loglib - INFO - Starting up...
+2026-05-19 15:57:58,003 - loglib - INFO - Database initialized
+2026-05-19 15:57:58,012 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:57:58,012 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:57:58,196 - loglib - INFO - MQTT client started
+2026-05-19 15:57:59,260 - loglib - INFO - Shutting down...
+2026-05-19 15:57:59,260 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:57:59,260 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:57:59,260 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:58:01,496 - loglib - DEBUG - Отладка
+2026-05-19 15:58:01,496 - loglib - INFO - Информация
+2026-05-19 15:58:01,496 - loglib - WARNING - Предупреждение
+2026-05-19 15:58:01,496 - loglib - ERROR - Ошибка
+2026-05-19 15:58:02,059 - loglib - INFO - Starting up...
+2026-05-19 15:58:02,059 - loglib - INFO - Database initialized
+2026-05-19 15:58:02,059 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:58:02,059 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:58:02,244 - loglib - INFO - MQTT client started
+2026-05-19 15:58:06,902 - loglib - INFO - Shutting down...
+2026-05-19 15:58:06,994 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:58:07,052 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:58:07,117 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:58:10,078 - loglib - DEBUG - Отладка
+2026-05-19 15:58:10,079 - loglib - INFO - Информация
+2026-05-19 15:58:10,079 - loglib - WARNING - Предупреждение
+2026-05-19 15:58:10,079 - loglib - ERROR - Ошибка
+2026-05-19 15:58:10,660 - loglib - INFO - Starting up...
+2026-05-19 15:58:10,660 - loglib - INFO - Database initialized
+2026-05-19 15:58:10,676 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:58:10,679 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:58:10,825 - loglib - INFO - MQTT client started
+2026-05-19 15:58:31,318 - loglib - INFO - Shutting down...
+2026-05-19 15:58:31,319 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 15:58:31,319 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:58:31,320 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 15:58:33,255 - loglib - DEBUG - Отладка
+2026-05-19 15:58:33,255 - loglib - INFO - Информация
+2026-05-19 15:58:33,256 - loglib - WARNING - Предупреждение
+2026-05-19 15:58:33,256 - loglib - ERROR - Ошибка
+2026-05-19 15:58:36,828 - loglib - DEBUG - Отладка
+2026-05-19 15:58:36,828 - loglib - INFO - Информация
+2026-05-19 15:58:36,828 - loglib - WARNING - Предупреждение
+2026-05-19 15:58:36,828 - loglib - ERROR - Ошибка
+2026-05-19 15:58:37,381 - loglib - INFO - Starting up...
+2026-05-19 15:58:37,381 - loglib - INFO - Database initialized
+2026-05-19 15:58:37,381 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:58:37,381 - loglib - INFO - WebSocket background processor started
+2026-05-19 15:58:37,543 - loglib - INFO - MQTT client started
+2026-05-19 16:01:45,843 - loglib - INFO - Shutting down...
+2026-05-19 16:01:45,844 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:01:45,846 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:01:45,847 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:01:47,868 - loglib - DEBUG - Отладка
+2026-05-19 16:01:47,869 - loglib - INFO - Информация
+2026-05-19 16:01:47,869 - loglib - WARNING - Предупреждение
+2026-05-19 16:01:47,870 - loglib - ERROR - Ошибка
+2026-05-19 16:01:48,541 - loglib - INFO - Starting up...
+2026-05-19 16:01:48,541 - loglib - INFO - Database initialized
+2026-05-19 16:01:48,541 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:01:48,541 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:01:48,681 - loglib - INFO - MQTT client started
+2026-05-19 16:02:40,754 - loglib - INFO - Shutting down...
+2026-05-19 16:02:40,758 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:02:40,759 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:02:40,759 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:02:42,470 - loglib - DEBUG - Отладка
+2026-05-19 16:02:42,470 - loglib - INFO - Информация
+2026-05-19 16:02:42,471 - loglib - WARNING - Предупреждение
+2026-05-19 16:02:42,471 - loglib - ERROR - Ошибка
+2026-05-19 16:02:43,265 - loglib - INFO - Starting up...
+2026-05-19 16:02:43,270 - loglib - INFO - Database initialized
+2026-05-19 16:02:43,271 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:02:43,271 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:02:43,424 - loglib - INFO - MQTT client started
+2026-05-19 16:02:52,645 - loglib - INFO - Shutting down...
+2026-05-19 16:02:52,647 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:02:52,648 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:02:52,650 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:02:54,391 - loglib - DEBUG - Отладка
+2026-05-19 16:02:54,391 - loglib - INFO - Информация
+2026-05-19 16:02:54,391 - loglib - WARNING - Предупреждение
+2026-05-19 16:02:54,391 - loglib - ERROR - Ошибка
+2026-05-19 16:02:55,210 - loglib - INFO - Starting up...
+2026-05-19 16:02:55,230 - loglib - INFO - Database initialized
+2026-05-19 16:02:55,232 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:02:55,232 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:02:55,378 - loglib - INFO - MQTT client started
+2026-05-19 16:03:01,683 - loglib - INFO - Shutting down...
+2026-05-19 16:03:01,685 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:03:01,716 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:01,729 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:03,613 - loglib - DEBUG - Отладка
+2026-05-19 16:03:03,613 - loglib - INFO - Информация
+2026-05-19 16:03:03,613 - loglib - WARNING - Предупреждение
+2026-05-19 16:03:03,613 - loglib - ERROR - Ошибка
+2026-05-19 16:03:04,112 - loglib - INFO - Starting up...
+2026-05-19 16:03:04,126 - loglib - INFO - Database initialized
+2026-05-19 16:03:04,128 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:04,129 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:04,277 - loglib - INFO - MQTT client started
+2026-05-19 16:03:09,474 - loglib - INFO - Shutting down...
+2026-05-19 16:03:09,474 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:03:09,474 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:09,474 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:11,451 - loglib - DEBUG - Отладка
+2026-05-19 16:03:11,451 - loglib - INFO - Информация
+2026-05-19 16:03:11,452 - loglib - WARNING - Предупреждение
+2026-05-19 16:03:11,453 - loglib - ERROR - Ошибка
+2026-05-19 16:03:12,193 - loglib - INFO - Starting up...
+2026-05-19 16:03:12,199 - loglib - INFO - Database initialized
+2026-05-19 16:03:12,199 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:12,200 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:12,360 - loglib - INFO - MQTT client started
+2026-05-19 16:03:17,707 - loglib - INFO - Shutting down...
+2026-05-19 16:03:17,708 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:03:17,708 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:17,709 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:21,551 - loglib - DEBUG - Отладка
+2026-05-19 16:03:21,595 - loglib - INFO - Информация
+2026-05-19 16:03:21,597 - loglib - WARNING - Предупреждение
+2026-05-19 16:03:21,611 - loglib - ERROR - Ошибка
+2026-05-19 16:03:22,375 - loglib - INFO - Starting up...
+2026-05-19 16:03:22,375 - loglib - INFO - Database initialized
+2026-05-19 16:03:22,375 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:22,375 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:22,609 - loglib - INFO - MQTT client started
+2026-05-19 16:03:22,723 - loglib - INFO - Shutting down...
+2026-05-19 16:03:22,723 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:03:22,723 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:22,723 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:26,692 - loglib - DEBUG - Отладка
+2026-05-19 16:03:26,692 - loglib - INFO - Информация
+2026-05-19 16:03:26,692 - loglib - WARNING - Предупреждение
+2026-05-19 16:03:26,692 - loglib - ERROR - Ошибка
+2026-05-19 16:03:27,329 - loglib - INFO - Starting up...
+2026-05-19 16:03:27,347 - loglib - INFO - Database initialized
+2026-05-19 16:03:27,347 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:27,348 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:27,493 - loglib - INFO - MQTT client started
+2026-05-19 16:03:27,595 - loglib - INFO - Shutting down...
+2026-05-19 16:03:27,595 - loglib - INFO - WebSocket queue processor cancelled
+2026-05-19 16:03:27,596 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:27,597 - loglib - INFO - WebSocket background processor stopped
+2026-05-19 16:03:29,472 - loglib - DEBUG - Отладка
+2026-05-19 16:03:29,472 - loglib - INFO - Информация
+2026-05-19 16:03:29,487 - loglib - WARNING - Предупреждение
+2026-05-19 16:03:29,490 - loglib - ERROR - Ошибка
+2026-05-19 16:03:30,166 - loglib - INFO - Starting up...
+2026-05-19 16:03:30,177 - loglib - INFO - Database initialized
+2026-05-19 16:03:30,177 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:30,178 - loglib - INFO - WebSocket background processor started
+2026-05-19 16:03:30,322 - loglib - INFO - MQTT client started
+2026-05-19 16:08:34,925 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-19 16:09:04,948 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:09:34,950 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:10:05,586 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:10:35,586 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:11:05,586 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:11:35,589 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:12:05,585 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:12:52,582 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:13:52,588 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:14:05,784 - loglib - DEBUG - Received from WebSocket client: ping
+2026-05-19 16:14:09,374 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-19 16:14:09,388 - loglib - INFO - WebSocket client disconnected
+2026-05-19 16:14:09,526 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-19 16:20:57,560 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-19 16:20:57,568 - loglib - INFO - WebSocket client disconnected
+2026-05-19 16:20:57,624 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-19 16:25:45,607 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-19 16:25:45,619 - loglib - INFO - WebSocket client disconnected
+2026-05-19 16:25:45,669 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-19 16:29:41,128 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-19 16:29:41,156 - loglib - INFO - WebSocket client disconnected
+2026-05-19 16:29:41,233 - loglib - INFO - WebSocket connected. Total connections: 1
+2026-05-19 16:32:25,496 - loglib - INFO - WebSocket disconnected. Total connections: 0
+2026-05-19 16:32:25,497 - loglib - INFO - WebSocket client disconnected

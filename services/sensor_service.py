@@ -19,7 +19,7 @@ async def get_sensor_data(db: AsyncSession, skip: int = 0, limit: int = 100) -> 
     """Асинхронное получение данных"""
     result = await db.execute(
         select(SensorData)
-        .order_by(SensorData.datastamp.desc())
+        .order_by(SensorData.datestamp.desc())
         .offset(skip)
         .limit(limit)
     )

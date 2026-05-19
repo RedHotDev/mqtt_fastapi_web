@@ -18,7 +18,7 @@ broker = 'm8.wqtt.ru'
 port = 20606
 
 topic = "sensors/data"
-topic_cfg = 'CFG'
+topic_cfg = 'CFG_1'
 
 
 __setpoint=0
@@ -39,8 +39,9 @@ def on_connect(client, userdata, flags, rc):
             subscribe(client)
             client.connected_flag = True
             
-            msg = {"device": 1,
-                   "setTemp": 21, "setTimeLight": 600, "setDurationLight": 20,  "setTimeRain": 60, "setDurationRain": 10}
+            msg = {"device": 1, "data": [
+                {"datestamp": 1779166905, "tag": "temp", "val": 54.3}]}
+            
             msg = json.dumps(msg)
             # client.publish('CFG', msg, 2)
             
@@ -86,8 +87,17 @@ while True:
     time.sleep(10)
     temp = random.randint(20, 25)
     f = bool(random.getrandbits(1))
-    msg = {
-        "datastamp": datetime.datetime.now().isoformat(timespec='seconds'), "device": 1,   "temp": temp,  "humidity": random.randint(20, 70)}
+    current_date_time = datetime.datetime.now()
+    unix_current_date_time = int(current_date_time.timestamp())
+    
+    
+    msg = {"device": 1, "data":
+           [
+               {"datestamp": unix_current_date_time, "tag": "temp", "val": temp},
+               {"datestamp": unix_current_date_time, "tag": "humidity", "val": random.randint(20, 70)},
+           ]
+           }
+    
     msg = json.dumps(msg)
     
     result = client.publish(topic, msg, qos=1)

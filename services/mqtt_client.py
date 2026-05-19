@@ -5,7 +5,7 @@ from typing import Optional
 import paho.mqtt.client as mqtt
 from datetime import datetime
 from config import settings
-from schemas.schemas import SensorDataCreate
+from schemas.schemas import SensorDataCreate, MQTTMessage
 from services.sensor_service import create_sensor_data
 from database import AsyncSessionLocal
 from services.websocket_manager import ws_manager
@@ -73,31 +73,33 @@ class MQTTClient:
             logger.error(f"Error: {e}")
 
     
+    
     async def process_queue(self):
         while True:
             try:
                 # Читаем из очереди
                 payload = await self.message_queue.get()
                 # отправляем на запись в БД
-                saved_data = await self.process_message(payload)
-                logger.info(f"ЗАПИСЬ УСПЕШНА {saved_data}")
+                saved_data_list = await self.process_message(payload)
+                logger.info(f"ЗАПИСЬ УСПЕШНА {saved_data_list}")
 
                 # ✅ ЕСЛИ ДАННЫЕ УСПЕШНО СОХРАНЕНЫ → ОТПРАВЛЯЕМ В WEB SOCKET
-                if saved_data:
-                   
+                
+                if saved_data_list:
+                   for saved_data in saved_data_list:
                     await ws_manager.add_to_queue({
                         "type": "new_sensor_data",
                         "data": {
                             "id": saved_data.id,
                             "device": saved_data.device,
-                            "temp": saved_data.temp,
-                            "humidity": saved_data.humidity,
-                            "datastamp": saved_data.datastamp.isoformat() if saved_data.datastamp else None,
-                            "created_at": saved_data.created_at.isoformat() if saved_data.created_at else None
+                            "tag": saved_data.tag,
+                            "value": saved_data.value,
+                            # "datastamp": saved_data.datastamp.isoformat() if saved_data.datastamp else None,
+                            # "created_at": saved_data.created_at.isoformat() if saved_data.created_at else None
                         }
                     })
                     logger.info(
-                        f"Data sent to WebSocket: device={saved_data.device}")
+                        f"Data sent to WebSocket: device={saved_data.device},device={saved_data.tag}, value={saved_data.value}")
                 self.message_queue.task_done()
             except asyncio.CancelledError:
                 break
@@ -105,29 +107,37 @@ class MQTTClient:
                 logger.error(f"Queue error: {e}")
                 await asyncio.sleep(0.1)
 
+
+    @staticmethod
+    def convert_timestamp_to_datetime(timestamp):
+        """Конвертирует Unix timestamp в datetime объект"""
+        return datetime.fromtimestamp(timestamp)
+    
     async def process_message(self, payload: str):
         """Асинхронная обработка сообщения"""
         async with AsyncSessionLocal() as db:
             try:
                 data = json.loads(payload)
-                
-                # Преобразование данных
-                if isinstance(data.get('datastamp'), str):
-                    data['datastamp'] = datetime.fromisoformat(
-                        data['datastamp'])
-                
-                data['device'] = int(data['device'])
-                data['temp'] = float(data['temp'])
-                data['humidity'] = float(data['humidity'])
-                
-                sensor_data = SensorDataCreate(**data)
-                
-                # Асинхронное сохранение в БД
-                result = await create_sensor_data(db, sensor_data)
-                
-                logger.info(f"Запись в БД: device={result.device}, temp={result.temp}, humidity={result.humidity}")
-                return result
-                
+                mqtt_message = MQTTMessage(**data)
+
+                device = mqtt_message.device
+                data_list = mqtt_message.data
+
+                saved_results = []  # Сохраняем все результаты
+                for item in data_list:
+                    sensor_dict = {
+                        'device': device,
+                        'tag': item.tag,
+                        'value': item.val,
+                        'datestamp': self.convert_timestamp_to_datetime(item.datestamp)
+                    }
+                    sensor_data = SensorDataCreate(**sensor_dict)
+                    result = await create_sensor_data(db, sensor_data)
+                    saved_results.append(result)
+                    logger.info(f"Saved: device={result.device}, tag={result.tag}")
+
+                return saved_results  # Возвращаем все сохраненные записи
+
             except Exception as e:
                 logger.error(f"Process error: {e}", exc_info=True)
                 return None

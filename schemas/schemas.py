@@ -1,15 +1,28 @@
 from pydantic import BaseModel, Field
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
+
+
+class DataItem(BaseModel):
+    """Схема для элемента данных внутри MQTT сообщения"""
+    datestamp: int
+    tag: str
+    val: float
+
+
+
+class MQTTMessage(BaseModel):
+    """Схема для входящего MQTT сообщения"""
+    device: int
+    data: List[DataItem]
+    
 
 
 class SensorDataBase(BaseModel):
-    datastamp: datetime
     device: int
-    temp: float = Field(..., ge=-50, le=100,
-                        description="Temperature in Celsius")
-    humidity: float = Field(..., ge=0, le=100,
-                            description="Humidity in percent")
+    datestamp: datetime
+    tag: str 
+    value: float
 
 
 class SensorDataCreate(SensorDataBase):

@@ -5,130 +5,43 @@
     <title>Sensor Data Live</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f0f2f5;
+            padding: 20px;
         }
 
-        #status {
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+        h1 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
         }
 
-        .connected {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .disconnected {
-            background: #f8d7da;
-            color: #721c24;
+        /* Управление */
+        .controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
         }
 
         button {
-            padding: 8px 15px;
-            margin: 5px;
+            padding: 10px 20px;
             cursor: pointer;
             border: none;
             border-radius: 5px;
+            font-weight: bold;
             transition: all 0.3s;
         }
 
         button:hover {
             transform: translateY(-2px);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Панель текущего значения */
-        .current-panel {
-            border: 2px solid #667eea;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .current-item {
-            text-align: center;
-            flex: 1;
-            min-width: 120px;
-        }
-
-        .current-label {
-            font-size: 12px;
-            opacity: 0.9;
-            margin-bottom: 5px;
-        }
-
-        .current-value {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .current-unit {
-            font-size: 14px;
-            margin-left: 5px;
-        }
-
-        #currentDevice {
-            font-size: 32px;
-        }
-
-        /* Контейнер графика */
-        .chart-container {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 15px 0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        canvas {
-            max-height: 300px;
-            width: 100%;
-        }
-
-        #data {
-            border: 1px solid #ccc;
-            background: #f9f9f9;
-            font-family: monospace;
-            font-size: 13px;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        /* Каждое сообщение - одна строка */
-        .sensor-record {
-            padding: 8px 10px;
-            border-bottom: 1px solid #ddd;
-            background: white;
-            white-space: nowrap;
-            overflow-x: auto;
-        }
-
-        .sensor-record:hover {
-            background: #f0f0f0;
-        }
-
-        .system-message {
-            padding: 8px 10px;
-            background: #e3f2fd;
-            color: #1976d2;
-            text-align: center;
-        }
-
-        .controls {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
         }
 
         .btn-connect {
@@ -145,63 +58,399 @@
             background: #ffc107;
             color: #333;
         }
+
+        #status {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .connected {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #28a745;
+        }
+
+        .disconnected {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #dc3545;
+        }
+
+        /* ========== ПАНЕЛЬ 1: Текущие значения (карточки) ========== */
+        .panel {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+            border-left: 4px solid #667eea;
+            padding-left: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .current-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .sensor-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 15px;
+            color: white;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .sensor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .sensor-card.added {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        .sensor-card.added::after {
+            content: "📈";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px;
+        }
+
+        .sensor-tag {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .sensor-value {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .sensor-unit {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        .sensor-device {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+
+        .sensor-time {
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        /* ========== ПАНЕЛЬ 2: График ========== */
+        .chart-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .legend-item:hover {
+            background: #e0e0e0;
+        }
+
+        .legend-item.disabled {
+            opacity: 0.4;
+            text-decoration: line-through;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .legend-label {
+            font-weight: bold;
+        }
+
+        .legend-unit {
+            color: #666;
+            font-size: 10px;
+        }
+
+        .remove-trend-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 2px 6px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+
+        .remove-trend-btn:hover {
+            background: #c82333;
+        }
+
+        canvas {
+            max-height: 400px;
+            width: 100%;
+        }
+
+        /* ========== ПАНЕЛЬ 3: Журнал ========== */
+        .log-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .log-header {
+            display: grid;
+            grid-template-columns: 80px 180px 120px 1fr;
+            gap: 10px;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .log-entry {
+            display: grid;
+            grid-template-columns: 80px 180px 120px 1fr;
+            gap: 10px;
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+            font-family: monospace;
+        }
+
+        .log-entry:hover {
+            background: #f5f5f5;
+        }
+
+        .log-entry:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .log-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .tag-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .tag-temperature {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .tag-humidity {
+            background: #3498db;
+            color: white;
+        }
+
+        .tag-pressure {
+            background: #2ecc71;
+            color: white;
+        }
+
+        .tag-default {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .empty-log {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .legend-item {
+            animation: fadeIn 0.3s ease;
+        }
     </style>
 </head>
 
 <body>
-    <h1>📡 MQTT Sensor</h1>
-
-    <div id="status" class="disconnected">Disconnected</div>
+    <h1>📡 MQTT Sensor Data Dashboard</h1>
 
     <div class="controls">
-        <button class="btn-connect" onclick="connectWebSocket()">Соединение</button>
-        <button class="btn-disconnect" onclick="disconnectWebSocket()">Отключиться</button>
-        <button class="btn-clear" onclick="clearAll()">Очистить всё</button>
+        <button class="btn-connect" onclick="connectWebSocket()">🔌 Connect</button>
+        <button class="btn-disconnect" onclick="disconnectWebSocket()">❌ Disconnect</button>
+        <button class="btn-clear" onclick="clearAll()">🗑️ Clear All</button>
     </div>
 
-    <!-- Панель текущего значения -->
-    <div class="current-panel">
-        <div class="current-item">
-            <div class="current-label">📱 Текущее устройство</div>
-            <div class="current-value" id="currentDevice">—</div>
+    <div id="status" class="disconnected">⚫ Disconnected</div>
+
+    <!-- ПАНЕЛЬ 1: Текущие значения по тегам -->
+    <div class="panel">
+        <div class="panel-title">
+            <span>📊 Текущие значения - кликните на карточку для добавления тренда на график</span>
         </div>
-        <div class="current-item">
-            <div class="current-label">🌡️ Температура</div>
-            <div class="current-value">
-                <span id="currentTemp">—</span>
-                <span class="current-unit">°C</span>
+        <div class="current-grid" id="currentValuesGrid">
+            <div style="color: #999; text-align: center; grid-column: 1/-1; padding: 20px;">
+                Нет данных. Ожидание подключения...
             </div>
-        </div>
-        <div class="current-item">
-            <div class="current-label">💧 Влажность</div>
-            <div class="current-value">
-                <span id="currentHumidity">—</span>
-                <span class="current-unit">%</span>
-            </div>
-        </div>
-        <div class="current-item">
-            <div class="current-label">🕐 Последнее обновление</div>
-            <div class="current-value" id="currentTime" style="font-size: 16px;">—</div>
         </div>
     </div>
 
-    <!-- График -->
+    <!-- ПАНЕЛЬ 2: График -->
     <div class="chart-container">
+        <div class="chart-header">
+            <div class="panel-title" style="border-left: none; padding-left: 0; margin-bottom: 0;">
+                📈 Тренды датчиков
+            </div>
+            <button onclick="removeAllTrends()"
+                style="background: #dc3545; color: white; padding: 5px 15px; font-size: 12px;">🗑️ Удалить все
+                тренды</button>
+        </div>
+        <div class="legend" id="legend"></div>
         <canvas id="sensorChart"></canvas>
     </div>
 
-    <h3>Сообщения :</h3>
-    <div id="data"></div>
+    <!-- ПАНЕЛЬ 3: Журнал -->
+    <div class="log-container">
+        <div class="panel-title">📋 Журнал событий</div>
+        <div class="log-header">
+            <div>ID</div>
+            <div>Дата/Время</div>
+            <div>Тег</div>
+            <div>Значение</div>
+        </div>
+        <div class="log-list" id="logList">
+            <div class="empty-log">Нет записей в журнале</div>
+        </div>
+    </div>
 
     <script>
         let ws = null;
         let chart = null;
-        let chartData = {
-            labels: [],
-            temperatures: [],
-            humidities: []
-        };
-        let allRecords = [];
+
+        // Хранилище текущих значений по тегам
+        let currentValues = {};
+
+        // Хранилище трендов { tag: { data, color, visible, unit, displayName } }
+        let trends = {};
+
+        // Цвета для трендов
+        const trendColors = [
+            { border: '#e74c3c', bg: 'rgba(231, 76, 60, 0.1)' },
+            { border: '#3498db', bg: 'rgba(52, 152, 219, 0.1)' },
+            { border: '#2ecc71', bg: 'rgba(46, 204, 113, 0.1)' },
+            { border: '#f39c12', bg: 'rgba(243, 156, 18, 0.1)' },
+            { border: '#9b59b6', bg: 'rgba(155, 89, 182, 0.1)' },
+            { border: '#1abc9c', bg: 'rgba(26, 188, 156, 0.1)' },
+            { border: '#e67e22', bg: 'rgba(230, 126, 34, 0.1)' },
+            { border: '#34495e', bg: 'rgba(52, 73, 94, 0.1)' }
+        ];
+
+        // Журнал записей
+        let logEntries = [];
+
+        // Хранилище исторических данных для всех тегов
+        let historicalData = {};
+
+        // Функция получения единицы измерения
+        function getUnit(tag) {
+            const units = {
+                'temperature': '°C',
+                'temp': '°C',
+                'humidity': '%',
+                'pressure': 'hPa'
+            };
+            return units[tag?.toLowerCase()] || '';
+        }
+
+        // Функция получения названия для отображения
+        function getDisplayName(tag) {
+            const names = {
+                'temperature': 'Температура',
+                'temp': 'Температура',
+                'humidity': 'Влажность',
+                'pressure': 'Давление'
+            };
+            return names[tag?.toLowerCase()] || tag;
+        }
+
+        // Получение цвета для тега
+        function getTagColor(tag) {
+            const colors = {
+                'temperature': 'tag-temperature',
+                'temp': 'tag-temperature',
+                'humidity': 'tag-humidity',
+                'pressure': 'tag-pressure'
+            };
+            return colors[tag?.toLowerCase()] || 'tag-default';
+        }
 
         // Инициализация графика
         function initChart() {
@@ -210,28 +459,7 @@
                 type: 'line',
                 data: {
                     labels: [],
-                    datasets: [
-                        {
-                            label: 'Температура (°C)',
-                            data: [],
-                            borderColor: '#e74c3c',
-                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
-                            borderWidth: 2,
-                            tension: 0.3,
-                            fill: true,
-                            yAxisID: 'y'
-                        },
-                        {
-                            label: 'Влажность (%)',
-                            data: [],
-                            borderColor: '#3498db',
-                            backgroundColor: 'rgba(52, 152, 219, 0.1)',
-                            borderWidth: 2,
-                            tension: 0.3,
-                            fill: true,
-                            yAxisID: 'y1'
-                        }
-                    ]
+                    datasets: []
                 },
                 options: {
                     responsive: true,
@@ -241,15 +469,8 @@
                         intersect: false,
                     },
                     plugins: {
-                        title: {
-                            display: true,
-                            text: 'Температура и влажность в реальном времени',
-                            font: {
-                                size: 14
-                            }
-                        },
                         legend: {
-                            position: 'top',
+                            display: false
                         },
                         tooltip: {
                             mode: 'index',
@@ -260,26 +481,10 @@
                         y: {
                             title: {
                                 display: true,
-                                text: 'Температура (°C)',
-                                color: '#e74c3c'
+                                text: 'Значения'
                             },
-                            min: -10,
-                            max: 50,
                             grid: {
-                                color: 'rgba(231, 76, 60, 0.1)'
-                            }
-                        },
-                        y1: {
-                            position: 'right',
-                            title: {
-                                display: true,
-                                text: 'Влажность (%)',
-                                color: '#3498db'
-                            },
-                            min: 0,
-                            max: 100,
-                            grid: {
-                                drawOnChartArea: false
+                                color: 'rgba(0, 0, 0, 0.1)'
                             }
                         },
                         x: {
@@ -299,143 +504,458 @@
             });
         }
 
-        // Обновление графика
-        function updateChart(sensorData) {
-            const time = new Date(sensorData.datastamp).toLocaleTimeString();
+        // Обновление легенды
+        function updateLegend() {
+            const legendDiv = document.getElementById('legend');
 
-            // Добавляем новые данные
-            chartData.labels.push(time);
-            chartData.temperatures.push(sensorData.temp);
-            chartData.humidities.push(sensorData.humidity);
-
-            // Оставляем только последние 30 точек
-            if (chartData.labels.length > 30) {
-                chartData.labels.shift();
-                chartData.temperatures.shift();
-                chartData.humidities.shift();
+            if (Object.keys(trends).length === 0) {
+                legendDiv.innerHTML = '<div style="color: #999; text-align: center; width: 100%;">Нет добавленных трендов. Нажмите на карточку с датчиком, чтобы добавить тренд.</div>';
+                return;
             }
 
-            // Обновляем график
-            chart.data.labels = chartData.labels;
-            chart.data.datasets[0].data = chartData.temperatures;
-            chart.data.datasets[1].data = chartData.humidities;
-            chart.update();
+            let html = '';
+            for (const [tag, trend] of Object.entries(trends)) {
+                const displayName = trend.displayName;
+                const unit = trend.unit;
+                const color = trend.color.border;
+                const isVisible = trend.visible !== false;
+
+                html += `
+                    <div class="legend-item ${!isVisible ? 'disabled' : ''}" onclick="toggleTrend('${tag}')">
+                        <div class="legend-color" style="background: ${color};"></div>
+                        <div class="legend-label">${displayName}</div>
+                        <div class="legend-unit">(${unit})</div>
+                        <button class="remove-trend-btn" onclick="event.stopPropagation(); removeTrend('${tag}')">✖</button>
+                    </div>
+                `;
+            }
+            legendDiv.innerHTML = html;
         }
 
-        // Очистка графика
-        function clearChart() {
-            chartData = {
-                labels: [],
-                temperatures: [],
-                humidities: []
+        // Добавление нового тренда
+        function addTrend(tag) {
+            const normalizedTag = tag === 'temp' ? 'temperature' : tag.toLowerCase();
+
+            // Проверяем, существует ли уже тренд для этого тега
+            if (trends[normalizedTag]) {
+                showNotification(`Тренд для ${getDisplayName(normalizedTag)} уже существует`, 'warning');
+                return;
+            }
+
+            const displayName = getDisplayName(normalizedTag);
+            const unit = getUnit(normalizedTag);
+            const colorIndex = Object.keys(trends).length;
+            const colors = trendColors[colorIndex % trendColors.length];
+
+            // Создаем новый датасет для графика
+            const newDataset = {
+                label: `${displayName} (${unit})`,
+                data: [],
+                borderColor: colors.border,
+                backgroundColor: colors.bg,
+                borderWidth: 2,
+                tension: 0.3,
+                fill: false,
+                pointRadius: 3,
+                pointHoverRadius: 6,
+                pointBackgroundColor: colors.border,
+                pointBorderColor: 'white',
+                pointBorderWidth: 2,
+                hidden: false
             };
-            chart.data.labels = [];
-            chart.data.datasets[0].data = [];
-            chart.data.datasets[1].data = [];
+
+            chart.data.datasets.push(newDataset);
+
+            // Сохраняем тренд
+            trends[normalizedTag] = {
+                datasetIndex: chart.data.datasets.length - 1,
+                data: [],
+                color: colors,
+                unit: unit,
+                displayName: displayName,
+                visible: true,
+                labels: []
+            };
+
+            // Загружаем существующие данные для этого тега
+            if (historicalData[normalizedTag]) {
+                const data = historicalData[normalizedTag];
+                if (data.labels && data.values) {
+                    for (let i = 0; i < data.labels.length; i++) {
+                        addDataToTrend(normalizedTag, data.values[i], data.labels[i]);
+                    }
+                }
+            }
+
+            // Обновляем легенду
+            updateLegend();
+
+            // Подсвечиваем карточку
+            highlightAddedCard(normalizedTag);
+
+            // Обновляем шкалу Y при необходимости
+            updateYAxis();
+
+            showNotification(`Тренд для ${displayName} добавлен`, 'success');
+        }
+
+        // Добавление данных в тренд
+        function addDataToTrend(tag, value, timeLabel) {
+            const trend = trends[tag];
+            if (!trend) return;
+
+            trend.labels.push(timeLabel);
+            trend.data.push(value);
+
+            // Оставляем только последние 30 точек
+            if (trend.labels.length > 30) {
+                trend.labels.shift();
+                trend.data.shift();
+            }
+
+            // Обновляем датасет в графике
+            if (chart.data.datasets[trend.datasetIndex]) {
+                chart.data.datasets[trend.datasetIndex].data = trend.data;
+            }
+
+            // Обновляем лейблы (берем максимальные лейблы из всех трендов)
+            updateChartLabels();
+
             chart.update();
         }
 
+        // Обновление лейблов графика (берем максимальные из всех трендов)
+        function updateChartLabels() {
+            let maxLength = 0;
+            let longestLabels = [];
+
+            for (const trend of Object.values(trends)) {
+                if (trend.labels.length > maxLength) {
+                    maxLength = trend.labels.length;
+                    longestLabels = trend.labels;
+                }
+            }
+
+            chart.data.labels = longestLabels;
+        }
+
+        // Обновление шкалы Y в зависимости от данных
+        function updateYAxis() {
+            let allValues = [];
+            for (const trend of Object.values(trends)) {
+                allValues = allValues.concat(trend.data);
+            }
+
+            if (allValues.length > 0) {
+                const min = Math.min(...allValues);
+                const max = Math.max(...allValues);
+                const padding = (max - min) * 0.1;
+
+                chart.options.scales.y.min = Math.floor(min - padding);
+                chart.options.scales.y.max = Math.ceil(max + padding);
+                chart.options.scales.y.title.text = 'Значения';
+            }
+
+            chart.update();
+        }
+
+        // Переключение видимости тренда
+        function toggleTrend(tag) {
+            const trend = trends[tag];
+            if (!trend) return;
+
+            trend.visible = !trend.visible;
+            chart.data.datasets[trend.datasetIndex].hidden = !trend.visible;
+            chart.update();
+            updateLegend();
+        }
+
+        // Удаление тренда
+        function removeTrend(tag) {
+            const trend = trends[tag];
+            if (!trend) return;
+
+            // Удаляем датасет из графика
+            chart.data.datasets.splice(trend.datasetIndex, 1);
+
+            // Обновляем индексы датасетов в оставшихся трендах
+            delete trends[tag];
+            let newIndex = 0;
+            for (const [t, tr] of Object.entries(trends)) {
+                tr.datasetIndex = newIndex;
+                newIndex++;
+            }
+
+            chart.update();
+            updateLegend();
+            removeCardHighlight(tag);
+
+            showNotification(`Тренд для ${trend.displayName} удален`, 'info');
+        }
+
+        // Удаление всех трендов
+        function removeAllTrends() {
+            chart.data.datasets = [];
+            trends = {};
+            chart.update();
+            updateLegend();
+
+            // Снимаем подсветку со всех карточек
+            document.querySelectorAll('.sensor-card').forEach(card => {
+                card.classList.remove('added');
+            });
+
+            showNotification('Все тренды удалены', 'info');
+        }
+
+        // Подсветка добавленной карточки
+        function highlightAddedCard(tag) {
+            const card = document.querySelector(`.sensor-card[data-tag="${tag}"]`);
+            if (card) {
+                card.classList.add('added');
+            }
+        }
+
+        // Снятие подсветки с карточки
+        function removeCardHighlight(tag) {
+            const card = document.querySelector(`.sensor-card[data-tag="${tag}"]`);
+            if (card) {
+                card.classList.remove('added');
+            }
+        }
+
+        // Показ уведомления
+        function showNotification(message, type = 'info') {
+            console.log(`[${type.toUpperCase()}] ${message}`);
+            // Можно добавить toast уведомления при желании
+        }
+
+        // Обновление панели текущих значений
+        function updateCurrentPanel() {
+            const grid = document.getElementById('currentValuesGrid');
+
+            if (Object.keys(currentValues).length === 0) {
+                grid.innerHTML = '<div style="color: #999; text-align: center; grid-column: 1/-1; padding: 20px;">Нет данных. Ожидание подключения...</div>';
+                return;
+            }
+
+            let html = '';
+            for (const [tag, data] of Object.entries(currentValues)) {
+                const unit = getUnit(tag);
+                const displayName = getDisplayName(tag);
+                const isAdded = trends[tag] ? 'added' : '';
+
+                html += `
+                    <div class="sensor-card ${isAdded}" data-tag="${tag}" onclick="addTrend('${tag}')">
+                        <div class="sensor-tag">🏷️ ${displayName}</div>
+                        <div class="sensor-value">
+                            ${data.value}
+                            <span class="sensor-unit">${unit}</span>
+                        </div>
+                        <div class="sensor-device">📱 Device: ${data.device}</div>
+                        <div class="sensor-time">🕐 ${data.time}</div>
+                    </div>
+                `;
+            }
+            grid.innerHTML = html;
+        }
+
+        // Добавление точки в историю
+        function addToHistory(tag, value, timestamp) {
+            const time = new Date(timestamp).toLocaleTimeString();
+            const normalizedTag = tag === 'temp' ? 'temperature' : tag.toLowerCase();
+
+            if (!historicalData[normalizedTag]) {
+                historicalData[normalizedTag] = { labels: [], values: [] };
+            }
+
+            historicalData[normalizedTag].labels.push(time);
+            historicalData[normalizedTag].values.push(value);
+
+            // Оставляем только последние 30 точек
+            if (historicalData[normalizedTag].labels.length > 30) {
+                historicalData[normalizedTag].labels.shift();
+                historicalData[normalizedTag].values.shift();
+            }
+
+            // Если тренд для этого тега существует, добавляем данные
+            if (trends[normalizedTag]) {
+                addDataToTrend(normalizedTag, value, time);
+            }
+        }
+
+        // Добавление записи в журнал
+        function addToLog(id, datetime, tag, value) {
+            const tagClass = getTagColor(tag);
+            const unit = getUnit(tag);
+            const displayValue = `${value}${unit}`;
+            const displayName = getDisplayName(tag);
+
+            logEntries.unshift({
+                id,
+                datetime,
+                tag: displayName,
+                value: displayValue,
+                tagClass
+            });
+
+            if (logEntries.length > 200) {
+                logEntries.pop();
+            }
+
+            renderLog();
+        }
+
+        // Отрисовка журнала
+        function renderLog() {
+            const logList = document.getElementById('logList');
+
+            if (logEntries.length === 0) {
+                logList.innerHTML = '<div class="empty-log">Нет записей в журнале</div>';
+                return;
+            }
+
+            let html = '';
+            for (const entry of logEntries) {
+                html += `
+                    <div class="log-entry">
+                        <div>#${entry.id}</div>
+                        <div>${entry.datetime}</div>
+                        <div>
+                            <span class="tag-badge ${entry.tagClass}">${entry.tag}</span>
+                        </div>
+                        <div>${entry.value}</div>
+                    </div>
+                `;
+            }
+            logList.innerHTML = html;
+        }
+
+        // Очистка всех данных
+        function clearAllData() {
+            currentValues = {};
+            historicalData = {};
+            logEntries = [];
+            removeAllTrends();
+
+            updateCurrentPanel();
+            renderLog();
+        }
+
+        // Обработка новых данных сенсора
+        function handleSensorData(data) {
+            const { id, device, tag, value } = data;
+            const now = new Date();
+            const datetime = now.toLocaleString('ru-RU');
+            const time = now.toLocaleTimeString('ru-RU');
+            const normalizedTag = tag === 'temp' ? 'temperature' : tag.toLowerCase();
+
+            // Обновляем текущие значения
+            currentValues[normalizedTag] = {
+                device: device,
+                value: value,
+                time: time,
+                timestamp: now.getTime()
+            };
+            updateCurrentPanel();
+
+            // Добавляем в историю для графика
+            addToHistory(normalizedTag, value, now);
+
+            // Добавляем в журнал
+            addToLog(id, datetime, normalizedTag, value);
+        }
+
+        // WebSocket подключение
         function connectWebSocket() {
-            const wsUrl = `ws://${window.location.host}/ws/sensors/live`;
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                console.log('WebSocket already connected');
+                return;
+            }
+
+            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsUrl = `${protocol}//${window.location.host}/ws/sensors/live`;
+
             ws = new WebSocket(wsUrl);
 
             ws.onopen = function () {
-                document.getElementById('status').innerHTML = '✅ Connected';
-                document.getElementById('status').className = 'connected';
+                const statusDiv = document.getElementById('status');
+                statusDiv.innerHTML = '✅ Connected - Receiving sensor data';
+                statusDiv.className = 'connected';
+                console.log('WebSocket connected');
+
+                logEntries.unshift({
+                    id: 'sys',
+                    datetime: new Date().toLocaleString('ru-RU'),
+                    tag: 'system',
+                    value: 'WebSocket connected',
+                    tagClass: 'tag-default'
+                });
+                renderLog();
             };
 
             ws.onmessage = function (event) {
-                const data = JSON.parse(event.data);
+                try {
+                    const message = JSON.parse(event.data);
+                    console.log('Received:', message);
 
-                if (data.type === 'new_sensor_data') {
-                    const d = data.data;
+                    if (message.type === 'connected') {
+                        const statusDiv = document.getElementById('status');
+                        statusDiv.innerHTML = `✅ Connected - ${message.message} (${message.clients_connected} clients)`;
 
-                    // Обновляем панель текущего значения
-                    updateCurrentPanel(d);
+                    } else if (message.type === 'new_sensor_data') {
+                        handleSensorData(message.data);
 
-                    // Обновляем график
-                    updateChart(d);
-
-                    // Сохраняем запись
-                    allRecords.unshift(d);
-
-                    // Форматируем полную дату для списка сообщений
-                    const fullDate = new Date(d.datastamp).toLocaleString();
-                    // ВСЁ В ОДНОЙ СТРОКЕ
-                    const line = `[#${d.id}] ${fullDate} | Device: ${d.device} | Temp: ${d.temp}°C | Humidity: ${d.humidity}%`;
-
-                    const container = document.getElementById('data');
-                    const record = document.createElement('div');
-                    record.className = 'sensor-record';
-                    record.textContent = line;
-
-                    container.insertBefore(record, container.firstChild);
-
-                    // Оставляем только последние 100 записей
-                    while (container.children.length > 100) {
-                        container.removeChild(container.lastChild);
+                    } else if (message.type === 'pong') {
+                        console.log('Heartbeat received');
                     }
+                } catch (e) {
+                    console.error('Error parsing message:', e, event.data);
                 }
+            };
+
+            ws.onerror = function (error) {
+                console.error('WebSocket error:', error);
+                document.getElementById('status').innerHTML = '⚠️ WebSocket Error';
+                document.getElementById('status').className = 'disconnected';
             };
 
             ws.onclose = function () {
                 document.getElementById('status').innerHTML = '❌ Disconnected';
                 document.getElementById('status').className = 'disconnected';
+                console.log('WebSocket disconnected');
+
+                setTimeout(() => {
+                    if (!ws || ws.readyState === WebSocket.CLOSED) {
+                        console.log('Attempting to reconnect...');
+                        connectWebSocket();
+                    }
+                }, 3000);
             };
         }
 
-        // Функция обновления панели текущего значения
-        function updateCurrentPanel(d) {
-            document.getElementById('currentDevice').textContent = d.device;
-
-            const tempElem = document.getElementById('currentTemp');
-            tempElem.textContent = d.temp;
-            if (d.temp < 10) {
-                tempElem.style.color = '#a0d8ff';
-            } else if (d.temp < 20) {
-                tempElem.style.color = '#90ee90';
-            } else if (d.temp < 30) {
-                tempElem.style.color = '#ffd700';
-            } else {
-                tempElem.style.color = '#ff6b6b';
-            }
-
-            const humidityElem = document.getElementById('currentHumidity');
-            humidityElem.textContent = d.humidity;
-            if (d.humidity < 30) {
-                humidityElem.style.color = '#ffa500';
-            } else if (d.humidity < 70) {
-                humidityElem.style.color = '#90ee90';
-            } else {
-                humidityElem.style.color = '#a0d8ff';
-            }
-
-            const now = new Date();
-            document.getElementById('currentTime').textContent = now.toLocaleTimeString();
-        }
-
         function disconnectWebSocket() {
-            if (ws) ws.close();
+            if (ws) {
+                ws.close();
+                ws = null;
+            }
         }
 
         function clearAll() {
-            // Очищаем список сообщений
-            document.getElementById('data').innerHTML = '';
-            // Очищаем массив записей
-            allRecords = [];
-            // Очищаем график
-            clearChart();
-            // Сбрасываем панель текущего значения
-            document.getElementById('currentDevice').textContent = '—';
-            document.getElementById('currentTemp').textContent = '—';
-            document.getElementById('currentHumidity').textContent = '—';
-            document.getElementById('currentTime').textContent = '—';
+            clearAllData();
+
+            logEntries.unshift({
+                id: 'sys',
+                datetime: new Date().toLocaleString('ru-RU'),
+                tag: 'system',
+                value: 'All data cleared',
+                tagClass: 'tag-default'
+            });
+            renderLog();
         }
 
-        // Инициализация графика при загрузке
+        // Инициализация
         initChart();
-
-        // Автоподключение
         connectWebSocket();
     </script>
 </body>
