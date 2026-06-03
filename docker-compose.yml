@@ -3,7 +3,7 @@ version: '3.8'
 services:
   fastapi-mqtt-service:
     build: .
-    container_name: fastapi-mqtt-service
+    container_name: mqtt-fastapi-web-service
     ports:
       - "8000:8000"
     volumes:

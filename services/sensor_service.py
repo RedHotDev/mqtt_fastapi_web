@@ -28,10 +28,10 @@ async def get_sensor_data(db: AsyncSession, skip: int = 0, limit: int = 100) -> 
     )
     return list(result.scalars().all())
 
-async def get_sensor_data_by_device( db: AsyncSession, device: str, limit: int = 100) -> List[SensorData]:
+async def get_sensor_data_by_device( db: AsyncSession, device_id: int, limit: int = 100) -> List[SensorData]:
     """Получить данные по устройству"""
     result = await db.execute(
-        select(SensorData).where(SensorData.device_id == device)
+        select(SensorData).where(SensorData.device_id == device_id)
         .limit(limit)
     )
     

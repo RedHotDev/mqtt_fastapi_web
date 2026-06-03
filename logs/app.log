@@ -1,0 +1,9 @@
+2026-06-03 12:32:55,245 - loglib - DEBUG - Отладка
+2026-06-03 12:32:55,248 - loglib - INFO - Информация
+2026-06-03 12:32:55,264 - loglib - WARNING - Предупреждение
+2026-06-03 12:32:55,277 - loglib - ERROR - Ошибка
+2026-06-03 12:32:55,813 - loglib - INFO - Starting up...
+2026-06-03 12:32:55,976 - loglib - INFO - Database initialized
+2026-06-03 12:32:55,977 - loglib - INFO - WebSocket background processor started
+2026-06-03 12:32:55,978 - loglib - INFO - WebSocket background processor started
+2026-06-03 12:32:56,242 - loglib - INFO - MQTT client started
