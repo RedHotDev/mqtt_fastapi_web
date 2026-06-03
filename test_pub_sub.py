@@ -85,7 +85,7 @@ client.loop_start()
 while True:
     
     time.sleep(10)
-    temp = random.randint(20, 25)
+    temp = random.randint(10, 25)
     f = bool(random.getrandbits(1))
     current_date_time = datetime.datetime.now()
     unix_current_date_time = int(current_date_time.timestamp())

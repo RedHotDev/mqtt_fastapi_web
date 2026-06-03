@@ -78,7 +78,7 @@ class MQTTClient:
         while True:
             try:
                 # Читаем из очереди
-                payload = await self.message_queue.get()
+                payload = await self.message_queue.get() # type: ignore
                 # отправляем на запись в БД
                 saved_data_list = await self.process_message(payload)
                 logger.info(f"ЗАПИСЬ УСПЕШНА {saved_data_list}")
@@ -91,7 +91,7 @@ class MQTTClient:
                         "type": "new_sensor_data",
                         "data": {
                             "id": saved_data.id,
-                            "device": saved_data.device,
+                            "device": saved_data.device_id,
                             "tag": saved_data.tag,
                             "value": saved_data.value,
                             # "datastamp": saved_data.datastamp.isoformat() if saved_data.datastamp else None,
@@ -99,7 +99,7 @@ class MQTTClient:
                         }
                     })
                     logger.info(
-                        f"Data sent to WebSocket: device={saved_data.device},device={saved_data.tag}, value={saved_data.value}")
+                        f"Data sent to WebSocket: device={saved_data.device_id},device={saved_data.tag}, value={saved_data.value}")
                 self.message_queue.task_done()
             except asyncio.CancelledError:
                 break
@@ -126,7 +126,7 @@ class MQTTClient:
                 saved_results = []  # Сохраняем все результаты
                 for item in data_list:
                     sensor_dict = {
-                        'device': device,
+                        'device_id': device,
                         'tag': item.tag,
                         'value': item.val,
                         'datestamp': self.convert_timestamp_to_datetime(item.datestamp)
@@ -134,7 +134,7 @@ class MQTTClient:
                     sensor_data = SensorDataCreate(**sensor_dict)
                     result = await create_sensor_data(db, sensor_data)
                     saved_results.append(result)
-                    logger.info(f"Saved: device={result.device}, tag={result.tag}")
+                    logger.info(f"Saved: device={result.device_id}, tag={result.tag}")
 
                 return saved_results  # Возвращаем все сохраненные записи
 
